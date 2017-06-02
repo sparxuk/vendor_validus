@@ -92,7 +92,8 @@ PRODUCT_PACKAGES += \
     LatinIME \
     BluetoothExt \
     OmniJaws \
-    OmniStyle
+    OmniStyle \
+    GZRoms
 #    WolvesDen \
 #    ThemeInterfacer \
 #    Eleven \
