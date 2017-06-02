@@ -91,8 +91,8 @@ PRODUCT_PACKAGES += \
     Calculator \
     LatinIME \
     BluetoothExt \
-    WolesDen
-
+    WolesDen \
+    GZRoms
 
 # 3rd party packages
 PRODUCT_PACKAGES += \
