@@ -53,7 +53,11 @@ PRODUCT_COPY_FILES += \
     vendor/validus/prebuilt/common/etc/mkshrc:system/etc/mkshrc \
     vendor/validus/prebuilt/common/etc/sysctl.conf:system/etc/sysctl.conf
 
-# validus-specific startup services
+# Fix Dialer
+PRODUCT_COPY_FILES +=  \
+    vendor/validus/prebuilt/common/sysconfig/dialer_experience.xml:system/etc/sysconfig/dialer_experience.xml 
+
+# ValidusOs-specific startup services
 PRODUCT_COPY_FILES += \
     vendor/validus/prebuilt/common/etc/init.d/00banner:system/etc/init.d/00banner \
     vendor/validus/prebuilt/common/etc/init.d/90userinit:system/etc/init.d/90userinit \
