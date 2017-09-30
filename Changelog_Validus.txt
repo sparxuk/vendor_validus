@@ -1,0 +1,453 @@
+====================
+     12-21-2017
+====================
+
+
+   * build/make/
+92bae58  envi: changelog generation added  [Prema Chand Alugu]
+366ed36  Validus refactor  [Mirko]
+   * build/soong/
+15078ee  Validus refactor  [Mirko]
+   * frameworks/av/
+5986c04  Validus adjustment  [Mirko]
+   * manifest/
+400f914  track frameworks_av and bionic  [Mirko]
+   * vendor/validus/
+9982d72  changelog_validus: more info and bling  [Prema Chand Alugu]
+d156b0e  script: generate changelog for last 15days  [Prema Chand Alugu]
+fc38119  vendor: Remove duplicates from the    * repos  [Prema Chand Alugu]
+25e236c  vendor: Add the    *s list  [Prema Chand Alugu]
+cb18a61  Validus refactor  [Mirko]
+====================
+     12-20-2017
+====================
+
+
+   * bionic/
+73c01b3  Validus adjustment  [GitHub]
+====================
+     12-19-2017
+====================
+
+
+   * device/motorola/sanders/
+4da29a6  sanders:  Remove AID_QCOM_DIAG (ROM defines it already)  [Prema Chand Alugu]
+ec274a8  sanders: Bring on Validus 8.1, Ooh, its 64b too! B)  [Prema Chand Alugu]
+   * frameworks/base/
+bc299b4  base: gzosp: import gzosp utils  [Prema Chand Alugu]
+74d7d71  DeviceKeyHandler: Fix suspend gesture not working  [Prema Chand Alugu]
+b7f33d8  policy: Use PathClassLoader for loading the keyhandler  [Prema Chand Alugu]
+8103089  input: Forward-port support for chained input filters  [Prema Chand Alugu]
+d8ac964  Support GESTURE_SENSOR input device type with GestureService  [Prema Chand Alugu]
+4d22b96  PowerManager: Add proximity check on wake  [Prema Chand Alugu]
+bcb630d  Dispatch keys to a device specific key handler  [Prema Chand Alugu]
+7c1c521  Set Persisting Mobile Data connection off by default [2/2]  [Mirko]
+ee3c8d7  CellularTile: don't show confirm dialog on disable  [Mirko]
+fa1ffdc  Add back increasing ring feature (3/3)  [Mirko]
+   * packages/apps/Settings/
+6d492b2  Set Persisting Mobile Data connection off by default [1/2]  [Mirko]
+79bbc3a  Add back increasing ring feature (2/3).  [Mirko]
+   * packages/services/Telecomm/
+f6418c2  Add back increasing ring feature (3/3).  [Mirko]
+   * system/bt/
+4009cf4  Add support to force disable sco enhanced sync  [martinusbe]
+====================
+     12-18-2017
+====================
+
+
+   * device/motorola/sanders/
+612b37f  sanders: Fix invalid bluetooth mac  [Prema Chand Alugu]
+d348569  sanders: Cleanup unused overlays  [Prema Chand Alugu]
+41e1475  Use tracefs not debugfs  [Prema Chand Alugu]
+52098fa  sanders: Disable SUPL for Canadian carriers  [Prema Chand Alugu]
+7a42e9b  sanders: Import AOSP carrier specific GPS params  [Prema Chand Alugu]
+0567988  rootdir: Remove lines that fail  [Prema Chand Alugu]
+c6ae52a  sanders: Set ro.boot.hardware.revision instead of ro.hw.revision  [Prema Chand Alugu]
+363a9c5  rootdir: load_all_props is dead with M, replace with load_system_props  [Prema Chand Alugu]
+   * hardware/interfaces/
+bbe49aa  wifi: Handle errors other than wifi_error enum.  [martinusbe]
+   * packages/apps/SlimRecents/
+6fc239e  Card options: new kill app icon  [Mirko]
+   * vendor/validus/
+c239c68  gzosp: Add TARGET_SPECIFIC_CAMERA_PARAMETER_LIBRARY variable handling  [Mirko]
+====================
+     12-17-2017
+====================
+
+
+   * device/motorola/sanders/
+d963321  sanders: Give /dev/msm_vidc_* camera group and video_device label  [Prema Chand Alugu]
+622678d  sanders: enable wifi services 1.1  [Prema Chand Alugu]
+020e5b6  sanders: fstab.qcom it not in vendor  [Prema Chand Alugu]
+422067b  sanders: Re-enable overlays for LineageActions  [Prema Chand Alugu]
+72ba7c6  Revert "sanders:DNM: Do not build LineageActions"  [Prema Chand Alugu]
+   * hardware/qcom/audio-caf/msm8998/
+a38e5fb  policy_hal: fix for MR1 function prototype.  [Rashed Abdel-Tawab]
+   * hardware/qcom/media-caf/msm8998/
+6956941  media: Add extrapolated gpustats header for PQ  [Rashed Abdel-Tawab]
+   * packages/apps/Settings/
+2d001f2  change validus logo  [Mirko]
+42b79fd  Set System Animations to .7 by default (2 of 2)  [Mirko]
+4e2279d  Alert when screen off and charging if charge level becomes good [2/3]  [Mirko]
+1fd1f1a  DUI: Initial checkin for Oreo [3/7]  [Mirko]
+beabcaf  Allow to customize notification channels led light [1/2]  [Mirko]
+7d2999e  Enable notifications led light by default [2/2]  [Mirko]
+   * system/vold/
+7df063f  vold: ntfs: Use strlcat  [martinusbe]
+====================
+     12-16-2017
+====================
+
+
+   * device/motorola/sanders/
+bd41589  Revert "Revert "sanders: Add AID_QCOM_DIAG, AID_RFS, and AID_RFS_SHARED""  [Prema Chand Alugu]
+   * external/DUtils/
+91cc66d  Enable ScreenRecord  [Mirko]
+   * frameworks/base/
+278d71a  admin: Restore requireSecureKeyguard interface.  [Mirko]
+f8bc8ca  Set System Animations to .7 by default (1 of 2)  [Mirko]
+bb6a153  DUI: Uncomment screenrecord  [Mirko]
+08f6e6e  QS: add Screenrecord tile @xyyx: adapted to O  [Mirko]
+5fc0c87  Add a timer to screen record  [Mirko]
+ea8c249  Save screenrecord in "Screenrecords" directory  [Mirko]
+9376933  base: bring back screenrecord  - adapt for O Squashed commit of the following:  [Mirko]
+9e7f5e1  Recents Clear All Button Tweaks and Add FAB to Recents Panel Thanks to RR and @varund7726  [Mirko]
+a297991  Immersive Recents [1/2] Name says it all. Made this when someone had asked about how recents look with Touchwiz, simple enough.  [Mirko]
+7800c58  Slim Recents 3.0 [1/3]  [Mirko]
+252ce9e  Recents kill app: move it to app detail view header  [Mirko]
+c9d755b  Fix stock nav icon size after DUI merge and cleanup drawables  [Mirko]
+5a8bef7  DUI: Initial checkin for Oreo [5/7]  [Mirko]
+069620f  Recents kill app button: use a bomb icon  [Mirko]
+dc17f15  Recents: add pinch-in gesture on tasks to Clear All  [Mirko]
+be8199e  Stock Recents icon pack support [1/2]  [Mirko]
+fb37e0c  Recents: allow single tap on app icon to show app info overlay  [Mirko]
+009c737  Speed up Recents additional buttons show delay  [Mirko]
+e7d3e4e  SystemUI: Support recents task locking  [Mirko]
+ac4f409  Allow to kill any app from recents panel in a safe way  [Mirko]
+52f84aa  Statusbar ticker refactoring  [Mirko]
+9628eb8  Status bar notification ticker  [Mirko]
+cbb9f76  Vibrate on plug [1/2]  [Mirko]
+08dc510  Alert when screen off and charging if charge level becomes good [1/3]  [Mirko]
+0bbfd29  [1/2] base: config to disable power menu on secure lock screen  [Mirko]
+50fcdcc  Port: Wake on plug (1/2)  [Mirko]
+c3db6e0  Status network traffic [1/2]  [Mirko]
+df27c93  Less boring heads up option [1/2]  [Mirko]
+33730c6  Double tap to sleep on statusbar [1/2]  [Mirko]
+fc9ba51  Battery tile: fix label when charging  [Mirko]
+5a7ca32  NfcTile: use Oreo style  [Mirko]
+846002d  Show NFC tile  [Mirko]
+cb724a7  Hide tiles title: longpress will launch detail view  [Mirko]
+676d6bd  QS tile titles visibility [1/2]  [Mirko]
+b11f0ba  QS tiles customizer: respect user tiles columns value  [Mirko]
+cccf5da  Allow to set QS panel columns and rows [1/2]  [Mirko]
+a6cc9ef  Allow to disable qs footer warnings [1/2]  [Mirko]
+fd4779d  Added show volume panel tile to QS  [Mirko]
+45cc532  Add Sound tile to Quick Settings  [Mirko]
+08dc9b3  PiP tile: add toast if pip mode is not avail  [Mirko]
+87e397d  Add PiP tile  [Mirko]
+7cd32e9  Location tile: make it cycle modes  [Mirko]
+19ce0de  Add Ambient-LiftToWake tile  [Mirko]
+87a16a8  Add partial/full screenshot QS tile  [Mirko]
+1a22756  Allow user to add/remove QS with one click  [Mirko]
+bfb7481  Allow to customize notification channels led light [2/2]  [Mirko]
+6a870ac  Enable notifications led light by default [1/2]  [Mirko]
+60b93fc  its validus  [Mirko]
+1c3cabb  Battery light customization [1/2]  [Mirko]
+f4c3983  Allow doubletap/longpress power to toggle torch (8.1) [1/3]  [Mirko]
+fc662c2  Disable Lockscreen Media Art [1/2]  [Mirko]
+d2586ad  SystemUI: add quick settings pull down with one finger [1/2]  [Mirko]
+1f81d92  Double tap to sleep on lockscreen [1/2]  [Mirko]
+6a0c15e  Fix custom lockscreen shortcut icons being white  [Mirko]
+a0801ca  Launch music player on headset connect: add BT compatibility [1/2]  [Mirko]
+3fcc9fc  AudioService: launch default music player on headset connect [1/2]  [Mirko]
+b185548  [1/2] base: volume key music control  [Mirko]
+20298dd  Option to use volume keys to control media volume anytime (2/2)  [Mirko]
+166f809  [1/2] base: allow to swap volume buttons rotation based  [Mirko]
+2888020  Lockscreen bottom shortcuts fixes  [Mirko]
+73f4633  base: tuner: add a hide config to left and right shortcut  [Mirko]
+94f8b3f  Fix wrong actionbar title sticking around after exit  [Mirko]
+961e681  Hide SysUi tuner from Settings  [Mirko]
+1f1119b  Run LockscreenFragment external  [Mirko]
+b9e6a1f  Run NavBarTuner external  [Mirko]
+cc2e75b  Run PowerNotificationControlsFragment external  [Mirko]
+1473cd5  fwb: Seperate statusbar from tuner and launch externally ExTunerSettings style by beanstown106  [Mirko]
+738c906  its validus  [Mirko]
+5453da9  Tuner: Add back 'Show brightness slider'  [Mirko]
+c2a834c  Brightness on footer: improve vpn footer warnings layout  [Mirko]
+c54b293  Add a sendKeycode api to ValidusUtils  [Mirko]
+b155471  Add api to take screenshots  [Mirko]
+d392120  Add api to toggle flashlight and check if device has flashlight  [Mirko]
+338d219  Add some static custom utilities  [Mirko]
+02f88e3  Add support to manually pause/resume downloads [1/2]  [Mirko]
+0ed38e1  Footer brightness slider: fixes and improvements  [Mirko]
+9af49bf  Make use of the brightness slider buttons  [Mirko]
+7abc23c  Rework auto brightness implementation  [Mirko]
+8bbb91a  Brightness control on footer  [Mirko]
+5294ae5  Fix automatic brightness QS toggle icon  [Mirko]
+5f1413b  Add auto brightness toggle to Quick Settings  [Mirko]
+4b449a7  Allow to quickly open Running Services from QS panel [1/2]  [Mirko]
+56759c5  Let's use last screenOn brightness value for ambient display [1/2]  [Mirko]
+5d4c36c  Add our StatusBar custom settings observer  [Mirko]
+1d878aa  Lockscreen Charging info (1/2)  [Mirko]
+0e93fbd  Remove shadow/gap between QS bottom and notification top  [Mirko]
+65c0751  Increase Zenmode max hour limit from 12 to 24  [Mirko]
+c530b24  Make "Turn on WiFi Automatically" available for all  [Mirko]
+6e50750  Enable battery percentage in statusbar by default [1/2]  [Mirko]
+9427397  Night Light brightness mode options [1/2]  [Mirko]
+2df6bac  Add Power+VolUp action to catch a partial area screenshot  [Mirko]
+fe3e8bc  SystemUI: add caffeine qs tile  [Mirko]
+b750c4e  [1/2] base: unlink notification volume is back -delete old unused volume images -add new one for notification volumes maybe some day one will be able to create a vector drawable for this - I am not :)  [Mirko]
+4dcc2b8  Live Volume Steps [1/2]  [Mirko]
+   * packages/apps/DUI/
+8d0519a  Dark custom icons: lower the light of the icon, don't make it black  [Mirko]
+   * packages/apps/Settings/
+1f3c880  Allow to doubletap or longpress power to toggle flashlight [3/3]  [Mirko]
+c339b33  Let's use last screenOn brightness value for ambient display [2/2]  [Mirko]
+0d26871  Allow to quickly open Running Services from QS panel [2/2]  [Mirko]
+4adbc8a  Enable battery percentage in statusbar by default [2/2]  [Mirko]
+0f3374b  Night Light brightness mode options [2/2]  [Mirko]
+687f250  Settings: fix notification volume linking  [Mirko]
+766c720  [2/2] Settings: unlink notification volume is back  [Mirko]
+f05189f  Live Volume Steps [2/2]  [Mirko]
+   * packages/apps/WolvesDen/
+76ddc59  add Immersive Recents and clear all button tweaks  [Mirko]
+de45a73  add SlimRecents  [Mirko]
+8cf05ce  add DUI  [Mirko]
+acf173a  add Statusbar notification ticker  [Mirko]
+9b36e83  add Vibrate on plug  [Mirko]
+b033a6d  add Config to disable power menu on secure lock screen  [Mirko]
+296aff8  add Wake on plug  [Mirko]
+3ad02b3  add Status network traffic  [Mirko]
+101ca9c  add Less boring heads up option  [Mirko]
+6cee2af  add Double tap to sleep on statusbar  [Mirko]
+7bcaea9  add QS tile titles visibility  [Mirko]
+d3be57e  add Allow to set QS panel columns and rows  [Mirko]
+8bb01dc  add Allow to disable qs footer warnings  [Mirko]
+9b0569d  add Battery light customization  [Mirko]
+c12029e  add Allow to doubletap or longpress power to toggle flashlight  [Mirko]
+108ba12  add Disable Lockscreen Media Art  [Mirko]
+a0967ae  add Add quick settings pull down with one finger  [Mirko]
+a57bc9b  add Double tap to sleep on lockscreen  [Mirko]
+9cfe59b  add Launch music player on headset connect: add BT compatibility  [Mirko]
+4700c4b  add Launch default music player on headset connect  [Mirko]
+4cd43f9  add Volume rocker music control  [Mirko]
+af8775d  add Option to use volume keys to control media volume anytime  [Mirko]
+868526c  add Allow to swap volume buttons rotation based  [Mirko]
+f69bd69  add SystemUI tuner to wolves  [Mirko]
+6172b88  add "show battery info on lockscreen when charging"  [Mirko]
+8c9c85f  Lets start wolvesden 8.1  [Mirko]
+   * packages/services/Telephony/
+dcb67dc  Add TD-SCDMA related network mode options  [martinusbe]
+   * system/core/
+da3a8f4  Revert "Add AIDs for RFS module"  [martinusbe]
+   * vendor/validus/
+e557a7a  Alert when screen off and charging if charge level becomes good [3/3]  [Mirko]
+b3bed37  DUI  [Mirko]
+====================
+     12-15-2017
+====================
+
+
+   * device/motorola/sanders/
+abce6a3  sanders: Ensure read_ahead_kb values same for all nodes  [Prema Chand Alugu]
+9b89654  Revert "sanders: disable qti"  [Prema Chand Alugu]
+4ec6374  Revert "sanders:DNM: vndk-sp: Get away with android.hidl.base"  [Prema Chand Alugu]
+0db131d  Revert "sanders: Build CAF RIL"  [Prema Chand Alugu]
+679c58e  sanders: build android.hidl.base@1.0  [Prema Chand Alugu]
+574e20f  sanders:DNM: Disbale LED overlays  [Prema Chand Alugu]
+1eff92c  sanders:DNM: vndk-sp: Get away with android.hidl.base  [Prema Chand Alugu]
+3780cf2  sanders: Bring on Gzosp 8.1, Ooh, its 64b too! B)  [Prema Chand Alugu]
+ffc3563  sanders: Enable Tether offload  [Prema Chand Alugu]
+1014761  init.qcom.rc: Set net_admin for cnss-daemon  [Prema Chand Alugu]
+da0a4f1  sanders: manually start sensorservice  [Prema Chand Alugu]
+8cbfd52  sanders: switch back to core_64_bit.mk  [Prema Chand Alugu]
+e3b6a2d  Revert "sanders:DNM: Temporary disable init extension"  [Prema Chand Alugu]
+9eebabe  sanders: Fix and optimize init for 8.1  [Prema Chand Alugu]
+8ac2b18  sanders:DNM: Temporary disable init extension  [Prema Chand Alugu]
+a8d730c  sanders: enable USB debugging at boot  [Prema Chand Alugu]
+28eb41a  sanders: Set ALLOW_MISSING_DEPENDENCIES true  [Prema Chand Alugu]
+41eb4f9  sanders: Comment out sepolicy for now  [Prema Chand Alugu]
+6906c7a  sanders: remove context from fstab  [Prema Chand Alugu]
+c05f862  sanders: Build CAF RIL  [Prema Chand Alugu]
+d524efa  sanders:DNM: Do not build LineageActions  [Prema Chand Alugu]
+7a5eb14  sanders:DNM: Disable overlays for 8.1 bringup  [Prema Chand Alugu]
+5524c3c  sanders:init change for 8.1 property_set  [Prema Chand Alugu]
+   * frameworks/base/
+87194eb  [2/2] SettingsLib: switch style to removed left padding  [Mirko]
+6314f6b  [1/2] SettingsLib: allow to remove forced start margin  [Mirko]
+   * frameworks/native/
+d765491  Revert "Mark libEGL, GLESv1_CM, GLESv2, and GLESv3 as LLNDK"  [Prema Chand Alugu]
+   * packages/apps/Settings/
+139b62f  [1/2] Settings: change dimen to removed left padding  [Mirko]
+041675f  [2/2] Settings: allow to remove forced start margin  [Mirko]
+   * packages/providers/DownloadProvider/
+f236ca5  Add support to manually pause/resume downloads [2/2]  [Mirko]
+   * system/libhidl/
+4d86b49  Revert "Remove duplicate targets."  [Prema Chand Alugu]
+====================
+     12-14-2017
+====================
+
+
+   * device/motorola/sanders/
+81bea38  sanders: fix MultiHal  [Prema Chand Alugu]
+945c50e  sanders: fix fm and bt scripts path  [Prema Chand Alugu]
+2354ce9  sanders: rootdir: Don't set fwpath  [Prema Chand Alugu]
+aa0d679  Revert "sanders: update KeyHandler for api change"  [Prema Chand Alugu]
+0d69ad9  Revert "sanders: Add AID_QCOM_DIAG, AID_RFS, and AID_RFS_SHARED"  [Prema Chand Alugu]
+087830f  sanders: cleanup libmot_gpu_mapper shim  [Prema Chand Alugu]
+80f7d12  sanders: add back some init scripts to root folder  [Prema Chand Alugu]
+93f432d  Revert "sanders: qcom bsp - display specific flag"  [Prema Chand Alugu]
+ca4a50e  sanders: qcom bsp - display specific flag  [Prema Chand Alugu]
+a1480ae  sanders: add back msm_irqbalance  [Prema Chand Alugu]
+cf41430  sanders: Display: Add entry for postproc  [Prema Chand Alugu]
+39d9541  sanders: thermal: Add thermal send rule socket to thermal service init  [Prema Chand Alugu]
+eee04a2  sanders: HIDL: Add new IOP hal  [Prema Chand Alugu]
+fe2dd81  sanders: Add Renderscript to manifest  [Prema Chand Alugu]
+5cad847  sanders: Use build variables to build device matrices.  [Prema Chand Alugu]
+71fa6ad  sanders: update rootdir  [Prema Chand Alugu]
+100aec4  sanders: update KeyHandler for api change  [Prema Chand Alugu]
+b45eaca  sanders: build netd HAL  [Prema Chand Alugu]
+43ba2a8  sanders: update thermal-engine conf filename  [Prema Chand Alugu]
+4b3ce6a  sanders: add vndk-sp libs  [Prema Chand Alugu]
+c9452da  thermal-engine: Add thermal client library header  [Prema Chand Alugu]
+5661eb7  sanders: add thermal HAL  [Prema Chand Alugu]
+3eb3a06  sanders: update location configs  [Prema Chand Alugu]
+2eef5a2  sanders: keep a copy of media_profiles.xml in /system  [Prema Chand Alugu]
+347ed44  sanders: add perfboostconfig.xml  [Prema Chand Alugu]
+14bd8bc  sanders: disable ubwc  [Prema Chand Alugu]
+10e4939  Revert "sanders: Powerhal by device, undefine qcom variant"  [Prema Chand Alugu]
+5861d2a  Revert "sanders: add AIDs for legacy RFS"  [Prema Chand Alugu]
+b1a3562  sanders: move some config files to vendor  [Prema Chand Alugu]
+7c7e097  sanders: Set monotonic to 1, fix video recording  [Prema Chand Alugu]
+fe83700  sanders: revert some binderized services  [Prema Chand Alugu]
+2d1586c  sanders: shim: update adspd path  [Prema Chand Alugu]
+e3fedd9  sanders: remove debugging tools  [Prema Chand Alugu]
+c836bde  sanders: mods/greybus cleanup  [Prema Chand Alugu]
+386ee08  sanders: KeyHandler: Never return null, prevent crash  [Prema Chand Alugu]
+58c5cff  sanders: Update recovery partition size  [Prema Chand Alugu]
+ac72441  Revert "sanders: address some denials"  [Prema Chand Alugu]
+f80f5d5  sanders: Optimize makefiles  [Prema Chand Alugu]
+be0b3b0  sanders: Disable dexpreopt for some modules  [Prema Chand Alugu]
+8003524  sanders: LineageActions: Haptic improvements  [Prema Chand Alugu]
+728ecea  sanders: replace QCOMs groups with oem_2950-oem_2952  [Prema Chand Alugu]
+c9d8d9f  sanders: add AIDs for legacy RFS  [Prema Chand Alugu]
+5ee73c8  sanders: Add AID_QCOM_DIAG, AID_RFS, and AID_RFS_SHARED  [Prema Chand Alugu]
+ca1cbcf  sanders: update display flag  [Prema Chand Alugu]
+eb58110  sanders: enable treble for omx  [Prema Chand Alugu]
+0f5f003  sanders: ship missing powerhint  [Prema Chand Alugu]
+971421e  sanders: update hidl manifest  [Prema Chand Alugu]
+291be4e  sanders: time to binderize  [Prema Chand Alugu]
+ea6205a  sanders: build Camera2 for now  [Prema Chand Alugu]
+7da551a  sanders: init: move some services to vendor  [Prema Chand Alugu]
+e32df32  sanders: gps: switch to LA.UM.6.6.r1-04300-89xx.0 branch  [Prema Chand Alugu]
+773419a  sanders: address some denials  [Prema Chand Alugu]
+b934ed7  sanders: update seccomp_policy  [Prema Chand Alugu]
+b2167e7  sanders: update sec_config  [Prema Chand Alugu]
+70c41d5  sanders: update manifest and ship compatibility matrix  [Prema Chand Alugu]
+27fb628  sanders: More DTV fixes * Add to check_features * Add proprietary blobs * Fix sepolicy  [Prema Chand Alugu]
+dd47321  sanders: Disable armv8-a and cleanup BoardConfig  [Prema Chand Alugu]
+9c4ce5f  sanders: Bring up 32_64_bit support  [Prema Chand Alugu]
+8da753a  sanders: liblight: Fix blinking support, and cleanup code  [Prema Chand Alugu]
+2bbf11b  sanders: update 64bits flags  [Prema Chand Alugu]
+2114251  sanders: initial commit for 64bits support  [Prema Chand Alugu]
+   * system/extras/
+c25604a  f2fs_utils: Add a static libf2fs_sparseblock for minvold  [martinusbe]
+====================
+     12-13-2017
+====================
+
+
+   * device/gzosp/sepolicy/
+afb8b13  sepolicy: Allow platform app to find nfc service  [martinusbe]
+   * device/qcom/sepolicy/
+d3b4c13  sepolicy: Include legacy rild policies  [martinusbe]
+   * frameworks/base/
+9ea863f  Validus metrics  [Mirko]
+4bf9082  Add back new UI for default Reboot action after the power toggle commit  [Mirko]
+   * hardware/qcom/fm/
+dd508b1  Merge tag 'LA.UM.6.2.r1-05300-sdm660.0' into HEAD  [martinusbe]
+   * hardware/ril-caf/
+773b0b4  librilutils: Relocate pb-generated objects to their expected path  [martinusbe]
+   * packages/apps/Nfc/
+2437414  Make Transceive Length configurable for ISO DEP Technology  [martinusbe]
+   * packages/apps/Settings/
+6e4f887  Swap over to alpha for Info logo  [Mirko]
+d7a01cf  Integrate WolvesDen into Settings  [Mirko]
+ef6cbf6  Remove OTA prefs  [Mirko]
+   * system/nfc/
+6ab7482  Increase APDU buffer size to support extended APDU  [martinusbe]
+   * vendor/validus/
+02961de  Lets start wolvesden  [Mirko]
+====================
+     12-12-2017
+====================
+
+
+   * bootable/recovery/
+a6a00e8  updater: Allow devices to suppress BLKDISCARD  [martinusbe]
+   * system/hwservicemanager/
+47f7602  Stop using inherit FIFO ioctl.  [martinusbe]
+   * vendor/validus/
+492a194  Add Pixel Sounds  [theringmaster]
+====================
+     12-11-2017
+====================
+
+
+   * external/selinux/
+86e8e15  selinux: add selinux_status_getenforce to header  [martinusbe]
+   * frameworks/opt/telephony/
+2274a6f  Fix signal icon is not shown  [martinusbe]
+   * vendor/validus/
+38e2647  Build new overlays And a few link adjustments Change-Id: I23ff4fa0ccfe64940357fd9e0c2c9d0c3e747c00  [theringmaster]
+2fdc8c7  Add all Pixel sounds  [theringmaster]
+a06f7e1  vendor_gzosp: 8.1  [theringmaster]
+====================
+     12-10-2017
+====================
+
+
+   * frameworks/base/
+10ee031  Powermenu: use new gradient dialog also for recovery/bootloader action  [Mirko]
+84ba299  PowerMenu toggleable recovery/bootloader action  [Mirko]
+   * hardware/qcom/keymaster/
+f4b7c1d  keymaster: add support for samsung 'skeymast'  [martinusbe]
+   * hardware/qcom/media-caf/msm8996/
+def3eee  vdec: include  libnativebase_headers  [martinusbe]
+   * packages/apps/Settings/
+c88ae71  Dev settings: set switchbar to ON by default  [Mirko]
+====================
+     12-09-2017
+====================
+
+
+   * frameworks/base/
+3638fbf  Enable SysUI tuner by default  [Mirko]
+   * hardware/libhardware/
+d3502b6  libhardware: Only support tertiary display in QTI_BSP is defined  [martinusbe]
+====================
+     12-08-2017
+====================
+
+
+   * external/tinycompress/
+c874595  tinycompress: Move [get,set]_metadata to vendor extension  [Prema Chand Alugu]
+   * hardware/gzosp/interfaces/
+4f3e97b  camera: Remove android.hidl.base  [martinusbe]
+   * hardware/qcom/audio-caf/msm8996/
+49c6e0b  hal: Make libvolumelistener depend on kernel headers  [martinusbe]
+   * packages/apps/Settings/
+4fde6be  Deviceinfo: Changed imports  [theringmaster]
+   * system/sepolicy/
+54f50a7  DNM: Fix never allow policy violation  [Prema Chand Alugu]
+   * vendor/qcom/opensource/interfaces/
+2a9d1fe  qcom/interfaces: Remove android.hidl.base  [martinusbe]
+   * vendor/validus/
+d2b349e  version: Lets Ground 8.1  [Prema Chand Alugu]
+====================
+     12-07-2017
+====================
+
+
