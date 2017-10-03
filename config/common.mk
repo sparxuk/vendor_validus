@@ -94,6 +94,10 @@ PRODUCT_PACKAGES += \
     WolesDen
 
 
+# 3rd party packages
+PRODUCT_PACKAGES += \
+    Phonograph
+
 # Extra tools
 PRODUCT_PACKAGES += \
     openvpn \
