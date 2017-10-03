@@ -102,6 +102,10 @@ PRODUCT_PACKAGES += \
 #    Nova \
 #    NovaGoogleCompanion
 
+# 3rd party packages
+PRODUCT_PACKAGES += \
+    Phonograph
+
 # Extra tools
 PRODUCT_PACKAGES += \
     openvpn \
