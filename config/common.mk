@@ -55,7 +55,7 @@ PRODUCT_COPY_FILES += \
 
 # Fix Dialer
 PRODUCT_COPY_FILES +=  \
-    vendor/validus/prebuilt/common/sysconfig/dialer_experience.xml:system/etc/sysconfig/dialer_experience.xml 
+    vendor/validus/prebuilt/common/sysconfig/dialer_experience.xml:system/etc/sysconfig/dialer_experience.xml
 
 # ValidusOs-specific startup services
 PRODUCT_COPY_FILES += \
@@ -222,8 +222,8 @@ endif
 # Versioning System
 # validus first version.
 PRODUCT_VERSION_MAJOR = 8.0
-PRODUCT_VERSION_MINOR = Alpha
-PRODUCT_VERSION_MAINTENANCE = 1.0
+PRODUCT_VERSION_MINOR = Beta
+PRODUCT_VERSION_MAINTENANCE = v16.0
 VALIDUS_POSTFIX := -$(shell date +"%Y%m%d-%H%M")
 ifdef VALIDUS_BUILD_EXTRA
     VALIDUS_POSTFIX := -$(VALIDUS_BUILD_EXTRA)
