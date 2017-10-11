@@ -91,12 +91,12 @@ PRODUCT_PACKAGES += \
     Calculator \
     LatinIME \
     BluetoothExt \
-    OmniJaws
+    OmniJaws \
+    OmniStyle
 #    WolvesDen \
 #    ThemeInterfacer \
 #    Eleven \
 #    OmniSwitch \
-#    OmniStyle \
 #    Turbo \
 #    GZRoms \
 #    Nova \
