@@ -10,7 +10,7 @@ platform/dalvik
 platform/developers/build
 platform/developers/demos
 platform/developers/samples/android
-platform/development
+development
 device/common
 device/generic/arm64
 device/generic/armv7-a-neon
@@ -411,7 +411,7 @@ platform/packages/apps/CertInstaller
 platform/packages/apps/Contacts
 packages_apps_DeskClock
 platform/packages/apps/DevCamera
-platform/packages/apps/Dialer
+packages_apps_Dialer
 platform/packages/apps/DocumentsUI
 platform/packages/apps/Email
 platform/packages/apps/EmergencyInfo
@@ -424,10 +424,10 @@ platform/packages/apps/Launcher2
 platform/packages/apps/Launcher3
 platform/packages/apps/LegacyCamera
 platform/packages/apps/ManagedProvisioning
-platform/packages/apps/Messaging
-platform/packages/apps/Music
+packages_apps_Messaging
 platform/packages/apps/MusicFX
 packages_apps_Nfc
+packages_apps_OmniStyle
 platform/packages/apps/OneTimeInitializer
 platform/packages/apps/PackageInstaller
 platform/packages/apps/Phone
@@ -473,6 +473,7 @@ platform/packages/services/BuiltInPrintService
 platform/packages/services/Car
 platform/packages/services/Mms
 platform/packages/services/NetworkRecommendation
+packages_services_OmniJaws
 platform/packages/services/Telecomm
 packages_services_Telephony
 platform/packages/wallpapers/LivePicker
