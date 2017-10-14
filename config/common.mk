@@ -92,7 +92,9 @@ PRODUCT_PACKAGES += \
     LatinIME \
     BluetoothExt \
     WolesDen \
-    GZRoms
+    GZRoms \
+    Nova \
+    NovaGoogleCompanion
 
 # 3rd party packages
 PRODUCT_PACKAGES += \
