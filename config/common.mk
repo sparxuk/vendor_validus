@@ -93,15 +93,14 @@ PRODUCT_PACKAGES += \
     BluetoothExt \
     OmniJaws \
     OmniStyle \
-    GZRoms
+    GZRoms \
+    Nova \
+    NovaGoogleCompanion
 #    WolvesDen \
 #    ThemeInterfacer \
 #    Eleven \
 #    OmniSwitch \
 #    Turbo \
-#    GZRoms \
-#    Nova \
-#    NovaGoogleCompanion
 
 # 3rd party packages
 PRODUCT_PACKAGES += \
