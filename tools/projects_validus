@@ -380,7 +380,6 @@ platform/hardware/qcom/msm8x09
 platform/hardware/qcom/msm8x26
 platform/hardware/qcom/msm8x27
 platform/hardware/qcom/msm8x84
-platform/hardware/qcom/power
 hardware_qcom_wlan
 hardware_ril
 platform/libcore
@@ -420,8 +419,6 @@ platform/packages/apps/Gallery
 packages_apps_Gallery2
 platform/packages/apps/HTMLViewer
 platform/packages/apps/KeyChain
-platform/packages/apps/Launcher2
-platform/packages/apps/Launcher3
 platform/packages/apps/LegacyCamera
 platform/packages/apps/ManagedProvisioning
 packages_apps_Messaging
@@ -429,7 +426,7 @@ platform/packages/apps/MusicFX
 packages_apps_Nfc
 packages_apps_OmniStyle
 platform/packages/apps/OneTimeInitializer
-platform/packages/apps/PackageInstaller
+packages_apps_PackageInstaller
 platform/packages/apps/Phone
 platform/packages/apps/PhoneCommon
 platform/packages/apps/Protips
@@ -447,6 +444,7 @@ platform/packages/apps/TV
 platform/packages/apps/Tag
 platform/packages/apps/Terminal
 platform/packages/apps/Test/connectivity
+interfacer
 platform/packages/apps/TvSettings
 platform/packages/apps/UnifiedEmail
 platform/packages/apps/WallpaperPicker
@@ -474,7 +472,7 @@ platform/packages/services/Car
 platform/packages/services/Mms
 platform/packages/services/NetworkRecommendation
 packages_services_OmniJaws
-platform/packages/services/Telecomm
+packages_services_Telecomm
 packages_services_Telephony
 platform/packages/wallpapers/LivePicker
 platform/pdk
