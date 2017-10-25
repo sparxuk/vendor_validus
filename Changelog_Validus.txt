@@ -1,5 +1,267 @@
 ====================
+     10-25-2017
+====================
+
+
+   * frameworks/base/
+a9e5157e2e7  base: SystemUI: update settings for Logo style/color too  [Prema Chand Alugu]
+e40ff6c3b81  base: SystemUI: check for context in CollapsedStatusBarFragment  [Prema Chand Alugu]
+   * hardware/qcom/audio-caf/msm8998/
+bcf8cda06  aenc-aac: Support get_parameter query for profile type  [Martinusbe]
+f33e93eb4  Revert "configs: Add built-in mic to primary input sources"  [Martinusbe]
+523f18678  configs: Support fluence for ADSP SVA  [Martinusbe]
+   * hardware/qcom/media-caf/msm8998/
+9a1cf157a  mm-core: move multiaac decoder component above dummy  [Martinusbe]
+adab5e775  mm-video-v4l2: Return correct encoder level for apq8098_latv target  [Martinusbe]
+c9ab5c20b  mm-core: msm8953: Restore secure codecs for secure playback  [Martinusbe]
+934bc0735  mm-video-v4l2: Initialize variables for output buffer  [Martinusbe]
+482015bd9  Promotion of video-userspace.lnx.2.9-00015.  [Martinusbe]
+41fed6538  mm-video-v4l2: venc: Avoid buffer access after free  [Martinusbe]
+45c90c082  mm-core:  omxregistry: deprecate unused OMX components  [Martinusbe]
+e70f7a430  mm-core: msm8937: Prevent exposing internal codecs in registry.  [Martinusbe]
+ea857a9e4  mm-core: msm8996: Prevent exposing internal codecs in registry.  [Martinusbe]
+de4e9d88c  mm-core: msm8953: Prevent exposing internal codecs in registry.  [Martinusbe]
+4515976f6  mm-video-v4l2: Fix KW resported issues  [Martinusbe]
+5d1f8744f  mm-video-v4l2: define outputcropinfo extradata and TME codectype  [Martinusbe]
+143febd3b  mm-video-v4l2: venc: Remove support of temporal layers  [Martinusbe]
+3b2cd3cdb  venc: Adding temporal layer config support  [Martinusbe]
+8d8af6a6d  mm-video-v4l2: vidc: Restrict PQ upto 60 FPS  [Martinusbe]
+a9b0f6aa0  Omm-video-v4l2: Set OPB color format for 10bit split case  [Martinusbe]
+1275e7e04  mm-core: add index and structure for profile type query  [Martinusbe]
+22eea76b2  mm-video-v4l2: venc: Enable PQ for low fps too  [Martinusbe]
+77cc04cf7  mm-video-v4l2: vdec: Fix memory leak issues  [Martinusbe]
+====================
+     10-24-2017
+====================
+
+
+   * frameworks/base/
+26cc2467742  Add support for overriding default time format value  [Martinusbe]
+514e5ffbc9f  ViewConfiguration: Align coding style to AOSP  [Martinusbe]
+e87e1e97d9e  ViewConfiguration: add support for max/min fling velocity sysproperties  [Martinusbe]
+99ef5403e17  Optimised hwui rounded corners shader  [Martinusbe]
+416fe5bf249  Reduce hwui CPU time by using glDrawRangeElements  [Martinusbe]
+5276b53cfd7  jni: FingerprintService: use fastJni for nativeAuthenticate  [Martinusbe]
+2a84445d7bf  core: jni: AudioTrack: enable fastJni for some methods  [Martinusbe]
+   * vendor/validus/
+a68c4d2  theme: exclude the theme apk's from dexpreopt  [Martinusbe]
+a1ce465  common: Add themes  [Martinusbe]
+====================
+     10-23-2017
+====================
+
+
+   * frameworks/base/
+4ff6f8a4fd8  Add VOLTE icon Extracted from CAF and adapted to AOSP by @xyyx Added switch to statusbar icon blacklist by @xyyx  [Prema Chand Alugu]
+   * packages/apps/Settings/
+98a11e5405  Change encryption preference's summary conditionally  [Martinusbe]
+====================
+     10-22-2017
+====================
+
+
+====================
+     10-21-2017
+====================
+
+
+   * device/qcom/sepolicy/
+902f850  apq8084: Define qcal530_prop as property_type  [Martinusbe]
+f799a7a  Fix bad characters  [Martinusbe]
+   * frameworks/base/
+a00ec25be25  Logo: Fix Warning and misc changes  [Prema Chand Alugu]
+ab310a54b25  Logo: Color picker [1/2]  [Prema Chand Alugu]
+b72c27219c5  Logo: More Wolf logos [1/2]  [Prema Chand Alugu]
+37d371e6c5e  Logo: Add more Logo Styles [1/2]  [Prema Chand Alugu]
+6d04f7440fb  Fix Build for Battery Warning colors  [Prema Chand Alugu]
+   * manifest/
+9c28d8e  manifest: track gzosp PackageInstaller  [Martinusbe]
+78d5362  manifest: caf: track our qcom power  [Martinusbe]
+   * packages/apps/Dialer/
+0b29e4ef7  Dialer: Disable proguard when not compiling with jack  [Martinusbe]
+   * packages/apps/Settings/
+a46a2deebf  Simplify the root checking method  [Mirko]
+9e44fe6a36  Embed shortcut for root app on the dashboard  [Mirko]
+   * packages/apps/WolvesDen/
+15d3fd4  GZR Colors into default in the ColorPicker  [Prema Chand Alugu]
+e1486af  Logo: Color picker [2/2]  [Prema Chand Alugu]
+691c03f  Logo: More Wolf logos [2/2]  [Prema Chand Alugu]
+0703069  Logo: Add more Logo Styles [2/2]  [Prema Chand Alugu]
+   * system/sepolicy/
+e1ba24c9  sepolicy: Also allow vendor_file text relocations  [Martinusbe]
+   * vendor/validus/
+e9d857a  version: Beta v16.1 for the weekend  [Martinusbe]
+====================
+     10-20-2017
+====================
+
+
+   * frameworks/base/
+ad5a2f57739  FWB: add status bar logo (1/2)  [Prema Chand Alugu]
+1a5ca7e78ba  Allow adjusting progress on touch events.  [Martinusbe]
+1c1b074d24e  Toast: Fix toast layout for RTL  [Martinusbe]
+3e7b1af8117  base: SystemUI: call qs tile layout on rotate  [Martinusbe]
+b8d1c18b23a  base: SystemUI: remove gap between QS bottom and notification top  [Martinusbe]
+4e116fb1416  BatteryWarningColor: fix white statusbar icons  [Martinusbe]
+fee6c83bdb8  Statusbar ticker refactoring  [Mirko]
+cbf4ac19d14  Status bar notification ticker  [Mirko]
+da08b0b0983  Display network name in status bar(1/2)  [Mirko]
+   * packages/apps/PackageInstaller/
+0b4e915e  Revert "Disable overlays while installer is resumed"  [Martinusbe]
+   * packages/apps/Settings/
+c47fabf45c  Display network name in status bar(2/2)  [Mirko]
+   * packages/apps/WolvesDen/
+509c2b0  wolvesden: add status bar logo (2/2)  [Prema Chand Alugu]
+5af2a82  Statusbar notification ticker [2/2]  [Mirko]
+====================
+     10-19-2017
+====================
+
+
+   * frameworks/base/
+0a074d9896a  base: input: add FLAG_RECEIVER_INCLUDE_BACKGROUND to IME switch broadcasts  [Martinusbe]
+797d1c15d08  Disable statusbar time refresh when screen off  [Martinusbe]
+c98be7540c6  Collapse Notification panel after tapping CLEAR ALL button  [Martinusbe]
+322756b5be9  base: rescue party: check isDisabled on all public API  [Martinusbe]
+1938cbc4049  SystemUI: fix the monkey crash issue  [Martinusbe]
+ca91eeabc78  SystemUI: Fix SystemUI Crash  [Martinusbe]
+f0eae4959e1  Optimize IncallUI delay for voice calls  [Martinusbe]
+39f691fc654  ColorFade: fix EGL crash on exynos4 mali blobs  [Martinusbe]
+c1b399d28a7  aapt: Fix compiler warning (clobbered by longjmp)  [Martinusbe]
+6762fcb1c94  aapt: add check for untranslatable "string-array"s  [Martinusbe]
+b9b3ef7af62  aapt: Use a std::map instead of a SortedVector  [Martinusbe]
+60c93970dae  aapt: Speed up the style pruning  [Martinusbe]
+0d4a0cdd3a1  sensors: Allow opting out of default batch size  [Martinusbe]
+   * hardware/qcom/display-caf/msm8952/
+bfec4079e  Fix Format to size t for layer Index  [Prema Chand Alugu]
+cf2cacfe6  Fix build  [Prema Chand Alugu]
+   * hardware/qcom/media-caf/msm8952/
+7aaffd292  mm-video-v4l2: Fix compilation issues for vdec and venc  [Prema Chand Alugu]
+   * packages/apps/Settings/
+d2c90674da  Settings: Use seekbar to allow setting arbitrary animation values  [Prema Chand Alugu]
+   * system/core/
+e53b1458d  adb: Restore support for legacy f_adb interface  [Martinusbe]
+dfe2adb59  init: Fire a trigger when a class is started/stopped  [Martinusbe]
+====================
+     10-18-2017
+====================
+
+
+   * build/make/
+1bba227e5  envsetup: correct path to repopick in vendor  [Martinusbe]
+   * external/tinycompress/
+472a04c  tinycompress: Add kernel header depencency  [Martinusbe]
+c097c3e  tinycompress: Move [get,set]_metadata to vendor extension  [Martinusbe]
+0f9cfdc  tinycompress: Fix compilation on old targets  [Martinusbe]
+   * vendor/validus/
+a70d2d9  repopick: fetch only from gerrit, not from github  [Martinusbe]
+69382a8  repopick: adapt for GZOSP's setup  [Martinusbe]
+1d225d4  repopick: update for 2017  [Martinusbe]
+6693965  repopick: default to gzosp gerrit  [Martinusbe]
+====================
+     10-17-2017
+====================
+
+
+   * external/wpa_supplicant_8/
+112fe7b  TDLS: Reject TPK-TK reconfiguration  [Martinusbe]
+19f615e  Fix PTK rekeying to generate a new ANonce  [Martinusbe]
+0166800  Extend protection of GTK/IGTK reinstallation of WNM-Sleep Mode cases  [Martinusbe]
+96f88bf  FT: Do not allow multiple Reassociation Response frames  [Martinusbe]
+4cf6055  WNM: Ignore WNM-Sleep Mode Response without pending request  [Martinusbe]
+4e43077  Prevent installation of an all-zero TK  [Martinusbe]
+32c20df  hostapd: Avoid key reinstallation in FT handshake  [Martinusbe]
+e0877ad  Prevent reinstallation of an already in-use group key  [Martinusbe]
+   * hardware/qcom/audio-caf/msm8996/
+97cb5d4c2  hal: remove -Werror  [Erfan Abdi]
+   * packages/apps/DeskClock/
+5fddd4876  Revert "DeskClock: Failed to set up Alarm"  [Martinusbe]
+bccd66239  DeskClock: start foreground service for alarms  [Martinusbe]
+12846d042  DeskClock: use non-Compat Notification classes  [Martinusbe]
+d8e0ac4d7  DeskClock: move to NotificationChannels  [Martinusbe]
+   * packages/apps/Settings/
+04e17695fe  Prox Switch: Match base default off correct switch call in fragment  [theringmaster]
+   * vendor/validus/
+bda802f  prebuilt: Nova 5.5 beta 3  [Prema Chand Alugu]
+====================
+     10-16-2017
+====================
+
+
+   * frameworks/base/
+0f3f32562b2  Live Volume Steps [1/2]  [Mirko]
+   * hardware/gzosp/interfaces/
+dccba7d  lineage/interfaces: Add bcm2709x changes to Nfc impl  [theringmaster]
+6a462c4  lineage/interfaces: Fork Nfc HIDL impl  [theringmaster]
+   * packages/apps/Settings/
+d854669814  fix proximity switch  [Mirko]
+854244467c  Live Volume Steps [2/2]  [Mirko]
+====================
+     10-15-2017
+====================
+
+
+   * frameworks/base/
+7111fd7c94b  PiP tile: add toast if pip mode is not avail  [Mirko]
+   * hardware/qcom/audio-caf/msm8937/
+3c4b937a5  Merge LA.UM.6.6.r1-03000-89xx.0  [Prema Chand Alugu]
+   * hardware/qcom/display-caf/msm8937/
+91d0d07aa  Merge LA.UM.6.6.r1-03000-89xx.0  [Prema Chand Alugu]
+   * hardware/qcom/media-caf/msm8937/
+6c6efd343  Merge LA.UM.6.6.r1-03000-89xx.0  [Prema Chand Alugu]
+   * vendor/validus/
+aba794f  launcher: Nova overrides HOME  [Prema Chand Alugu]
+====================
+     10-14-2017
+====================
+
+
+   * frameworks/base/
+219624bd652  fix lockscreen weather  [Martinusbe]
+f26fd62df8d  Parse "vendor/priv-app" to find privileged applications  [Martinusbe]
+0a74f399542  fix foreground process will be mistakenly killed when it uses content provider.  [Martinusbe]
+a4edc0bfd95  Set mProximity to PROXIMITY_UNKNOWN on screen off  [Martinusbe]
+47d6f84b1dc  Skip send broadcast to the receiver whoes user has not started.  [Martinusbe]
+7f5c0051675  Add checking values not to save illegal value to appwidgets.xml  [Martinusbe]
+d6c8d12c741  Fix to avoid UI freeze issue  [Martinusbe]
+be7e2a50618  Speed up Orientation Listener  [Martinusbe]
+5c445c8e46b  Allow faster app switching  [Martinusbe]
+73f21212dce  Reset battery stats [1/2]  [Martinusbe]
+   * manifest/
+43f9c49  aosp: Remove AOSP launchers  [Prema Chand Alugu]
+   * packages/apps/Settings/
+26bfcf97d8  Reset battery stats [2/2]  [Martinusbe]
+d92f2d23f9  fix link volume  [Mirko]
+   * vendor/validus/
+07308bd  Add Nova and Google Companion  [Prema Chand Alugu]
+====================
      10-13-2017
+====================
+
+
+   * frameworks/base/
+4bc99811393  Keyguard: Don't listen for fingerprint when prox.sensor is covered  [Martinusbe]
+89adfe869a0  KeyguardWeather: Clean up and refactor for OmniJaws [1/2]  [Mirko]
+7282c568ac4  LSWeather: panel improvements (1/2)  [Mirko]
+dbce2b7b4b8  Keyguard: Create lockscreen weather  [Mirko]
+dde6cab9a73  Add back increasing ring feature (3/3)  [Mirko]
+   * manifest/
+eeaf9c1  val: track our ThemeInterfacer  [Martinusbe]
+9b839c5  track Telecomm  [Mirko]
+   * packages/apps/Settings/
+59721ba9fb  Settings: Poximity wake  [theringmaster]
+707a197fd1  Add back increasing ring feature (2/3).  [Mirko]
+   * packages/apps/WolvesDen/
+f34bd4c  disable "show location" for now  [Mirko]
+61ad70f  KeyguardWeather: Clean up and refactor for OmniJaws [2/2]  [Mirko]
+b217319  LockScreen: Weather panel improvements (2/2)  [Mirko]
+   * packages/services/Telecomm/
+461b793f  Add back increasing ring feature (3/3).  [Mirko]
+   * vendor/validus/
+dc99897  Update Changelog  [Prema Chand Alugu]
+a571521  Update    *s_validus with added/removed repos  [Prema Chand Alugu]
+====================
+     10-12-2017
 ====================
 
 
@@ -11,34 +273,47 @@
 bb63d155bf9  Save screenrecord in "Screenrecords" directory  [Martinusbe]
 7ead64627db  base: bring back screenrecord - adapt for O  [Martinusbe]
 513323b07ee  Revert "Add Power+VolUp action to catch a partial area screenshot"  [Martinusbe]
+4ba08e73e8a  [1/3] base: make outline the default weather icon pack  [Mirko]
+1d75e7ad98b  base: SystemUI: weather: display wind direction as pinWheel and not degrees  [Mirko]
+   * manifest/
+8ea19be  build OmniStyle  [Mirko]
    * packages/apps/Settings/
 eac51c0312  Integrate GZApp into settings  [Prema Chand Alugu]
    * packages/apps/WolvesDen/
 48613a9  Add Screen Record to the Power Menu [2/2]  [Martinusbe]
+   * packages/services/OmniJaws/
+17c05da  [3/3] OmniJaws: make outline the default icon package  [Mirko]
+dad002a  OmniJaws: display wind direction as pinWheel and not degrees  [Mirko]
+318974f  Weather: add new Outline icon set  [Mirko]
+   * system/bt/
+b798a9e0  btm_inq: fix build with BTA_HOST_INTERLEAVE_SEARCH  [Martinusbe]
    * vendor/validus/
-a571521  Update    *s_validus with added/removed repos  [Prema Chand Alugu]
 3d3b963  GzrApp v4.1  [Prema Chand Alugu]
+68756df  Include GZRoms App to Settings for OTA support  [Prema Chand Alugu]
+8547017  build OmniStyle  [Mirko]
 ====================
-     10-12-2017
+     10-11-2017
 ====================
 
 
    * frameworks/base/
-4ba08e73e8a  [1/3] base: make outline the default weather icon pack  [Mirko]
-1d75e7ad98b  base: SystemUI: weather: display wind direction as pinWheel and not degrees  [Mirko]
 4d900d7f1a9  Set System Animations to .7 by default (1 of 2)  [Martinusbe]
 8229f622818  Set System Animations to .5 by default (1 of 2)  [Martinusbe]
 a55d98d7a8e  Refresh Location tile onClick  [Martinusbe]
 2fe44d5bee3  Don't refresh ui when screen off  [Martinusbe]
 63a05783b90  display: Don't animate screen brightness when turning the screen on  [Martinusbe]
 12a4bda108c  Dialer auto proximity speakerphone [1/2]  [Mirko]
+773b624ab4e  add activity for OmniJaws  [Mirko]
+38ef6976f49  base: SystemUI: add tinting for OmniJaws provided QS images  [Mirko]
+e988333f1e0  base: SystemUI: change disabled QS weather tile image  [Mirko]
+5f87d9f88b1  base: SystemUI: OmniJaws qs tile integration  [Mirko]
    * frameworks/opt/telephony/
 affb3fe1  telephony: Fix NPE when switching data SIM  [Martinusbe]
 c5998017  Add ContentObserver when sms sent limit changed  [Martinusbe]
 4b6d0ca9  Fix signal icon is not shown  [Martinusbe]
    * manifest/
-8ea19be  build OmniStyle  [Mirko]
 0e84ef0  track dialer  [Mirko]
+13bb6af  build OmniJaws  [Mirko]
    * packages/apps/Dialer/
 869daadfa  Dialer: We want consistents....change CheckBoxes to Switches Like in settings it is on other places often switches and here and there a checkbox Change all CheckBoxes to Switches like sugested by google for new LP Ui.  [Mirko]
 d9d1c7505  Add back in-call vibration features  [Mirko]
@@ -50,574 +325,9 @@ fed785006  Fix issue that "Use touch tone keypad" doesn't work  [Mirko]
    * packages/apps/Settings/
 c032a0bc36  Set System Animations to .7 by default (2 of 2)  [Martinusbe]
 b3d9314c7d  Set System Animations to .5 by default (2 of 2)  [Martinusbe]
-   * packages/services/OmniJaws/
-17c05da  [3/3] OmniJaws: make outline the default icon package  [Mirko]
-dad002a  OmniJaws: display wind direction as pinWheel and not degrees  [Mirko]
-318974f  Weather: add new Outline icon set  [Mirko]
-   * vendor/validus/
-68756df  Include GZRoms App to Settings for OTA support  [Prema Chand Alugu]
-8547017  build OmniStyle  [Mirko]
-2a41c10  apps: update Phonograph  [Martinusbe]
-====================
-     10-11-2017
-====================
-
-
-   * frameworks/base/
-773b624ab4e  add activity for OmniJaws  [Mirko]
-38ef6976f49  base: SystemUI: add tinting for OmniJaws provided QS images  [Mirko]
-e988333f1e0  base: SystemUI: change disabled QS weather tile image  [Mirko]
-5f87d9f88b1  base: SystemUI: OmniJaws qs tile integration  [Mirko]
-b6f5ffac421  Only go HOME if screen is fully awake  [Martinusbe]
-de57c500d71  temp:fw/base: Enable home button wake  [Martinusbe]
-   * manifest/
-13bb6af  build OmniJaws  [Mirko]
-   * packages/apps/Settings/
 f0400924aa  [2/2] Settings: add OmniJaws settings  [Mirko]
    * packages/apps/WolvesDen/
 623e942  [1/2] OmniGears: add OmniJaws config  [Mirko]
-   * packages/services/OmniJaws/
-3657db6  OmniJaws: add tinting of vector drawabes  [Mirko]
-bdffeee  OmniJaws: simple service disable should not throw error  [Mirko]
-4c58805  OmniJaws: rework wakelock usage  [Mirko]
-8812475  OmniJaws: add setup column to settings query  [Mirko]
-6801a0d  Vectorize default weather icons  [Mirko]
-7376750  OmniJaws: apply default size on omnirom logo  [Mirko]
-ac3d0c3  OmniJaws: use vector logo  [Mirko]
-b692e7b  Revert "Add new weather icons"  [Mirko]
-6c86ffb  Automatic translation import  [Mirko]
-   * packages/services/Telephony/
-11aa8f44  IMS: Add API to get IMS Registration Status based on subId  [Martinusbe]
-   * system/qcom/
-a9cbf51  qsap: Fix missing log symbols  [Martinusbe]
    * vendor/validus/
+2a41c10  apps: update Phonograph  [Martinusbe]
 245c312  build OmniJaws  [Mirko]
-====================
-     10-10-2017
-====================
-
-
-   * frameworks/base/
-6f29fd6b9ae  Revert "NightLight: Allow lower temperatures"  [theringmaster]
-e3dc6c95d8a  Merge pull request #1 from ROM-FIXES/8.0  [GitHub]
-   * packages/apps/WolvesDen/
-6d7a0d1  leds: Fix fc when device does not have LED overlay  [Prema Chand Alugu]
-   * system/bt/
-4729f722  BT: Features supported changes for system/bt  [Martinusbe]
-f567ee98  BT_BOND: Report repeated_attempts failure to application Change-Id: Id0d5a323daabcd0a50193bb7bc6fde18fde3c5ad  [Martinusbe]
-3d5dbbb4  Advertise data parser - allow zero padding at end of packet  [Martinusbe]
-44a249c6  Prevent abort in case of command timeout  [Martinusbe]
-da037258  Bluetooth: Read BLE vendor capability to proceed on Secure conn  [Martinusbe]
-bcb18365  Add support for FM vendor operations such as ON/OFF  [Martinusbe]
-   * system/sepolicy/
-9767afb0  Hide grep filename output.  [Martinusbe]
-6896aaa2  netd: relax binder neverallow rules for hwservices  [Martinusbe]
-1d3a8d88  Add system_net_netd_hwservice.  [Martinusbe]
-   * vendor/validus/
-4de8ab5  Allow lower NightLight temperatures  [theringmaster]
-2f75403  Merge branch '8.0' of https://github.com/ValidusOs/vendor_validus into 8.0  [theringmaster]
-72e4715  add zuk z2 plus  [theringmaster]
-====================
-     10-09-2017
-====================
-
-
-   * frameworks/base/
-81b7f6c303b  Revert "settingsprovider: bluetooth default off"  [Martinusbe]
-27a721da8cd  core: Add support for fake signatures, enabled per app by dynamic permission  [Martinusbe]
-111a38a73c7  keyguard: Allow disabling fingerprint wake-and-unlock  [Martinusbe]
-fc94f47e17a  use gzosp xml  [Mirko]
-aacd3117310  Add NavBar toggle [1/2]  [Mirko]
-1f0bbe42270  Gesture Anywhere: Add missing dimens  [DroidFreak32]
-8ba11efeaab  GA: Layout improvements & switch to dark material theme  [DroidFreak32]
-cc7077c0c28  GA : Materiallize gesture anywhere layout - Added close fab button - Added 3 colors gradient layout background - overall improved UI - Exposed all colors for the themers  [DroidFreak32]
-9aa9f2cb6d3  settingsprovider: wifi default on  [Martinusbe]
-848ee486ff7  settingsprovider: bluetooth default off  [Martinusbe]
-6fe0ff8a137  Camera: Use TextUtils.isEmpty to check null + empty  [Martinusbe]
-4cb30b3c46a  Guard in short-circuit evaluations for stringSplit methods.  [Martinusbe]
-5fde5ec87a4  Allow sending vendor- or device-specific commands to the camera HAL.  [Martinusbe]
-99272d6482d  Camera: Don't throw exceptions when value pairs have spaces in them  [Martinusbe]
-ee3f2e4e2dd  SystemUI: Use new drawable and correct tint for H+ qs icon  [Martinusbe]
-dd2c5002b1b  Status bar: Add HSPA+ icons  [Martinusbe]
-   * packages/apps/Settings/
-eb4bb8ad62  Comment out Legal/Regulatory info  [Martinusbe]
-deeb365298  Skip Misc/Overcounted battery stats regardless of build type.  [Martinusbe]
-   * packages/apps/WolvesDen/
-bcc350c  Add NavBar toggle [2/2]  [Mirko]
-   * vendor/validus/
-6befde0  add zuk z2 plus  [Prema Chand Alugu]
-6b99c40  vendor: Add sanders (Motorola G5s Plus)  [Prema Chand Alugu]
-34a4faa  v16.0 Beta  * should be beta once going public  * Validus was on v15.. on Nougat, so v16  [Martinusbe]
-====================
-     10-08-2017
-====================
-
-
-   * build/make/
-c3c2bf34d  Nuke cache images  [Martinusbe]
-d342b99fd  Correct input write path for OTA Signature checking  [Martinusbe]
-   * frameworks/base/
-019b2853ed3  Show full alarm info  [Mirko]
-500c0fb8c15  Reload Pixel Home Animation without reboot  [Mirko]
-34f81c0ddff  Pixel Navbar animation toggle [1/2]  [Mirko]
-cff8831f1ff  PixelNavbar: Fixed to work with oreo  [Mirko]
-3e71c1c65d1  SystemUI: Add back the Pixel Navbar  [Mirko]
-ced206263e1  SystemUI: add volume tones and toggle back [1/2]  [Mirko]
-5f41ca5f6f2  base: SystemUI: volumes in dialog should have same order as in settings  [Mirko]
-b9e1f0d1778  Recents: add pinch-in gesture on tasks to Clear All  [Mirko]
-f504bd4ecc9  SystemUI: Recents: Allow closing empty view via tapping  [Mirko]
-9bffef9a25d  Add Compass tile  [Mirko]
-380eaeaef56  Language toggle QS  [Mirko]
-6198b3116e2  Add Reboot/Recovery QS Tile  [Mirko]
-c1589b6c9af  Stock Recents icon pack support [1/2]  [Mirko]
-ce77ab77031  Recents: allow single tap on app icon to show app info overlay  [Mirko]
-   * packages/apps/Settings/
-e429cbeced  Settings: add volume tone toggle back [2/2]  [Mirko]
-   * packages/apps/WolvesDen/
-f9e7591  Pixel Navbar animation toggle [2/2]  [Mirko]
-fab79fd  set "volume keys control media volume" to default off  [Mirko]
-9dbf64d  Stock Recents icon packs support [2/2]  [Mirko]
-====================
-     10-07-2017
-====================
-
-
-   * frameworks/base/
-cbea37c63b8  audio: VOLUME_KEYS_CONTROL_MEDIA default off  [Martinusbe]
-====================
-     10-06-2017
-====================
-
-
-   * frameworks/base/
-cd078347226  GlobalActions: Fix airplane mode switch for MSIM  [Martinusbe]
-979ce450611  GlobalActions: Set the initial status of airplane mode toggle  [Martinusbe]
-7b46fb4b7f4  set LED overlays to false... ...its in device now  [Mirko]
-c31c8a797a9  fingerprint: notify client when cancelling succeeded  [Martinusbe]
-   * packages/apps/Settings/
-6b3b8482ae  PowerUsageSummary: import android.widget.TextView  [Martinusbe]
-67f8f2ae9e  Consolidate onSaveInstanceState overrides  [Martinusbe]
-9794f08634  Add animation for battery asyncLoader.  [Martinusbe]
-93789d5c69  Revert "Split loading process for battery header"  [Martinusbe]
-====================
-     10-05-2017
-====================
-
-
-   * frameworks/base/
-fed7cb2a876  Force disable OTA and enable Dev settings for some Google apps  [Mirko]
-991f2b169a6  NfcTile: make sure NFC adapter is always available when needed  [Mirko]
-80cebee5ab1  SystemUI: enable NFC tile  [Mirko]
-7a5aad6ca7d  Revert "Unlock keystore with fingerprint after reboot or SysUI restart"  [Martinusbe]
-   * manifest/
-d0d8e2b  val: copy interfaces Android.bp  [Martinusbe]
-7e1ee2b  aosp: nuke default music player  [Prema Chand Alugu]
-2a830b1  Track val messaging  [GitHub]
-04f4b61  Update default.xml  [GitHub]
-   * packages/apps/Settings/
-ca1d5747fe  Partially revert "Remove the Automatic ota check option but be sure i… …t's disabled"  [Mirko]
-   * packages/inputmethods/LatinIME/
-725c0b502  Fix send button not being centered for non-standard densities.  [Martinusbe]
-49c83918d  LatinIME: Fix to English dictionary can be added after deleting  [Martinusbe]
-06c5b244b  proper dvorak keyboard fix  [Martinusbe]
-e22ab93c2  Rearrange Slavic & Greek morekeys  [Martinusbe]
-165b806de  LatinIME: Apply "Enable more keys for top row on tablets" (f6620308ba) and "Add "more" keys to ALL the keys" (c561f31af9) to slavik layouts.  [Martinusbe]
-509e23f48  LatinIME: Add "more" keys to ALL the keys in Greek layouts  [Martinusbe]
-c9aa3450a  Rearrange morekeys  [Martinusbe]
-27feb4e5a  latinime: Add "more" keys to ALL the keys  [Martinusbe]
-e709ecec1  Fix ALL the keys for QWERTZ keyboards  [Martinusbe]
-   * vendor/validus/
-104446d  prebuilt: Add Phonograph  [Prema Chand Alugu]
-====================
-     10-04-2017
-====================
-
-
-   * build/make/
-beff1e90a  Merge tag 'android-8.0.0_r17' into HEAD  [Mirko]
-   * frameworks/base/
-aaaad4127cf  Merge tag 'android-8.0.0_r17' into 8.0  [Mirko]
-   * hardware/qcom/audio-caf/msm8937/
-4b4681e83  hal: update haxed header for O  [Alx31]
-921bcc510  ssr: Fix building with OSS materials  [Alx31]
-4c2e222ef  hal: Haxed header  [Alx31]
-966490baa  audio: Fix flac offload not working  [Alx31]
-e9c5258a1  audio: Fix complilation warnings under Clang  [Alx31]
-650d38fde  hal: Allow building hardware audio encoders  [Alx31]
-   * manifest/
-d6cb4fe  val: cleanup manifest  [Martinusbe]
-1d802b8  val: remove the "groups"  [Martinusbe]
-063b18c  val: track development from gzosp  [Martinusbe]
-80661de  aosp: android-8.0.0_r17  [Mirko]
-   * packages/apps/Messaging/
-1e2f89b  Add 'new message' shortcut using the API introduced in sdk25  [theringmaster]
-71059f2  String improvements  [theringmaster]
-4a62589  Show snackbar instead of toast when deleting conversation  [theringmaster]
-69fdf18  MediaPicker: Check for NPE  [theringmaster]
-9d10621  Fix bad recycle on sending two mms in a row  [theringmaster]
-d57c117  Use app settings for conversation settings if no custom set  [theringmaster]
-0f83745  Fix messaging app crashing after a few MMS  [theringmaster]
-3b88447  Fixed storage permission issue for attachments  [theringmaster]
-fb4943f  Added support for video and audio mms attachments  [theringmaster]
-e3e4471  Add UI/UX capability to attach a saved video to a MMS message  [theringmaster]
-5f47f09  Implement saved video attachments in MMS  [theringmaster]
-26f9f5c  Fix messaging app crashing when storage memory is full  [theringmaster]
-c9448ac  Fix menu item highlight color.  [theringmaster]
-a813cd9  Improve swipe to delete strings  [theringmaster]
-75706ed  Toggable keyboard emoticons access  [theringmaster]
-c667987  Swipe right to delete conversation  [theringmaster]
-2624350  MessageQueue: Process pending messages per subscription  [theringmaster]
-b52b33f  Change avatar fontFamily to sans-serif-medium  [theringmaster]
-8d2525b  Implement option for swipe to delete.  [theringmaster]
-   * packages/apps/Settings/
-19a3bd4715  add back Doze always on  [Mirko]
-ff806084d3  Settings: Use preference for Changelog hotlink  [Prema Chand Alugu]
-498dd89ca6  Hotlink to show Validus Features at-a-glance  [Prema Chand Alugu]
-b33489de43  Settings: Add Validus Device Maintainers  [Prema Chand Alugu]
-   * packages/providers/MediaProvider/
-b2efd52  Merge tag 'android-8.0.0_r17' into HEAD  [Martinusbe]
-   * packages/services/Telephony/
-9954e6ce  Merge tag 'android-8.0.0_r17' into HEAD  [Martinusbe]
-====================
-     10-03-2017
-====================
-
-
-   * build/make/
-e9a637b60  build: add maintainers to build.prop Change-Id: I9dc1c6a95c441829b5900ff9c83aa32540ddabf1  [Prema Chand Alugu]
-   * frameworks/base/
-7f93b291b40  Bring back 'custom small QS tiles' [1/2]  [Prema Chand Alugu]
-51ea14403ec  BatteryBar: Gradient color [1/2]  [Mirko]
-a9ca95f0f33  Battery bar enhancements [1/2]  [Mirko]
-daaacf7b77c  base: Add back battery bar [1/2]  [Mirko]
-3219875cb0c  FWB: Add Volume Key Answer (1/2)  [Mirko]
-76cded5d9d0  Allow to disable HOME key when ringing [1/2] In early versions Google disabled it by default. In 7.1.x HOME key always works that is very annoying for users  [Mirko]
-e8f6a3f9c4c  base: audioservice: Set BT_SCO status  [Martinusbe]
-   * packages/apps/WolvesDen/
-565ade0  Bring back 'custom small QS tiles' [2/2] Change-Id: I3af34254db3f6c73c5ec90ba1b30dd27f4a23008  [Prema Chand Alugu]
-6f764f3  BatteryBar: Gradient Color [2/2]  [Mirko]
-a72db6d  Battery bar enhancements [2/2]  [Mirko]
-87d672f  Settings: Add back batterybar [2/2]  [Mirko]
-b50c438  WolvesDen: Add Volume Key Answer (2/2)  [Mirko]
-aa2e820  Allow to disable HOME key when ringing [2/2]  [Mirko]
-====================
-     10-02-2017
-====================
-
-
-   * development/
-759f34896  Grant dev tools system permission to trigger media-scan service  [Martinusbe]
-   * frameworks/base/
-852737521cc  FWbase : Fix GA fc and saving the gesture cache  [Prema Chand Alugu]
-6cce885faec  Increase gesture anywhere width to 40px [1/2]  [Prema Chand Alugu]
-117b4891898  Gesture Anywhere [1/3]  [Prema Chand Alugu]
-dee40273ae3  Increase Zenmode max hour limit from 12 to 24  [Mirko]
-38bfc1cba81  Lockscreen bottom shortcuts fixes  [Mirko]
-877bee2e1c7  base: tuner: add a hide config to left and right shortcut  [Mirko]
-781ee4176c5  HeadsUpTile: Add long-press action to open wolvesden fragment  [Mirko]
-e8cf5431814  base: add zen mode off hook to prevent problems with ringer mode  [Mirko]
-93d92da6f50  Base: HeadsUp snooze function [1/2] 5.1 introduced a snooze feature which activates when swiping up. Default snooze time is 1 minute. Let's make it configurable!  [Mirko]
-8585faa0500  HeadsUp: add timeout option (1/2)  [Mirko]
-bda7fd33690  SystemUI: HeadsUp blacklists (1/2)  [Mirko]
-42d771b0efa  HeadsUp: Stop showing notifications when selected applications on top [1/2]  [Mirko]
-6058b6dc2b0  Revert "Less boring heads up option [1/2]"  [Mirko]
-85ae4c5484b  Revert "Less annoying heads up: code fixes and improvements"  [Mirko]
-710e4c6290d  SystemUI: Add heads up tile  [Mirko]
-b84c9257a40  Unlock keystore with fingerprint after reboot or SysUI restart  [Martinusbe]
-66af9aa97f7  Notification lights: use default resources for color on and off [2/2]  [Mirko]
-86dd02483cb  Hide SystemUI Tuner  [Mirko]
-e7abda837f4  Revert "base: tuner: set empty summary to get nice layout in settings"  [Mirko]
-7a09f9e91d2  Revert "Reenable sysui tuner for all build types"  [Mirko]
-eb28b9b7762  Revert "Enable SysUI tuner by default"  [Mirko]
-478b1b47b45  Run LockscreenFragment external  [Mirko]
-317ce8b8a84  Run NavBarTuner external  [Mirko]
-15acc775356  Run PowerNotificationControlsFragment external  [Mirko]
-d764280633b  fwb: Seperate statusbar from tuner and launch externally ExTunerSettings style by beanstown106  [Mirko]
-d8febc1c952  Don't show MENU_REMOVE in QsTuner  [Mirko]
-3aa4cd3074f  NetworkTraffic: Add paddings  [Mirko]
-cc03573b96d  Wired/BT headset: make ringtone audio focus customizable [1/2]  [Mirko]
-6e646bcc9eb  Less annoying heads up: code fixes and improvements  [Mirko]
-21025dcd5a4  Less boring heads up option [1/2]  [Mirko]
-   * hardware/qcom/display-caf/msm8952/
-f23a24dc6  Merge pull request #3 from oadam11/8.0-caf-8952  [GitHub]
-10c86f0ec  Remove unsupported option  [oadam11]
-   * packages/apps/Settings/
-24fbff99e1  Gesture Anywhere [3/3]  [Prema Chand Alugu]
-ac9c301d1f  add activity to launch headsup settings fragment  [Mirko]
-9a01456181  Settings: Correctly align cursor in Settings  [Mirko]
-dea266b373  Revert "Settings: Correctly align cursor in Settings"  [Mirko]
-477815964a  Notification lights: use default resources for color on and off [1/2]  [Mirko]
-   * packages/apps/WolvesDen/
-72fb168  Fix GA fc for CustomSeekBar values  [Prema Chand Alugu]
-decc218  Fix GA fc and saving the gesture cache  [Prema Chand Alugu]
-5bad3cd  Increase gesture anywhere width to 40px [2/2]  [Prema Chand Alugu]
-5b2bc28  Gesture Anywhere [2/3]  [Prema Chand Alugu]
-4a6bdcf  Settings: HeadsUp snooze function [2/2] 5.1 introduced a snooze feature which activates when swiping up. Default snooze time is 1 minute. Let's make it configurable!  [Mirko]
-d4a3c52  HeadsUp: add timeout option (2/2) Forward ported to marshmallow/nougat By: @BeansTown106 removed the none option as we now have a headsup minimum time of 2seconds added 5sec option as that is the new default in marshmallow  [Mirko]
-6705cb1  WolvesDen: HeadsUp blacklists (2/2) @xyyx: delete app with one tap and some diff in code)  [Mirko]
-f93b979  HeadsUp: Stop showing notifications when selected applications on top [2/2]  [Mirko]
-fdcc176  Revert "Less boring heads up option [2/2]"  [Mirko]
-8f16fe0  Disable powernotifications. Need to check  [Mirko]
-e3b69b1  Run NavBar tuner from wolvesden  [Mirko]
-1e51e2f  Run Lockscreen tuner from wolvesden  [Mirko]
-4dd3d21  *move do not disturb switch to wolvesden  [Mirko]
-bc909fc  Move PowerNotificationControls from Tuner  [Mirko]
-324b1fd  run statusbar icon editor from wolvesden  [Mirko]
-d6639d1  Wired/BT headset: make ringtone audio focus customizable [2/2]  [Mirko]
-cf47a5a  Colorpicker and customseekbar: add method to set default values  [Mirko]
-9c455f1  Less boring heads up option [2/2]  [Mirko]
-====================
-     10-01-2017
-====================
-
-
-   * build/make/
-5fdd34cf9  Revert "increase prop value max to 100 for longer device names"  [Martinusbe]
-69b8890a0  build: recovery: Support adding device-specific items  [Martinusbe]
-d054b73ce  envi: changelog generation added  [Prema Chand Alugu]
-   * frameworks/base/
-14f61fbcaeb  add missing stuff to use lockscreen charging info switcher.. ..commit from @xyyx https://github.com/nitrogen-   */android_frameworks_base/commit/334338a0c100051732c96d556cd1ad8d6c19a520  [Mirko]
-23d6498d47c  Pimp the power menu out [1/2]  [Mirko]
-becdb0d7ad7  Lockscreen Charging info (1/2)  [Mirko]
-bae44cf917e  Add Ambient-LiftToWake tile  [Mirko]
-36ade933abc  AppOpsManager: Fix wrong coarse location permission issue  [Mirko]
-af28215c135  AppOps: Fix NPE from AppOpsManager.checkPackage.  [Mirko]
-b8e1640c91d  AppOps: Enable MODE_IGNORED for OP_WAKE_LOCK  [Mirko]
-c852f201c13  AppOps: Do not prune apps that are not present  [Mirko]
-49d192e1030  AppOps: Avoid RuntimeException and log spam  [Mirko]
-38d54ffd879  AppOps: Add BOOT_COMPLETED operation Add BOOT_COMPLETED operation in AppOps.  [Mirko]
-0c16a6e6159  PiP tile: launch PiP settings with long press  [Mirko]
-cf37653c12e  Add PiP tile  [Mirko]
-83448155be5  Add a sendKeycode api to GzospUtils  [Mirko]
-80186732cca  Vibrate on plug [1/2]  [Mirko]
-05703173f20  Hide tiles title: longpress will launch detail view  [Mirko]
-1812a134033  Fix notification light color default after clean flash  [Mirko]
-ef76c567acd  Notification light: light during DND option [1/2]  [Mirko]
-accc9b99675  QS title visibility feature: code improvements  [Mirko]
-83e3eb1436b  Allow to customize notification led light [2/2]  [Mirko]
-7caea577838  Keyguard: Forward port lockscreen quick unlock (1/2)  [Mirko]
-03da7c99daf  Keyguard: Add option to scramble pin layout when unlocking (2/2)  [Mirko]
-d4d5a85d5ed  QS auto brightness toggle rework  [Mirko]
-381bf0723f5  Add option to disable auto brightness icon in brightness slider [1/2]  [Mirko]
-8e3b4a10965  Port: Wake on plug (1/2)  [Mirko]
-25519abf4b4  Enable notifications led light by default [1/2]  [Mirko]
-e277463f444  [1/2] base: config to disable power menu on secure lock screen  [Mirko]
-e439e68a1f2  QS tile titles visibility [1/2]  [Mirko]
-0feb0c1df95  Status network traffic [1/2]  [Mirko]
-0ea004654b0  Allow to set QS panel columns and rows [1/2]  [Mirko]
-dd451822fa2  Battery light customization [1/2]  [Mirko]
-e7d6358ce97  Double tap to sleep on statusbar [1/2]  [Mirko]
-4911116ecdd  Allow to set custom brightness for ambient display and liftToWwake [1/2]  [Mirko]
-45db4d8eced  Allow to disable qs footer warnings [1/2]  [Mirko]
-c044c4b80a8  Night Light brightness mode options [1/2]  [Mirko]
-   * hardware/qcom/audio-caf/msm8952/
-5dadb6af8  Merge pull request #4 from oadam11/8.0-caf-8952  [GitHub]
-d4246b78d  audio: fix compilation on O  [oadam11]
-   * hardware/qcom/audio-caf/msm8974/
-d789af3ef  Move device dependent modules to /vendor  [Prema Chand Alugu]
-317b18c81  HAL: Align error code with HIDL wrapper  [Prema Chand Alugu]
-f382556c6  aenc-aac: bounds checking  [Prema Chand Alugu]
-   * hardware/qcom/display-caf/msm8952/
-8c89a0c1b  Merge pull request #2 from oadam11/8.0-caf-8952  [GitHub]
-17008ab56  Address const issues in preparation for libcxx rebase.  [oadam11]
-0b5768731  merge fix  [oadam11]
-ad759d955  SkImageEncoder->SkEncodeImage  [oadam11]
-0c2ac9aba  Fix -Wmacro-redefined werror issues.  [oadam11]
-ea5b15c9b  Perform typecast to disambiguate the call to abs in preparation for libcxx rebase.  [oadam11]
-   * hardware/qcom/media-caf/msm8974/
-893607156  mm-video-v4l2: venc: Protect buffer from being freed while accessing  [Prema Chand Alugu]
-   * packages/apps/Settings/
-cde17a7c87  ChangeLog: hotlink to CL generated in vendor  [Prema Chand Alugu]
-f9823b37fc  AppOps: rework AppOpsDetails to new AppHeaderController  [Mirko]
-9483c3e8ad  AppOps: Add BOOT_COMPLETED option and BootUp category  [Mirko]
-b8336acd8d  AppOps: use validus arrays and strings without summaries  [Mirko]
-291780d3b2  Enable App Ops  [Mirko]
-c8d5dda533  AppOps: Remove icons in detail item Before: http://imgur.com/a/qr5kI After: http://imgur.com/a/izaT8  [Mirko]
-f7539d9318  Fix viewpager tabs not showing on AppOpsSummary  [Mirko]
-4e725d1a10  Guard against themes without colorAccent defined  [Mirko]
-be971b0d69  Light on zen option: refresh switch state on Light disabled/enabled  [Mirko]
-d83db3f71e  Notification light: if we enable light for an app, enable system setting too  [Mirko]
-a20811b6ac  Notification light: light during DND option [2/2]  [Mirko]
-9b06324647  Allow to customize notification led light [1/2] (final improved version)  [Mirko]
-9b20ac4f57  Enable notifications led light by default [2/2]  [Mirko]
-12de5b0cc8  Keyguard: Forward port lockscreen quick unlock (2/2)  [Mirko]
-cbb82f4206  Settings: Add option to scramble pin layout when unlocking (1/2).  [Mirko]
-5270e04ad3  Allow to set custom brightness for ambient display and liftToWwake [2/2]  [Mirko]
-2a0b009dd8  Night Light brightness mode options [2/2]  [Mirko]
-   * packages/apps/WolvesDen/
-933d1c8  clean up wolvesden  [Mirko]
-0f105b6  show battery info on lockscreen when charging  [Mirko]
-1a45aaf  Pimp the power menu out [2/2]  [Mirko]
-af29026  AppOps: wellcome again  [Mirko]
-3e94668  Vibrate on plug [2/2]  [Mirko]
-55c0f62  Allow to call Notifications settings from WolvesDen  [Mirko]
-3f2bd39  Battery light colors: show reset to default button  [Mirko]
-893cb6c  Add option to disable auto brightness icon in brightness slider [2/2]  [Mirko]
-daebb56  Port: Wake on plug (2/2)  [Mirko]
-8368734  Settings: config to disable power menu on secure lock screen [2/2]  [Mirko]
-46e8652  QS tile titles visibility [2/2]  [Mirko]
-2899826  Status network traffic [2/2]  [Mirko]
-f251ef1  Add a missing return in batterylight settings  [Mirko]
-fe5c3dd  Battery light customization [2/2]  [Mirko]
-7848886  Allow to set QS panel columns and rows [2/2]  [Mirko]
-7c00dec  Double tap to sleep on statusbar [2/2]  [Mirko]
-7f1a9e0  Allow to disable qs footer warnings [2/2]  [Mirko]
-   * system/core/
-812c3c36a  Lockscreen Charging info (2/2)  [Mirko]
-   * vendor/validus/
-483585d  vendor: Begin to track the Change Log for Validus  [Prema Chand Alugu]
-46b5246  changelog_validus: more info and bling  [Prema Chand Alugu]
-9a3c002  script: generate changelog for last 15days  [Prema Chand Alugu]
-5865f86  vendor: Remove duplicates from the    * repos  [Prema Chand Alugu]
-56e8ede  vendor: Add the    *s list  [Prema Chand Alugu]
-====================
-     09-30-2017
-====================
-
-
-   * frameworks/base/
-01f425a0368  Add ability to configure battery saver mode color (1/2) Adapted for marshmallow by @KreAch3R  [Prema Chand Alugu]
-   * packages/apps/Settings/
-99b3f5ac18  Settings: Add dashboard suggestions to Options Menu  [Prema Chand Alugu]
-   * packages/apps/WolvesDen/
-39a8fa7  Add ability to configure battery saver mode color (2/2)  [Prema Chand Alugu]
-====================
-     09-29-2017
-====================
-
-
-   * frameworks/av/
-604edf16d  av: Fix build errors related to missing aes.h  [Martinusbe]
-4a39ebafa  av: Remove qcom/media/mm-core includes  [Martinusbe]
-e3fb4358e  libmedia: synchronize access to meta  [Martinusbe]
-657b2fbef  StagefrightRecorder: fix a/v sync issues with QC AAC encoder  [Martinusbe]
-544d90d78  StagefrightRecorder: Reset AudioSourceNode during LPCM recording  [Martinusbe]
-0e9692529  audiopolicy: fix unexpected output selection for direct pcm usecase  [Martinusbe]
-e53a73f15  audiopolicy: revert selecting speaker when a2dp is suspended  [Martinusbe]
-62debd5c8  audioflinger: Throttle output if no active tracks  [Martinusbe]
-1597dd08f  media: Print stats when application stops playback  [Martinusbe]
-d8d6c074f  audiopolicy: fix wrong volume db value for voice call stream  [Martinusbe]
-b7eb93577  video: Disconnect from native window for secure case  [Martinusbe]
-a88264ff4  libstagefright: Handling SSR/Hardware error in Camcorder  [Martinusbe]
-3303aec84  NdkMediaCodec: add AMediaCodec_getBufferFormat  [Martinusbe]
-c01d186b0  audiopolicy: update APM to use custom audio policy configuration  [Martinusbe]
-eaeb3f4ee  libstagefright: fix divide by zero  [Martinusbe]
-1a9748ee1  Stagefright: Addition of DS capability  [Martinusbe]
-98c908d25  libstagefright: notify extradata to application  [Martinusbe]
-63f4b6fb1  nuplayer: handle setPlaybackSettings on direct tracks  [Martinusbe]
-da763ac7e  StagefrightMetadataRetriever: correct the status flag  [Martinusbe]
-ecdae8115  nuplayer: call video flush on audio teardown  [Martinusbe]
-7940bfb62  libstagefright_omx: fix timestamps calculating in GraphicBufferSource  [Martinusbe]
-6bae0ce4e  audiopolicy: Update prefix for audio system property  [Martinusbe]
-a9fe9619c  AudioTrack: Don't tear down sink for invalid offload track  [Martinusbe]
-49a3133b8  audio: support bitdepth meta in webm writer  [Martinusbe]
-df659c555  media: Set generation in observer notification message  [Martinusbe]
-52295ecb4  media: Change the location of dumping stats  [Martinusbe]
-c62d38a3f  HLS: force audio/video both to start from IDR position  [Martinusbe]
-f73121945  audio: Audio resampler support for 192Khz playback  [Martinusbe]
-a52d2f51e  libstagefright: call release encoder instead of signalEOS  [Martinusbe]
-796ce772b  libstagefright: Copy the entire buffer from/to OMX component  [Martinusbe]
-7df032368  stagefright: Clear RenderQueue on port settings changed  [Martinusbe]
-390f47404  MediaPlayerService: Clear the vector holding tracks  [Martinusbe]
-e8dfbc0e8  NuPlayer: DEBUG: Notify RENDERING_STARTED event after resume  [Martinusbe]
-e47f1688f  libstagefright: Check trackMeta for NULL  [Martinusbe]
-46fcd315d  rtsp: Limit subframe processing to available buffer range  [Martinusbe]
-580a731da  stagefright: add changes related to high-framerates in CameraSource  [Martinusbe]
-b0bc81f8b  StagefrightRecorder: remove deprecated codes about timelapse recording  [Martinusbe]
-1fce4af34  audio: add support for error handling of dsp SSR  [Martinusbe]
-fff39525e  libstagefright: Use stride/slice-height instead of w/h for buffer dims  [Martinusbe]
-3dac6b5d3  stagefright: Fix issues related to batch-mode  [Martinusbe]
-d489e2674  stagefright: Add support for MPEG4 DP video clips  [Martinusbe]
-961be5980  AudioFlinger: re-organize position adjustment for restarted DirectOutputs  [Martinusbe]
-fccd11de6  stagefright: Add support for extradata  [Martinusbe]
-a64a715c6  mediaplayerservice: Changes for accurate seek  [Martinusbe]
-a17f48392  nuplayer: extend nuplayer renderer to handle gapless switch for direct pcm  [Martinusbe]
-985ebb92d  stagefright:  Add key to indicate thumbnail mode  [Martinusbe]
-4d0f88e37  audio: Output latency update in Audio Track  [Martinusbe]
-4339a52cf  audio: Check if A2DP playback happens via primary output  [Martinusbe]
-adc73a081  audioflinger: fix for playback paused during track transition  [Martinusbe]
-9c5f9ae26  audio: Update anchor time for offload playback post resume  [Martinusbe]
-717403db2  audiopolicy: Handle startOutput on output command thread  [Martinusbe]
-38c458209  frameworks/av: Fix LOG_NDEBUG compilation issues  [Martinusbe]
-8c5be320c  Nuplayer: Ensure AudioSink is closed before clearing Renderer  [Martinusbe]
-e9a6e176f  stagefright: stop audio encoding before releasing writer thread  [Martinusbe]
-ac9031b25  audio: Disable a2dp support on FM active  [Martinusbe]
-cee6ae225  audiopolicy: follow-up change to support extended feature  [Martinusbe]
-423b00bac  audio flinger: Fix native crash during underruns for patch track  [Martinusbe]
-e217e39d7  RTSP: add default implementations in NuPlayer for rtsp changes  [Martinusbe]
-151a42b57  httplive: refactor for HLS customization  [Martinusbe]
-3b5e1fb2f  frameworks/av: follow-up change for enabling audio extended features  [Martinusbe]
-9c64dd00b  avextensions: Fix audio crash due to improper linking  [Martinusbe]
-6f1670c11  audio: follow-up change for track offload using direct output  [Martinusbe]
-6f8932c59  Camera: Add extensions to CameraClient  [Martinusbe]
-d7cb46d81  Camera: Add support for preview frame fd  [Martinusbe]
-dad1615ee  audio: hold effect mutex when releasing effect engine  [Martinusbe]
-196e8acae  audio: add support to enable track offload using direct output  [Martinusbe]
-090d07794  frameworks/av: enable audio extended features  [Martinusbe]
-ec60ba1de  audiopolicy: support extended feature in audiopolicymanager  [Martinusbe]
-73774bccf  audio: enable post processing effects on DIRECT output thread  [Martinusbe]
-1d3299346  CamcorderProfiles: Add new camcorder profiles  [Martinusbe]
-31f0fd4e0  CameraService: Fix deadlock in binder death cleanup.  [Martinusbe]
-9d5dcd39b  Stagefright: Make classes customizable and add AV extensions  [Martinusbe]
-311b961e7  camera: include: Don't override possible overlayed header  [Martinusbe]
-a2fbea61e  stagefright: omx: Don't signal dataspace change on legacy QCOM  [Martinusbe]
-9c453b23f  stagefright: Fix SurfaceMediaSource buffer search condition when buffer return  [Martinusbe]
-de2267285  camera: Allow devices to load custom CameraParameter code  [Martinusbe]
-4a56acd45  audiopolicy: make audio policy extensible  [Martinusbe]
-   * frameworks/base/
-2b06f692d01  Background app notification: disable by default [2/2]  [Martinusbe]
-1854267fbdb  Make "Turn on WiFi Automatically" available for all  [Martinusbe]
-540f3160ea0  call log limit 500=>5000  [Martinusbe]
-421fabc07e0  BluetoothAdapter: disable logspew  [Martinusbe]
-9e36119cd06  FATAL EXCEPTION IN SYSTEM PROCESS: android.ui  [Martinusbe]
-89ac3ec4df1  Fix another AddAccountSettings memory leak  [Martinusbe]
-e011ab0e523  Fix AddAccountSettings memory leak  [Martinusbe]
-c5e76647e99  Fingerprints: Increase MAX_FAILED_ATTEMPTS  [Martinusbe]
-fa6670f7dde  Add partial/full screenshot QS tile  [Mirko]
-e8ee9a84c6c  Add api to take screenshots  [Mirko]
-1e08f770093  Add Power+VolUp action to catch a partial area screenshot  [Mirko]
-c97d4092d9e  Enable battery percentage in statusbar by default [1/2]  [Mirko]
-0604d08e998  Allow to doubletap or longpress power to toggle flashlight [1/3]  [Mirko]
-83b02ec7451  Add api to toggle flashlight and check if device has flashlight  [Mirko]
-e0348f6798d  Toast icon switch [1/2]  [Mirko]
-e29194ff843  Show icon of package associated with Toast  [Mirko]
-d76b822c562  [1/2] base: unlink notification volume is back -delete old unused volume images -add new one for notification volumes maybe some day one will be able to create a vector drawable for this - I am not :)  [Mirko]
-184cfafe812  Launch music player on headset connect: add BT compatibility [1/2]  [Mirko]
-fe3a55539df  AudioService: launch default music player on headset connect [1/2]  [Mirko]
-080a10c7067  make: update-api  [Prema Chand Alugu]
-   * frameworks/native/
-dea72960a  inputflinger: Add gesture sensor support  [Martinusbe]
-38f83fa59  Add GESTURE_SENSOR input source  [Martinusbe]
-73eef682e  SF: Squashed hwrotation support  [Martinusbe]
-c6b18bb0a  services: surfaceflinger: Fixed Seg Fault  [Martinusbe]
-71bad5c94  Surfaceflinger: update orientation value.  [Martinusbe]
-7d62199f1  SurfaceFlinger: Support get/set ActiveConfigs.  [Martinusbe]
-aecd23676  SF: Rename persist.panel.mountflip to ro.panel.mountflip  [Martinusbe]
-5cfec423b  sf: Defer DispSync initialization  [Martinusbe]
-ce833d86b  surfaceflinger: Add interface to get frame stats  [Martinusbe]
-f3999bea0  Fix atrace async_dump miss come content issue  [Martinusbe]
-f51e89cb3  SurfaceFlinger: Change to support framebuffer flip  [Martinusbe]
-7415a63d8  sf : Fix vertices & texture coordinates computation.  [Martinusbe]
-ffb3d38b4  sf: Validate output buffer usage bit appropriately  [Martinusbe]
-cfdf4c0aa  SF: Allow HDR for GPU fall back under certain conditions  [Martinusbe]
-c919015d6  SurfaceFlinger: Featurize using Color Metadata  [Martinusbe]
-a1e565fbf  SurfaceFlinger: Avoid HDR layers going to GPU  [Martinusbe]
-2428c354a  SF : Add support for rotated panel mounts  [Martinusbe]
-489ea0e2e  SurfaceFlinger: Add support for continuous dumpsys to file.  [Martinusbe]
-41631f0ef  surfaceflinger: Exclude video encoder usage for scratch buffer  [Martinusbe]
-b29fdd79e  surfaceflinger: Add check for number of queued buffers  [Martinusbe]
-e491cebaf  sf: vds: Avoid HWC for certain scenarios  [Martinusbe]
-bc2a1ebb2  SurfaceFlinger: Combine SF Refactor changes  [Martinusbe]
-   * packages/apps/Settings/
-02a3e4cab6  Enable battery percentage in statusbar by default [2/2]  [Mirko]
-1f0f9e1976  Allow to doubletap or longpress power to toggle flashlight [3/3]  [Mirko]
-2efd3cbd04  Settings: unlink notification volume is back  [Mirko]
-   * packages/apps/WolvesDen/
-e72bdb5  Allow to doubletap or longpress power to toggle flashlight [2/3]  [Mirko]
-2ad2b4d  Toast icon switch [2/2]  [Mirko]
-f880741  we use fragments  [Mirko]
-f220be3  Launch music player on headset connect: add BT compatibility [2/2]  [Mirko]
-9568ef6  Settings: launch default music player on headset connect [2/2]... ...and make an other category  [Mirko]
-   * vendor/validus/
-619d97e  overlay: update nightmode bool for O  * thanks for pointing out @ezio84 ;-)  [Martinusbe]
-9e78c20  Update initial attach for Tmo US  [Martinusbe]
