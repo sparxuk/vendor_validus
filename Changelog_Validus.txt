@@ -1,333 +1,277 @@
 ====================
-     10-25-2017
+     11-11-2017
+====================
+
+
+   * bionic/
+2113f70  libc: ARM: Add 32-bit Kryo memcpy  [Martinusbe]
+3101b33  libc: use Cortex-A7/A53 memset on Kryo  [Martinusbe]
+ea92b9c  Add kryo support.  [Martinusbe]
+   * build/make/
+fdeffb4  Revert "Build support for 32-bit armv8-a"  [Martinusbe]
+7b960ca  Build support for 32-bit armv8-a  [Martinusbe]
+   * build/soong/
+43ab8c8  Revert "Build support for 32-bit armv8-a"  [Martinusbe]
+a8a79bc  Build support for 32-bit armv8-a  [Martinusbe]
+e53cedd  Add cortex-a73 support.  [Martinusbe]
+dba07d5  Add arm neon and mips dspr2 arch features  [Martinusbe]
+b6efe6e  soong: use optimal FPU on Kryo targets  [Martinusbe]
+5f38cd7  soong: use optimal FPU for Cortex-A53 and Cortex-A53.A57  [Martinusbe]
+21e1b57  soong: use optimal FPU on Cortex-A15  [Martinusbe]
+01275d9  soong: always use -mfpu=neon-vfpv4 for Krait targets  [Martinusbe]
+1a31277  Make use of specific Kryo targeting in Clang  [Martinusbe]
+b09cfc1  Add support for an armv8 variant for Kryo  [Martinusbe]
+b921ab1  Add support for an armv7 variant for Kryo  [Martinusbe]
+   * vendor/validus/
+99b7fdc  v16.3 for Nov patch  [Martinusbe]
+====================
+     11-10-2017
 ====================
 
 
    * frameworks/base/
-a9e5157e2e7  base: SystemUI: update settings for Logo style/color too  [Prema Chand Alugu]
-e40ff6c3b81  base: SystemUI: check for context in CollapsedStatusBarFragment  [Prema Chand Alugu]
+fbbd464  Merge branch '8.0' of https://github.com/ValidusOs/frameworks_base into HEAD  [Martinusbe]
+35902db  Footer brightness slider: improve hide/show animation  [Mirko]
+2f918f5  Footer brightness buttons: make touch area more reliable  [Mirko]
+3676d09  Brightness slider buttons: make them dynamic (auto and manual)  [Mirko]
+165a467  Footer brightness slider: fix FC and code cleanup  [Mirko]
+7e3cad5  Fix automatic brightness QS toggle icon  [Mirko]
+d736ae0  Make use of the brightness slider buttons  [Mirko]
+66909c7  Rework auto brightness implementation  [Mirko]
+5024464  Brightness control on footer  [Mirko]
+49d5dbe  Fix brightness icon not showing  [Mirko]
+8e485f8  Only enable auto brightness toggle when also enabed for QS  [Mirko]
+   * frameworks/native/
+b113d4f  surfaceflinger & inputflinger: -O3  [Prema Chand Alugu]
+a739ff5  fix build for angler  [Prema Chand Alugu]
+76f8fb1  Improve touch response slightly  [Prema Chand Alugu]
+0f7823b  Fix installd get wrong inode cause APK crash  [Prema Chand Alugu]
+89964da  surfaceflinger: fix a nullptr dereference  [Prema Chand Alugu]
    * hardware/qcom/audio-caf/msm8998/
-bcf8cda06  aenc-aac: Support get_parameter query for profile type  [Martinusbe]
-f33e93eb4  Revert "configs: Add built-in mic to primary input sources"  [Martinusbe]
-523f18678  configs: Support fluence for ADSP SVA  [Martinusbe]
-   * hardware/qcom/media-caf/msm8998/
-9a1cf157a  mm-core: move multiaac decoder component above dummy  [Martinusbe]
-adab5e775  mm-video-v4l2: Return correct encoder level for apq8098_latv target  [Martinusbe]
-c9ab5c20b  mm-core: msm8953: Restore secure codecs for secure playback  [Martinusbe]
-934bc0735  mm-video-v4l2: Initialize variables for output buffer  [Martinusbe]
-482015bd9  Promotion of video-userspace.lnx.2.9-00015.  [Martinusbe]
-41fed6538  mm-video-v4l2: venc: Avoid buffer access after free  [Martinusbe]
-45c90c082  mm-core:  omxregistry: deprecate unused OMX components  [Martinusbe]
-e70f7a430  mm-core: msm8937: Prevent exposing internal codecs in registry.  [Martinusbe]
-ea857a9e4  mm-core: msm8996: Prevent exposing internal codecs in registry.  [Martinusbe]
-de4e9d88c  mm-core: msm8953: Prevent exposing internal codecs in registry.  [Martinusbe]
-4515976f6  mm-video-v4l2: Fix KW resported issues  [Martinusbe]
-5d1f8744f  mm-video-v4l2: define outputcropinfo extradata and TME codectype  [Martinusbe]
-143febd3b  mm-video-v4l2: venc: Remove support of temporal layers  [Martinusbe]
-3b2cd3cdb  venc: Adding temporal layer config support  [Martinusbe]
-8d8af6a6d  mm-video-v4l2: vidc: Restrict PQ upto 60 FPS  [Martinusbe]
-a9b0f6aa0  Omm-video-v4l2: Set OPB color format for 10bit split case  [Martinusbe]
-1275e7e04  mm-core: add index and structure for profile type query  [Martinusbe]
-22eea76b2  mm-video-v4l2: venc: Enable PQ for low fps too  [Martinusbe]
-77cc04cf7  mm-video-v4l2: vdec: Fix memory leak issues  [Martinusbe]
-====================
-     10-24-2017
-====================
-
-
-   * frameworks/base/
-26cc2467742  Add support for overriding default time format value  [Martinusbe]
-514e5ffbc9f  ViewConfiguration: Align coding style to AOSP  [Martinusbe]
-e87e1e97d9e  ViewConfiguration: add support for max/min fling velocity sysproperties  [Martinusbe]
-99ef5403e17  Optimised hwui rounded corners shader  [Martinusbe]
-416fe5bf249  Reduce hwui CPU time by using glDrawRangeElements  [Martinusbe]
-5276b53cfd7  jni: FingerprintService: use fastJni for nativeAuthenticate  [Martinusbe]
-2a84445d7bf  core: jni: AudioTrack: enable fastJni for some methods  [Martinusbe]
-   * vendor/validus/
-a68c4d2  theme: exclude the theme apk's from dexpreopt  [Martinusbe]
-a1ce465  common: Add themes  [Martinusbe]
-====================
-     10-23-2017
-====================
-
-
-   * frameworks/base/
-4ff6f8a4fd8  Add VOLTE icon Extracted from CAF and adapted to AOSP by @xyyx Added switch to statusbar icon blacklist by @xyyx  [Prema Chand Alugu]
-   * packages/apps/Settings/
-98a11e5405  Change encryption preference's summary conditionally  [Martinusbe]
-====================
-     10-22-2017
-====================
-
-
-====================
-     10-21-2017
-====================
-
-
-   * device/qcom/sepolicy/
-902f850  apq8084: Define qcal530_prop as property_type  [Martinusbe]
-f799a7a  Fix bad characters  [Martinusbe]
-   * frameworks/base/
-a00ec25be25  Logo: Fix Warning and misc changes  [Prema Chand Alugu]
-ab310a54b25  Logo: Color picker [1/2]  [Prema Chand Alugu]
-b72c27219c5  Logo: More Wolf logos [1/2]  [Prema Chand Alugu]
-37d371e6c5e  Logo: Add more Logo Styles [1/2]  [Prema Chand Alugu]
-6d04f7440fb  Fix Build for Battery Warning colors  [Prema Chand Alugu]
-   * manifest/
-9c28d8e  manifest: track gzosp PackageInstaller  [Martinusbe]
-78d5362  manifest: caf: track our qcom power  [Martinusbe]
-   * packages/apps/Dialer/
-0b29e4ef7  Dialer: Disable proguard when not compiling with jack  [Martinusbe]
-   * packages/apps/Settings/
-a46a2deebf  Simplify the root checking method  [Mirko]
-9e44fe6a36  Embed shortcut for root app on the dashboard  [Mirko]
-   * packages/apps/WolvesDen/
-15d3fd4  GZR Colors into default in the ColorPicker  [Prema Chand Alugu]
-e1486af  Logo: Color picker [2/2]  [Prema Chand Alugu]
-691c03f  Logo: More Wolf logos [2/2]  [Prema Chand Alugu]
-0703069  Logo: Add more Logo Styles [2/2]  [Prema Chand Alugu]
-   * system/sepolicy/
-e1ba24c9  sepolicy: Also allow vendor_file text relocations  [Martinusbe]
-   * vendor/validus/
-e9d857a  version: Beta v16.1 for the weekend  [Martinusbe]
-====================
-     10-20-2017
-====================
-
-
-   * frameworks/base/
-ad5a2f57739  FWB: add status bar logo (1/2)  [Prema Chand Alugu]
-1a5ca7e78ba  Allow adjusting progress on touch events.  [Martinusbe]
-1c1b074d24e  Toast: Fix toast layout for RTL  [Martinusbe]
-3e7b1af8117  base: SystemUI: call qs tile layout on rotate  [Martinusbe]
-b8d1c18b23a  base: SystemUI: remove gap between QS bottom and notification top  [Martinusbe]
-4e116fb1416  BatteryWarningColor: fix white statusbar icons  [Martinusbe]
-fee6c83bdb8  Statusbar ticker refactoring  [Mirko]
-cbf4ac19d14  Status bar notification ticker  [Mirko]
-da08b0b0983  Display network name in status bar(1/2)  [Mirko]
-   * packages/apps/PackageInstaller/
-0b4e915e  Revert "Disable overlays while installer is resumed"  [Martinusbe]
-   * packages/apps/Settings/
-c47fabf45c  Display network name in status bar(2/2)  [Mirko]
-   * packages/apps/WolvesDen/
-509c2b0  wolvesden: add status bar logo (2/2)  [Prema Chand Alugu]
-5af2a82  Statusbar notification ticker [2/2]  [Mirko]
-====================
-     10-19-2017
-====================
-
-
-   * frameworks/base/
-0a074d9896a  base: input: add FLAG_RECEIVER_INCLUDE_BACKGROUND to IME switch broadcasts  [Martinusbe]
-797d1c15d08  Disable statusbar time refresh when screen off  [Martinusbe]
-c98be7540c6  Collapse Notification panel after tapping CLEAR ALL button  [Martinusbe]
-322756b5be9  base: rescue party: check isDisabled on all public API  [Martinusbe]
-1938cbc4049  SystemUI: fix the monkey crash issue  [Martinusbe]
-ca91eeabc78  SystemUI: Fix SystemUI Crash  [Martinusbe]
-f0eae4959e1  Optimize IncallUI delay for voice calls  [Martinusbe]
-39f691fc654  ColorFade: fix EGL crash on exynos4 mali blobs  [Martinusbe]
-c1b399d28a7  aapt: Fix compiler warning (clobbered by longjmp)  [Martinusbe]
-6762fcb1c94  aapt: add check for untranslatable "string-array"s  [Martinusbe]
-b9b3ef7af62  aapt: Use a std::map instead of a SortedVector  [Martinusbe]
-60c93970dae  aapt: Speed up the style pruning  [Martinusbe]
-0d4a0cdd3a1  sensors: Allow opting out of default batch size  [Martinusbe]
-   * hardware/qcom/display-caf/msm8952/
-bfec4079e  Fix Format to size t for layer Index  [Prema Chand Alugu]
-cf2cacfe6  Fix build  [Prema Chand Alugu]
-   * hardware/qcom/media-caf/msm8952/
-7aaffd292  mm-video-v4l2: Fix compilation issues for vdec and venc  [Prema Chand Alugu]
-   * packages/apps/Settings/
-d2c90674da  Settings: Use seekbar to allow setting arbitrary animation values  [Prema Chand Alugu]
+88ca665  Revert "audio: Add check to confirm if routing to BT SCO is successfull"  [Martinusbe]
    * system/core/
-e53b1458d  adb: Restore support for legacy f_adb interface  [Martinusbe]
-dfe2adb59  init: Fire a trigger when a class is started/stopped  [Martinusbe]
+68e9805  libcutils: Fix thread ID on macOS  [Prema Chand Alugu]
 ====================
-     10-18-2017
+     11-09-2017
 ====================
 
 
    * build/make/
-1bba227e5  envsetup: correct path to repopick in vendor  [Martinusbe]
-   * external/tinycompress/
-472a04c  tinycompress: Add kernel header depencency  [Martinusbe]
-c097c3e  tinycompress: Move [get,set]_metadata to vendor extension  [Martinusbe]
-0f9cfdc  tinycompress: Fix compilation on old targets  [Martinusbe]
-   * vendor/validus/
-a70d2d9  repopick: fetch only from gerrit, not from github  [Martinusbe]
-69382a8  repopick: adapt for GZOSP's setup  [Martinusbe]
-1d225d4  repopick: update for 2017  [Martinusbe]
-6693965  repopick: default to gzosp gerrit  [Martinusbe]
-====================
-     10-17-2017
-====================
-
-
-   * external/wpa_supplicant_8/
-112fe7b  TDLS: Reject TPK-TK reconfiguration  [Martinusbe]
-19f615e  Fix PTK rekeying to generate a new ANonce  [Martinusbe]
-0166800  Extend protection of GTK/IGTK reinstallation of WNM-Sleep Mode cases  [Martinusbe]
-96f88bf  FT: Do not allow multiple Reassociation Response frames  [Martinusbe]
-4cf6055  WNM: Ignore WNM-Sleep Mode Response without pending request  [Martinusbe]
-4e43077  Prevent installation of an all-zero TK  [Martinusbe]
-32c20df  hostapd: Avoid key reinstallation in FT handshake  [Martinusbe]
-e0877ad  Prevent reinstallation of an already in-use group key  [Martinusbe]
-   * hardware/qcom/audio-caf/msm8996/
-97cb5d4c2  hal: remove -Werror  [Erfan Abdi]
-   * packages/apps/DeskClock/
-5fddd4876  Revert "DeskClock: Failed to set up Alarm"  [Martinusbe]
-bccd66239  DeskClock: start foreground service for alarms  [Martinusbe]
-12846d042  DeskClock: use non-Compat Notification classes  [Martinusbe]
-d8e0ac4d7  DeskClock: move to NotificationChannels  [Martinusbe]
-   * packages/apps/Settings/
-04e17695fe  Prox Switch: Match base default off correct switch call in fragment  [theringmaster]
-   * vendor/validus/
-bda802f  prebuilt: Nova 5.5 beta 3  [Prema Chand Alugu]
-====================
-     10-16-2017
-====================
-
-
+181839c  Version bump to OPR6.170623.023  [Prema Chand Alugu]
+23e8fbd  Make change and version bump to OPR6.170623.022  [Prema Chand Alugu]
+4a6c14d  Update Security String to 2017-11-05 on oc-dev bug:65631379 (cherry picked from commit d24487a2f2f215e5de8aad8117e58f81eaf1529c)  [Prema Chand Alugu]
+a1185d2  Update Security String to 2017-11-01 on oc-dev bug:65631379 (cherry picked from commit 8f4a4c213118ce088245abc4f31204393bab62a5)  [Prema Chand Alugu]
+   * frameworks/av/
+4760b2c  stagefright: Add support for extradata  [Martinusbe]
+c03a937  Revert "Fix memory leaks"  [Martinusbe]
+1667edf  Fix memory leaks  [Martinusbe]
+fdbe4a3  Put media.metrics service into proper group  [Martinusbe]
+df628a8  EffectBundle: Check parameter and value size  [Martinusbe]
+03f864d  Track graphic buffer mode in OMXNodeInstance  [Martinusbe]
+3cc4e49  Revert "stagefright: Add support for extradata"  [Martinusbe]
    * frameworks/base/
-0f3f32562b2  Live Volume Steps [1/2]  [Mirko]
-   * hardware/gzosp/interfaces/
-dccba7d  lineage/interfaces: Add bcm2709x changes to Nfc impl  [theringmaster]
-6a462c4  lineage/interfaces: Fork Nfc HIDL impl  [theringmaster]
-   * packages/apps/Settings/
-d854669814  fix proximity switch  [Mirko]
-854244467c  Live Volume Steps [2/2]  [Mirko]
-====================
-     10-15-2017
-====================
-
-
-   * frameworks/base/
-7111fd7c94b  PiP tile: add toast if pip mode is not avail  [Mirko]
-   * hardware/qcom/audio-caf/msm8937/
-3c4b937a5  Merge LA.UM.6.6.r1-03000-89xx.0  [Prema Chand Alugu]
-   * hardware/qcom/display-caf/msm8937/
-91d0d07aa  Merge LA.UM.6.6.r1-03000-89xx.0  [Prema Chand Alugu]
-   * hardware/qcom/media-caf/msm8937/
-6c6efd343  Merge LA.UM.6.6.r1-03000-89xx.0  [Prema Chand Alugu]
-   * vendor/validus/
-aba794f  launcher: Nova overrides HOME  [Prema Chand Alugu]
-====================
-     10-14-2017
-====================
-
-
-   * frameworks/base/
-219624bd652  fix lockscreen weather  [Martinusbe]
-f26fd62df8d  Parse "vendor/priv-app" to find privileged applications  [Martinusbe]
-0a74f399542  fix foreground process will be mistakenly killed when it uses content provider.  [Martinusbe]
-a4edc0bfd95  Set mProximity to PROXIMITY_UNKNOWN on screen off  [Martinusbe]
-47d6f84b1dc  Skip send broadcast to the receiver whoes user has not started.  [Martinusbe]
-7f5c0051675  Add checking values not to save illegal value to appwidgets.xml  [Martinusbe]
-d6c8d12c741  Fix to avoid UI freeze issue  [Martinusbe]
-be7e2a50618  Speed up Orientation Listener  [Martinusbe]
-5c445c8e46b  Allow faster app switching  [Martinusbe]
-73f21212dce  Reset battery stats [1/2]  [Martinusbe]
+e835e4f  config: enable some hwkey defaults  [Martinusbe]
+05e9634  Buttons: Allow setting default long-press app switch behavior  [Martinusbe]
+ff2784a  keyboard: re-add keyboard brightness handling  [Martinusbe]
+45d135e  Hardware key custom rebinding (1/2)  [Martinusbe]
+483bc6c  base: Introduce SubstratumService  [Martinusbe]
+76683c0  OMS: Add dynamic theme fonts support for O  [Martinusbe]
+66d9daa  OMS: Add back overlay modified callback implementation  [Martinusbe]
+2ee7fe0  Extras: Add dynamic theme shutdown and boot animation support  [Martinusbe]
+86a7d56  OMS: StrictMode and files under /data/system/theme/  [Martinusbe]
+bf8fc62  Hold "volume up" during boot to disable all overlays  [Martinusbe]
+98c6a1d  ThemeSafety: Introduce App Crash Intent  [Martinusbe]
+dfb7847  ApplicationsState: add filter for Substratum overlays [2/2]  [Martinusbe]
+a6100f3  Extras: Add dynamic theme sound effects support  [Martinusbe]
+27b844d  base: SystemUI: [QS] Add adb over network tile  [Prema Chand Alugu]
+8250a7a  base: add support for adb over network [1/2]  [Prema Chand Alugu]
+57aa269  DPC should not be allowed to grant development permission  [Prema Chand Alugu]
+85a7b7f  Backport overlay security fix  [Prema Chand Alugu]
+df5cfd5  Navbar skiptrack arrows: blacklist some apps  [Mirko]
+db9f47b  Navbar customizer: add dynamic skip_track/kb cursors buttons  [Mirko]
    * manifest/
-43f9c49  aosp: Remove AOSP launchers  [Prema Chand Alugu]
+af6e586  manifest: android-8.0.0_r32  [Prema Chand Alugu]
    * packages/apps/Settings/
-26bfcf97d8  Reset battery stats [2/2]  [Martinusbe]
-d92f2d23f9  fix link volume  [Mirko]
-   * vendor/validus/
-07308bd  Add Nova and Google Companion  [Prema Chand Alugu]
-====================
-     10-13-2017
-====================
-
-
-   * frameworks/base/
-4bc99811393  Keyguard: Don't listen for fingerprint when prox.sensor is covered  [Martinusbe]
-89adfe869a0  KeyguardWeather: Clean up and refactor for OmniJaws [1/2]  [Mirko]
-7282c568ac4  LSWeather: panel improvements (1/2)  [Mirko]
-dbce2b7b4b8  Keyguard: Create lockscreen weather  [Mirko]
-dde6cab9a73  Add back increasing ring feature (3/3)  [Mirko]
-   * manifest/
-eeaf9c1  val: track our ThemeInterfacer  [Martinusbe]
-9b839c5  track Telecomm  [Mirko]
-   * packages/apps/Settings/
-59721ba9fb  Settings: Poximity wake  [theringmaster]
-707a197fd1  Add back increasing ring feature (2/3).  [Mirko]
+9cd659c  Settings: Introduce Substratum changes.  [Martinusbe]
+1a2aebe  settings: add support for adb over network [2/2]  [Prema Chand Alugu]
+9e39791  Backport overlay security fix  [Prema Chand Alugu]
    * packages/apps/WolvesDen/
-f34bd4c  disable "show location" for now  [Mirko]
-61ad70f  KeyguardWeather: Clean up and refactor for OmniJaws [2/2]  [Mirko]
-b217319  LockScreen: Weather panel improvements (2/2)  [Mirko]
-   * packages/services/Telecomm/
-461b793f  Add back increasing ring feature (3/3).  [Mirko]
-   * vendor/validus/
-dc99897  Update Changelog  [Prema Chand Alugu]
-a571521  Update    *s_validus with added/removed repos  [Prema Chand Alugu]
-====================
-     10-12-2017
-====================
-
-
-   * frameworks/base/
-538617d25e8  screenrecord: fix the strings.xml  [Martinusbe]
-0d0a57a6eff  QS: add Screenrecord tile @xyyx: adapted to O  [Martinusbe]
-13b6e1576c5  Add Screen Record to the Power Menu [1/2]  [Martinusbe]
-1746ca05e0b  Add a timer to screen record  [Martinusbe]
-bb63d155bf9  Save screenrecord in "Screenrecords" directory  [Martinusbe]
-7ead64627db  base: bring back screenrecord - adapt for O  [Martinusbe]
-513323b07ee  Revert "Add Power+VolUp action to catch a partial area screenshot"  [Martinusbe]
-4ba08e73e8a  [1/3] base: make outline the default weather icon pack  [Mirko]
-1d75e7ad98b  base: SystemUI: weather: display wind direction as pinWheel and not degrees  [Mirko]
-   * manifest/
-8ea19be  build OmniStyle  [Mirko]
-   * packages/apps/Settings/
-eac51c0312  Integrate GZApp into settings  [Prema Chand Alugu]
-   * packages/apps/WolvesDen/
-48613a9  Add Screen Record to the Power Menu [2/2]  [Martinusbe]
+5be0cb5  WIP:Settings : Hardware key rebinding (2/2)  [Martinusbe]
    * packages/services/OmniJaws/
-17c05da  [3/3] OmniJaws: make outline the default icon package  [Mirko]
-dad002a  OmniJaws: display wind direction as pinWheel and not degrees  [Mirko]
-318974f  Weather: add new Outline icon set  [Mirko]
-   * system/bt/
-b798a9e0  btm_inq: fix build with BTA_HOST_INTERLEAVE_SEARCH  [Martinusbe]
-   * vendor/validus/
-3d3b963  GzrApp v4.1  [Prema Chand Alugu]
-68756df  Include GZRoms App to Settings for OTA support  [Prema Chand Alugu]
-8547017  build OmniStyle  [Mirko]
+a808e61  OmniJaws: service stop follow same path as if disabled from outside  [Martinusbe]
+4d911a3  Revert "OmniJaws: simple service disable should not throw error"  [Martinusbe]
+   * system/core/
+8a505fc  Fix integer overflow in utf{16,32}_to_utf8_length  [Prema Chand Alugu]
+   * system/sepolicy/
+5930672  Introduce sepolicy exceptions for theme assets  [Martinusbe]
+611afb7  Initial sepolicy rules for substratum service  [Martinusbe]
 ====================
-     10-11-2017
+     11-08-2017
+====================
+
+
+   * packages/apps/PackageInstaller/
+4642016  Backport overlay security fix  [Martinusbe]
+   * vendor/validus/
+28731cd  apps: don't include Turbo  [Martinusbe]
+====================
+     11-07-2017
+====================
+
+
+====================
+     11-06-2017
+====================
+
+
+   * manifest/
+a8caa99  Revert "val: track our ThemeInterfacer"  [Martinusbe]
+   * packages/apps/Settings/
+d28728b  Show full /proc/version information  [Martinusbe]
+   * packages/apps/WolvesDen/
+ab81c5f  Set fast mode (never expanded) as default [2/2]  [Mirko]
+====================
+     11-05-2017
+====================
+
+
+   * packages/apps/WolvesDen/
+caaea7d  BatteryBar: Fix handling style/thickness value changes  [Prema Chand Alugu]
+====================
+     11-04-2017
 ====================
 
 
    * frameworks/base/
-4d900d7f1a9  Set System Animations to .7 by default (1 of 2)  [Martinusbe]
-8229f622818  Set System Animations to .5 by default (1 of 2)  [Martinusbe]
-a55d98d7a8e  Refresh Location tile onClick  [Martinusbe]
-2fe44d5bee3  Don't refresh ui when screen off  [Martinusbe]
-63a05783b90  display: Don't animate screen brightness when turning the screen on  [Martinusbe]
-12a4bda108c  Dialer auto proximity speakerphone [1/2]  [Mirko]
-773b624ab4e  add activity for OmniJaws  [Mirko]
-38ef6976f49  base: SystemUI: add tinting for OmniJaws provided QS images  [Mirko]
-e988333f1e0  base: SystemUI: change disabled QS weather tile image  [Mirko]
-5f87d9f88b1  base: SystemUI: OmniJaws qs tile integration  [Mirko]
-   * frameworks/opt/telephony/
-affb3fe1  telephony: Fix NPE when switching data SIM  [Martinusbe]
-c5998017  Add ContentObserver when sms sent limit changed  [Martinusbe]
-4b6d0ca9  Fix signal icon is not shown  [Martinusbe]
-   * manifest/
-0e84ef0  track dialer  [Mirko]
-13bb6af  build OmniJaws  [Mirko]
-   * packages/apps/Dialer/
-869daadfa  Dialer: We want consistents....change CheckBoxes to Switches Like in settings it is on other places often switches and here and there a checkbox Change all CheckBoxes to Switches like sugested by google for new LP Ui.  [Mirko]
-d9d1c7505  Add back in-call vibration features  [Mirko]
-5817b017a  Dialer auto proximity speakerphone [2/2]  [Mirko]
-fed785006  Fix issue that "Use touch tone keypad" doesn't work  [Mirko]
-9436fccba  Add missing permissions to Dialer  [Mirko]
-   * packages/apps/OmniStyle/
-1afb4aa  [2/3] OmniStyle: make outline the default icon package  [Max Weninger]
-   * packages/apps/Settings/
-c032a0bc36  Set System Animations to .7 by default (2 of 2)  [Martinusbe]
-b3d9314c7d  Set System Animations to .5 by default (2 of 2)  [Martinusbe]
-f0400924aa  [2/2] Settings: add OmniJaws settings  [Mirko]
+bc6bd0d  Merge branch '8.0' of https://github.com/ValidusOs/frameworks_base into 8.0  [theringmaster]
+1976a5e  Power Menu: Dark Theme Fixes  [theringmaster]
    * packages/apps/WolvesDen/
-623e942  [1/2] OmniGears: add OmniJaws config  [Mirko]
+2431b26  Merge branch '8.0' of https://github.com/ValidusOs/packages_apps_WolvesDen into 8.0  [theringmaster]
+f9f5427  Disable retro theme till bugs are sorted  [theringmaster]
+2eb6cf7  Slim Recents fast engine mode [2/2]  [Mirko]
    * vendor/validus/
-2a41c10  apps: update Phonograph  [Martinusbe]
-245c312  build OmniJaws  [Mirko]
+f7c90c1  Remove tabs as they are now vectored in base  [theringmaster]
+====================
+     11-03-2017
+====================
+
+
+   * frameworks/base/
+a42c68b  Display bluetooth battery status when available [1/2]  [Prema Chand Alugu]
+   * hardware/qcom/audio/default/
+f312f1a  audio: Add sound trigger header  [Prema Chand Alugu]
+   * manifest/
+9594139  manifest: track our packages_apps_Bluetooth  [Prema Chand Alugu]
+====================
+     11-02-2017
+====================
+
+
+   * frameworks/av/
+0d30d8e  camera: Workaround for GCC-compiled HAL3 drivers  [oadam11]
+   * frameworks/base/
+bb4db0b  Vectorized the power menu sound panel selector  [theringmaster]
+86cad91  Theme: Expanded weather  [theringmaster]
+   * system/bt/
+fe4f799  Add support to force disable sco enhanced sync  [Prema Chand Alugu]
+====================
+     11-01-2017
+====================
+
+
+   * frameworks/base/
+3ca46fd  Power Menu: Icons  [theringmaster]
+1e87c67  Theming Adjustments  [theringmaster]
+   * system/core/
+d3da25a  Revert "Revert "cutils: Add support for ioprio cgroup""  [Martinusbe]
+   * vendor/validus/
+f488b3a  Merge pull request #4 from seAndroid/8.0  [GitHub]
+59c2fe9  Add Surnia  [seAndroid]
+====================
+     10-31-2017
+====================
+
+
+   * packages/apps/Camera2/
+7345f16  Camera: Support reenabling activities after initial boots  [Martinusbe]
+====================
+     10-30-2017
+====================
+
+
+   * frameworks/base/
+d521d66  Keyguard: Don't show keyguard if CryptKeeper enabled  [Martinusbe]
+ceb13c6  theme: fix sound fc in retro theme  [Martinusbe]
+aa3caed  ParcelFileDescriptor: can we stop the panic here?  [Martinusbe]
+62b1163  KernelWakelockReader: stop the panic  [Martinusbe]
+4540c2b  FingerprintManager: Suppress logspam  [Martinusbe]
+8ebd58b  Silence density flag warnings  [Martinusbe]
+e908192  Reporting FULL_WAKE_LOCK to battery stats.  [Martinusbe]
+a515c08  PowerMenu: Add Soft reboot & SystemUI restart  [Mirko]
+de6a308  Reboot: use correct strings  [Mirko]
+608a97d  Longpress back to kill app [1/2]  [Mirko]
+e1f62ff  Recents Clear All Button Tweaks and Add FAB to Recents Panel Thanks to RR and @varund7726  [Mirko]
+659f7bd  Immersive Recents [1/2] Name says it all. Made this when someone had asked about how recents look with Touchwiz, simple enough.  [Mirko]
+   * packages/apps/WolvesDen/
+0a4725f  SlimRecents b.l. PackageListAdapter: really sync mInstalledPackages  [Mirko]
+e14a47a  Longpress back to kill app [2/2]  [Mirko]
+230dea8  RecentSettings: recents panel clear all button tweaks * Show or hide recents button * Place the button in top left, center, right or bottom left, center, right  [Mirko]
+c339e6f  Immersive Recents [2/2]  [Mirko]
+   * system/core/
+14be946  Revert "cutils: Add support for ioprio cgroup"  [Martinusbe]
+====================
+     10-29-2017
+====================
+
+
+   * bionic/
+6813740  Merge pull request #1 from Andersonmendes2016/8.0  [GitHub]
+0edbfff  linker: Fix text relocations flag  [Andersonmendes2016]
+   * build/soong/
+42bbd56  Merge pull request #1 from Andersonmendes2016/8.0  [GitHub]
+e68e1e8  soong: explicitly specify name of Validus variables struct  [Andersonmendes2016]
+   * frameworks/base/
+fcaf990  MTU should be 1358 as per 3GPP standards, especially for LTE radio interfaces.  [Martinusbe]
+006b859  telephony: Hack GSM and LTE signal strength  [Martinusbe]
+6b54c66  theme: fix fc in sound settings  [Martinusbe]
+   * packages/apps/WolvesDen/
+f305bf9  system: Use Preferece for Theme Resources  [Prema Chand Alugu]
+   * system/core/
+d6b32b4  Disable flashing of stock recovery correctly  [Martinusbe]
+d41c2c7  healthd: Reinitialize mChargerNames for every battery update  [Martinusbe]
+   * vendor/validus/
+4aa5a41  16.2 week  [Martinusbe]
+d13887c  Merge pull request #3 from Andersonmendes2016/8.0  [GitHub]
+a839ade  build: Fix soong flags  [Andersonmendes2016]
+====================
+     10-28-2017
+====================
+
+
+   * development/
+0ea1704  Day/Night Oreo Edition Brought back some darkness again with black bg's and teal(#009688) and red (#cc0000) accents.  [theringmaster]
+   * frameworks/base/
+ec10162  IMS: RTT interface changes  [Prema Chand Alugu]
+e38f34f  SEEMP: framework instrumentation and AppProtect features  [Prema Chand Alugu]
+752c624  Slim Recents 3.0 [1/3]  [Mirko]
+9bf141c  Ticker: halt it when entering Ambient display  [Mirko]
+301a5e9  Notification ticker: fix FC  [Mirko]
+f6e00f8  hwui: Remove deprecated compiler flag  [Martinusbe]
+736e72f  Merge branch '8.0' of https://github.com/ValidusOs/frameworks_base into HEAD  [theringmaster]
+ea42639  Day/Night Oreo Edition  [theringmaster]
+   * frameworks/native/
+9e83c94  Day/Night Oreo Edition Brought back some darkness again with black bg's and teal(#009688) and red (#cc0000) accents.  [theringmaster]
+   * manifest/
+3194ad9  track SlimRecents  [Mirko]
+98d16a3  val: track some own repos for theme  [Martinusbe]
+   * packages/apps/Settings/
+a5eded5  fix scramble pin switch  [Mirko]
+cb7ffeb  Merge branch '8.0' of https://github.com/ValidusOs/packages_apps_Settings into HEAD  [theringmaster]
+a84dcd1  Day/Night Oreo Edition Brought back some darkness again with black bg's and teal(#009688) and red (#cc0000) accents.  [theringmaster]
+   * packages/apps/WolvesDen/
+9981014  no tab here  [Mirko]
+6117302  clean up a bit  [Mirko]
+f3e2575  Slim Recents 3.0 [3/3]  [Mirko]
+7ae64c2  cleanup merge garbage/derp in arrays  [Martinusbe]
+0bc77cc  Merge branch '8.0' of https://github.com/ValidusOs/packages_apps_WolvesDen into 8.0  [theringmaster]
+ca55a1c  Day/Night Oreo Edition Brought back some darkness again with black bg's and teal(#009688) and red (#cc0000) accents.  [theringmaster]

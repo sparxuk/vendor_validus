@@ -338,7 +338,6 @@ frameworks_opt_telephony
 platform/frameworks/opt/timezonepicker
 platform/frameworks/opt/vcard
 platform/frameworks/rs
-platform/frameworks/support
 platform/frameworks/webview
 platform/frameworks/wilhelm
 platform/hardware/akm
@@ -386,7 +385,6 @@ platform/libcore
 platform/libnativehelper
 manifest
 platform/packages/apps/BasicSmsReceiver
-platform/packages/apps/Bluetooth
 platform/packages/apps/Browser2
 platform/packages/apps/Calendar
 packages_apps_Camera2
@@ -444,7 +442,6 @@ platform/packages/apps/TV
 platform/packages/apps/Tag
 platform/packages/apps/Terminal
 platform/packages/apps/Test/connectivity
-interfacer
 platform/packages/apps/TvSettings
 platform/packages/apps/UnifiedEmail
 platform/packages/apps/WallpaperPicker
