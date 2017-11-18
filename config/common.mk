@@ -86,11 +86,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     AudioFX
 
-# Themes
-PRODUCT_PACKAGES += \
-    Pixel \
-    Stock
-
 # Extra Optional packages
 PRODUCT_PACKAGES += \
     Calculator \
