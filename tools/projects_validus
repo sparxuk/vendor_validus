@@ -259,7 +259,6 @@ platform/external/seccomp-tests
 external_selinux
 platform/external/sfntly
 platform/external/shflags
-platform/external/skia
 platform/external/sl4a
 platform/external/slf4j
 platform/external/smali
@@ -341,7 +340,6 @@ platform/frameworks/rs
 platform/frameworks/webview
 platform/frameworks/wilhelm
 platform/hardware/akm
-platform/hardware/broadcom/libbt
 platform/hardware/broadcom/wlan
 platform/hardware/google/apf
 hardware_gzosp_interfaces
@@ -524,7 +522,6 @@ system_core
 platform/system/extras
 platform/system/gatekeeper
 platform/system/hardware/interfaces
-platform/system/hwservicemanager
 platform/system/keymaster
 platform/system/libfmq
 platform/system/libhidl
