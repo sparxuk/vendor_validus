@@ -1,5 +1,170 @@
 ====================
+     12-02-2017
+====================
+
+
+   * frameworks/base/
+9a756c0  Buttons: Hardware key disable support  [martinusbe]
+d8f8a62  frameworks/base: Don't report existing menu key if it was remapped. [2/3]  [martinusbe]
+ecd3b17  Buttons: Bring up DU hardware key action binding framework [1/2]  [martinusbe]
+0fe5a99  Merge branch '8.0' of https://github.com/ValidusOs/frameworks_base into HEAD  [martinusbe]
+394e2d0  base: preference seekbar widgets should follow the rules  [martinusbe]
+41a911d  touch response optimizations.  [martinusbe]
+ea825b6  DUI smartbar double tap to sleep [1/3]  [Mirko]
+b8e9c77  Fix race condition of removing surface.  [martinusbe]
+e6eb8eb  Reduce wait time in NativeDaemonConnector from 5 to 1 seconds  [martinusbe]
+361ad40  SystemUI: Fix Screen Not On Issue  [martinusbe]
+770efc2  SystemUI: Prevent NPE in Dependency.get() in BrightnessController  [martinusbe]
+57be1e4  Settings:Bugfix for NPE, Only valid screen power consumption need to smear  [martinusbe]
+f17b44a  GC in heapDumpFinished to cleanup hprof fd  [martinusbe]
+c3dd2a1  Frequently used OpenGL ES methods whitelisted for fast JNI path  [martinusbe]
+58b8cb0  Fix keyguard black background while screen turning off/on quickly  [martinusbe]
+   * frameworks/native/
+82fbcc7  touch response optimizations  [martinusbe]
+d25f767  surfaceflinger: fix fencing when layers become invisible  [martinusbe]
+381afae  surfaceflinger: fix fencing when composition mode switches  [martinusbe]
+   * packages/apps/WolvesDen/
+cd6d3aa  DUI smartbar double tap to sleep [3/3]  [Mirko]
+8a3bd43  Protect against SystemUI FC when toggling navbar too fast  [Mirko]
+   * vendor/validus/
+dbcb8b8  v16.4 for DUI  [martinusbe]
+====================
+     12-01-2017
+====================
+
+
+   * frameworks/base/
+bd444f8  SystemUI: Restrict persistent USB drive notifications to USB disks  [martinusbe]
+2e533cc  Download: Add support to manually pause/resume download  [martinusbe]
+   * manifest/
+6752f32  track system libhidl, netd, downloadprovider, hw_interfaces from gzosp  [martinusbe]
+   * system/core/
+dc80657  init: Fire a trigger when a class is started/stopped  [Mirko]
+b87e6bd  init:  optimize shutdown time  [Mirko]
+451c583  healthd: Add support for HVDCP_3 chargers  [Mirko]
+5051800  sdcard: setup read/write mounts like the default one, not remounting it  [Mirko]
+====================
+     11-30-2017
+====================
+
+
+====================
+     11-29-2017
+====================
+
+
+   * packages/providers/DownloadProvider/
+9c047ab  Add support to manually pause/resume downloads [2/2]  [martin coulon]
+1f03c2e  Remove download notification after preview  [martin coulon]
+b07a45d  Add download speed, remaining time, and percentage in notification  [martin coulon]
+   * packages/providers/MediaProvider/
+25bf368  Add READ_EXTERNAL_STORAGE permission Logcat shows the following error,  [martin coulon]
+====================
+     11-28-2017
+====================
+
+
+   * frameworks/base/
+22dba9c  fix screenshot tile  [Mirko]
+   * system/hardware/interfaces/
+ed07f2d  Create Minimal HAL for NETD  [Martinusbe]
+   * system/libhidl/
+4f35dd2  INetd in HAL manifest  [Martinusbe]
+0be6fe0  libhidl: Allow building static libhidlbase  [Martinusbe]
+   * system/netd/
+7e9815e  netutils_wrapper: Add support for NDK type in ndc commands  [Martinusbe]
+cbe45ad  netd: HAL implmentation  [Martinusbe]
+c6b2fc7  netd: recognize NDK type in ndc network api  [Martinusbe]
+51922af  Invalidate dst caches when changing network permissions.  [Martinusbe]
+79f6021  Don't allow seamless handover to networks requiring permissions.  [Martinusbe]
+====================
+     11-27-2017
+====================
+
+
+====================
+     11-26-2017
+====================
+
+
+   * frameworks/base/
+1685c4d  Dark UI: Touch-ups Adjust a few styles. Add in a few tinted progress spinners. Added missing color reference  [theringmaster]
+   * packages/apps/Settings/
+ae96a7f  DarkUI: Touchups  [theringmaster]
+   * packages/apps/WolvesDen/
+bcb87ea  its wolvesden  [Mirko]
+7a22c59  Merge pull request #1 from HassanSardar/patch-1  [GitHub]
+0cfac06  Buttons: Capitalize string descriptions  [GitHub]
+1afb994  fix my derp  [Mirko]
+====================
+     11-25-2017
+====================
+
+
+   * frameworks/base/
+8f32388  DUI: Initial checkin for Oreo [5/7]  [Mirko]
+90ca7ba  Revert Navbar commits... ...this revert  [Mirko]
+   * manifest/
+bb3e43b  DUI  [Mirko]
+   * packages/apps/Settings/
+e68bc44  DUI: Initial checkin for Oreo [3/7]  [Mirko]
+   * packages/apps/WolvesDen/
+4f04dfc  DUI: Initial checkin for Oreo [4/7]  [Mirko]
+bd841f6  Revert Navbar commits... ...this revert  [Mirko]
+   * vendor/validus/
+fae70bf  DUI  [Mirko]
+====================
+     11-24-2017
+====================
+
+
+====================
+     11-23-2017
+====================
+
+
+   * build/make/
+e46fe07  fs_config: Allow targets to override OEM AID restrictions  [Martinusbe]
+====================
+     11-22-2017
+====================
+
+
+====================
+     11-21-2017
+====================
+
+
+   * hardware/qcom/display-caf/msm8974/
+844c433  Move some qcom libraries to vendor partition  [Martinusbe]
+f8c6ac2  Move QCOM HALs to vendor partition  [Martinusbe]
+2623b1e  Revert "hwc: Set ioprio for vsync thread"  [Martinusbe]
+   * hardware/qcom/media-caf/msm8974/
+6ea5850  Move QCOM mm codecs to vendor partition  [Martinusbe]
+====================
+     11-20-2017
+====================
+
+
+   * hardware/qcom/audio-caf/msm8974/
+56e812a  Equalizer: Check value size for get preset name  [Martinusbe]
+ac5b1c2  Fix parameters passed to pcm_open to include PCM_MONOTONIC  [Martinusbe]
+531a426  hal: configs: effects: update conf & lib paths  [Martinusbe]
+====================
      11-19-2017
+====================
+
+
+   * frameworks/base/
+45d35ff  Fix NPE when AOSP ambient display preference is removed  [Mirko]
+0ae4da2  Update battery tile to show charging state  [Mirko]
+   * packages/apps/Settings/
+6e77e4a  Remove empty category under tts  [Martinusbe]
+689cc6d  Category with no title strikes again  [Martinusbe]
+   * vendor/validus/
+be27889  v16.3.1  [Martinusbe]
+====================
+     11-18-2017
 ====================
 
 
@@ -8,210 +173,5 @@ bfcfc2b  Use a config to enable MMS when mobile data is off  [Martinusbe]
    * hardware/qcom/wlan-caf/
 cc3664c  wcnss_service: Read serial number from custom property  [Martinusbe]
    * vendor/validus/
-91cb438  v16.3.1  [Martinusbe]
 25c8fee  Revert "common: Add themes"  [Martinusbe]
 f668798  Revert "theme: exclude the theme apk's from dexpreopt"  [Martinusbe]
-====================
-     11-18-2017
-====================
-
-
-   * frameworks/base/
-8387f75  Comment out dead aosp lowbattery sound code  [Martinusbe]
-f8a6d9d  Changes to pass API check  [Martinusbe]
-ba034b1  Make dem animations faster  [Martinusbe]
-====================
-     11-17-2017
-====================
-
-
-   * packages/apps/Settings/
-b63b19d  Settings: Add notification channel for SIM selection  [Martinusbe]
-   * vendor/validus/
-3a00fda  Enable wifi wakeup config option  [Martinusbe]
-====================
-     11-16-2017
-====================
-
-
-   * frameworks/base/
-5669c66  BatteryService: Add Dash charging support  [Martinusbe]
-====================
-     11-15-2017
-====================
-
-
-   * manifest/
-d7e8fa1  manifest: track gzosp FM  [Prema Chand Alugu]
-eedc2d4  validus manifest cleanup  [Martinusbe]
-457fb17  manifest: track gzosp external_skia  [Martinusbe]
-d2c0bbf  manifest: track gzosp hwservicemanager  [Martinusbe]
-802e168  manifest: track our hardware broadcom libbt  [Martinusbe]
-====================
-     11-14-2017
-====================
-
-
-   * build/make/
-3b52033  Ccache configuration improvements  [Prema Chand Alugu]
-ae37312  Use the system's ccache by default  [Prema Chand Alugu]
-203007a  Fix ccache mismerges  [Prema Chand Alugu]
-====================
-     11-13-2017
-====================
-
-
-   * frameworks/base/
-2c932e4  Buttons: Allow setting default long-press app switch behavior  [Martinusbe]
-02617eb  keyboard: re-add keyboard brightness handling  [Martinusbe]
-6458ff4  Hardware key custom rebinding (1/2)  [Martinusbe]
-83d2f28  BT:Crash occured due to null pointer exception.  [Martinusbe]
-a2a7553  Bluetooth: Avoiding NULL pointer dereferences  [Martinusbe]
-24af538  BT: Multi A2dp support in Settings App.  [Martinusbe]
-8f48832  binder: adjust GC interval for binder ops  [Martinusbe]
-d26981f  Avoid clearing default browser setting when unnecessary  [Martinusbe]
-b92bce7  Turning screen on without creating surface  [Martinusbe]
-f1c224d  Adding optimization to reduce callbacks to TextClock  [Martinusbe]
-041fc7c  fix notification transact fail problem  [Martinusbe]
-69acd99  adjustSuggestedStreamVolume:google patch cause java crash  [Martinusbe]
-81ecd49  Should stop the link process when find resource is not exist  [Martinusbe]
-7dc1343  Fix NPE with LightBarController dump  [Martinusbe]
-ca5723d  Fix an apk icon animation corruption issue  [Martinusbe]
-defd657  Fix and work around aliasing rule violations  [Martinusbe]
-e31913c  Disable hwui blending for first draw to main FBO  [Martinusbe]
-594cd8c  Fix for wakelock being held during bootup and idle scenario.  [Martinusbe]
-8ebdb01  MessageQueue: explicitly remove FD event listeners.  [Martinusbe]
-4545b69  Prevent data usage dialog from being displayed again  [Martinusbe]
-beb42dc  Smoother system bars color transition  [Martinusbe]
-a437fd8  SysUI: Move all sensor operations to the background thread  [Martinusbe]
-b61195e  fingerprint: handle PerformanceStats NULL pointers  [Martinusbe]
-f4f6070  Convert Binder & BinderProxy to NativeAllocationRegistry  [Martinusbe]
-0f27263  Naming fix and add comments  [Martinusbe]
-92eb191  Rename Binder.destroy() to Binder.destroyBinder().  [Martinusbe]
-a0643d8  Add "android.permission.READ_PHONE_STATE" to manifest  [Martinusbe]
-7023ce3  ZenModeConfig: Fix weeknight and weekend days arrays  [Martinusbe]
-44691e8  Forward Port: Smoother Upload and Download Animation  [Martinusbe]
-51d0b7b  Navbar media arrows: more code improvements  [Mirko]
-a1fe5db  Navbar keyboard cursors: fix drawable derp  [Mirko]
-   * packages/apps/WolvesDen/
-e4c8adf  WIP:Settings : Hardware key rebinding (2/2)  [Martinusbe]
-====================
-     11-12-2017
-====================
-
-
-   * external/ant-wireless/ant_native/
-77a5e66  ANT: Don't build HIDL varient libantradio for OSS builds  [Martinusbe]
-   * system/core/
-ebacd11  Fix Lockscreen Charging info  [Prema Chand Alugu]
-====================
-     11-11-2017
-====================
-
-
-   * external/ant-wireless/ant_native/
-583b105  ant_native: fix compilation for AOSP bt HALs  [Martinusbe]
-   * vendor/validus/
-3ce92e1  generate changelog for 16.3  [Martinusbe]
-99b7fdc  v16.3 for Nov patch  [Martinusbe]
-====================
-     11-10-2017
-====================
-
-
-   * frameworks/base/
-35902db  Footer brightness slider: improve hide/show animation  [Mirko]
-2f918f5  Footer brightness buttons: make touch area more reliable  [Mirko]
-3676d09  Brightness slider buttons: make them dynamic (auto and manual)  [Mirko]
-165a467  Footer brightness slider: fix FC and code cleanup  [Mirko]
-7e3cad5  Fix automatic brightness QS toggle icon  [Mirko]
-d736ae0  Make use of the brightness slider buttons  [Mirko]
-66909c7  Rework auto brightness implementation  [Mirko]
-5024464  Brightness control on footer  [Mirko]
-49d5dbe  Fix brightness icon not showing  [Mirko]
-8e485f8  Only enable auto brightness toggle when also enabed for QS  [Mirko]
-   * frameworks/native/
-b113d4f  surfaceflinger & inputflinger: -O3  [Prema Chand Alugu]
-a739ff5  fix build for angler  [Prema Chand Alugu]
-76f8fb1  Improve touch response slightly  [Prema Chand Alugu]
-0f7823b  Fix installd get wrong inode cause APK crash  [Prema Chand Alugu]
-89964da  surfaceflinger: fix a nullptr dereference  [Prema Chand Alugu]
-   * hardware/qcom/audio-caf/msm8998/
-88ca665  Revert "audio: Add check to confirm if routing to BT SCO is successfull"  [Martinusbe]
-   * packages/apps/Settings/
-bfa4140  Customseekbar: add method to set default values  [Prema Chand Alugu]
-6bc558e  New CustomSeekBar: allow to translate "Default" value string  [Prema Chand Alugu]
-e7902fe  New custom seekbar: more improvements  [Prema Chand Alugu]
-fb779fa  New fresh look for CustomSeekbar  [Prema Chand Alugu]
-8a1340b  CustomSeekBar: fix progressbar glitch with custom min-max values  [Prema Chand Alugu]
-48d0439  Fix seekbar attribute grabbing *also remove from attrs as we have always used android: for max  [Prema Chand Alugu]
-e09db30  Add CustomSeekBarPreference  [Prema Chand Alugu]
-   * system/core/
-68e9805  libcutils: Fix thread ID on macOS  [Prema Chand Alugu]
-====================
-     11-09-2017
-====================
-
-
-   * build/make/
-181839c  Version bump to OPR6.170623.023  [Prema Chand Alugu]
-23e8fbd  Make change and version bump to OPR6.170623.022  [Prema Chand Alugu]
-4a6c14d  Update Security String to 2017-11-05 on oc-dev bug:65631379 (cherry picked from commit d24487a2f2f215e5de8aad8117e58f81eaf1529c)  [Prema Chand Alugu]
-a1185d2  Update Security String to 2017-11-01 on oc-dev bug:65631379 (cherry picked from commit 8f4a4c213118ce088245abc4f31204393bab62a5)  [Prema Chand Alugu]
-   * frameworks/base/
-27b844d  base: SystemUI: [QS] Add adb over network tile  [Prema Chand Alugu]
-8250a7a  base: add support for adb over network [1/2]  [Prema Chand Alugu]
-57aa269  DPC should not be allowed to grant development permission  [Prema Chand Alugu]
-85a7b7f  Backport overlay security fix  [Prema Chand Alugu]
-df5cfd5  Navbar skiptrack arrows: blacklist some apps  [Mirko]
-db9f47b  Navbar customizer: add dynamic skip_track/kb cursors buttons  [Mirko]
-   * manifest/
-af6e586  manifest: android-8.0.0_r32  [Prema Chand Alugu]
-   * packages/apps/Settings/
-1a2aebe  settings: add support for adb over network [2/2]  [Prema Chand Alugu]
-9e39791  Backport overlay security fix  [Prema Chand Alugu]
-   * packages/services/OmniJaws/
-a808e61  OmniJaws: service stop follow same path as if disabled from outside  [Martinusbe]
-4d911a3  Revert "OmniJaws: simple service disable should not throw error"  [Martinusbe]
-   * system/core/
-8a505fc  Fix integer overflow in utf{16,32}_to_utf8_length  [Prema Chand Alugu]
-====================
-     11-08-2017
-====================
-
-
-   * frameworks/av/
-4760b2c  stagefright: Add support for extradata  [Martinusbe]
-c03a937  Revert "Fix memory leaks"  [Martinusbe]
-1667edf  Fix memory leaks  [Martinusbe]
-fdbe4a3  Put media.metrics service into proper group  [Martinusbe]
-df628a8  EffectBundle: Check parameter and value size  [Martinusbe]
-03f864d  Track graphic buffer mode in OMXNodeInstance  [Martinusbe]
-3cc4e49  Revert "stagefright: Add support for extradata"  [Martinusbe]
-   * packages/apps/PackageInstaller/
-4642016  Backport overlay security fix  [Martinusbe]
-   * vendor/validus/
-28731cd  apps: don't include Turbo  [Martinusbe]
-====================
-     11-07-2017
-====================
-
-
-====================
-     11-06-2017
-====================
-
-
-   * manifest/
-a8caa99  Revert "val: track our ThemeInterfacer"  [Martinusbe]
-   * packages/apps/Settings/
-d28728b  Show full /proc/version information  [Martinusbe]
-   * packages/apps/WolvesDen/
-ab81c5f  Set fast mode (never expanded) as default [2/2]  [Mirko]
-====================
-     11-05-2017
-====================
-
-
-   * packages/apps/WolvesDen/
-caaea7d  BatteryBar: Fix handling style/thickness value changes  [Prema Chand Alugu]

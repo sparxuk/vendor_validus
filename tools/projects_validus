@@ -453,7 +453,7 @@ platform/packages/providers/BookmarkProvider
 platform/packages/providers/CalendarProvider
 platform/packages/providers/CallLogProvider
 platform/packages/providers/ContactsProvider
-platform/packages/providers/DownloadProvider
+packages/providers/DownloadProvider
 packages_providers_MediaProvider
 platform/packages/providers/PartnerBookmarksProvider
 packages_providers_TelephonyProvider
@@ -521,15 +521,15 @@ platform/system/connectivity/wifilogd
 system_core
 platform/system/extras
 platform/system/gatekeeper
-platform/system/hardware/interfaces
+system/hardware/interfaces
 platform/system/keymaster
 platform/system/libfmq
-platform/system/libhidl
+system/libhidl
 platform/system/libhwbinder
 platform/system/libufdt
 platform/system/libvintf
 system_media
-platform/system/netd
+system/netd
 system_nfc
 platform/system/nvram
 system_qcom
