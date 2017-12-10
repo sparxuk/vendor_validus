@@ -1,12 +1,70 @@
 ====================
-     12-02-2017
+     12-10-2017
 ====================
+
+   * packages/apps/WolvesDen/
+77fd03a  Buttons: Hardware key disable support  [martinusbe]
+   * vendor/validus/
+d36b275  v16.7  [martinusbe]
 
 
    * frameworks/base/
-9a756c0  Buttons: Hardware key disable support  [martinusbe]
-d8f8a62  frameworks/base: Don't report existing menu key if it was remapped. [2/3]  [martinusbe]
-ecd3b17  Buttons: Bring up DU hardware key action binding framework [1/2]  [martinusbe]
+2675536  config: hardwarekeys should be default 64 here  [martinusbe]
+09ce48d  i will be drinking now  [martinusbe]
+6ade70b  Buttons: Hardware key disable support  [martinusbe]
+4687d2a  frameworks/base: Don't report existing menu key if it was remapped. [2/3]  [martinusbe]
+   * packages/apps/WolvesDen/
+5dd051e  Enable single tap rebinding for hwkey back and home  [martinusbe]
+a75ae17  WolvesDen: hwkeys: changes for DU implementation  [martinusbe]
+
+   * frameworks/base/
+e41b73b  Buttons: Bring up DU hardware key action binding framework  [martinusbe]
+54b0820  Revert "Hardware key custom rebinding (1/2)"  [martinusbe]
+0a36697  Revert "keyboard: re-add keyboard brightness handling"  [martinusbe]
+e8683c7  Revert "Buttons: Allow setting default long-press app switch behavior"  [martinusbe]
+
+   * development/
+4aa4080  Fix red theme  [theringmaster]
+   * frameworks/base/
+28c7c27  Fix red theme Google doesn't like the number 3 i guess. Renamed the folders and changed references from red to bdred (bloodred)  [theringmaster]
+   * frameworks/native/
+4ce4c5d  Fix red theme  [theringmaster]
+   * packages/apps/Settings/
+44ad63d  Fix red theme  [theringmaster]
+   * packages/apps/WolvesDen/
+981838e  Fix red theme Just keeping it uniform  [theringmaster]
+   * system/core/
+cc3fae5  init: add install_keyring for TWRP FBE decrypt  [martinusbe]
+
+   * manifest/
+6c424e4  Revert "validus: track Wireguard"  [martinusbe]
+f49d79f  validus: track Wireguard  [martinusbe]
+
+   * development/
+1a83a29  Development: DarkUI Update Brought up a total of 7 Dark theme variations  [Your Name]
+   * frameworks/base/
+9512595  Revert "IMS: Add API to get IMS Registration Status based on subId"  [martinusbe]
+9e0a857  IMS: Add API to get IMS Registration Status based on subId  [martinusbe]
+28e9691  Brightness icon:Tint to match theme  [GitHub]
+00e7129  Merge branch '8.0' of https://github.com/ValidusOs/frameworks_base into 8.0  [Your Name]
+bfd84da  Base: DarkUI Update  [Your Name]
+   * frameworks/native/
+e9d9b02  Merge branch '8.0' of https://github.com/ValidusOs/frameworks_native into 8.0  [Your Name]
+d27a484  Native: DarkUI Update Brought up a total of 7 Dark theme variations  [Your Name]
+   * packages/apps/Settings/
+3c38c70  Settings: DarkUI Update Brought up a total of 7 Dark theme variations  [Your Name]
+   * packages/apps/WolvesDen/
+697132e  Merge branch '8.0' of https://github.com/ValidusOs/packages_apps_WolvesDen into 8.0  [Your Name]
+ed31d13  Native: DarkUI Update Brought up a total of 7 Dark theme variations  [Your Name]
+   * packages/services/Telecomm/
+09b68dc  Telecomm: Squashed phone_type switch support  [martinusbe]
+   * vendor/validus/
+2edb546  Merge pull request #5 from otisman/patch-1  [GitHub]
+d729e72  add gemini  [GitHub]
+37674f5  Add mata  [GitHub]
+62e7bed  changelog generated for v16.4  [martinusbe]
+
+   * frameworks/base/
 0fe5a99  Merge branch '8.0' of https://github.com/ValidusOs/frameworks_base into HEAD  [martinusbe]
 394e2d0  base: preference seekbar widgets should follow the rules  [martinusbe]
 41a911d  touch response optimizations.  [martinusbe]
@@ -26,46 +84,29 @@ d25f767  surfaceflinger: fix fencing when layers become invisible  [martinusbe]
    * packages/apps/WolvesDen/
 cd6d3aa  DUI smartbar double tap to sleep [3/3]  [Mirko]
 8a3bd43  Protect against SystemUI FC when toggling navbar too fast  [Mirko]
+   * system/core/
+dc80657  init: Fire a trigger when a class is started/stopped  [Mirko]
+b87e6bd  init:  optimize shutdown time  [Mirko]
+451c583  healthd: Add support for HVDCP_3 chargers  [Mirko]
+5051800  sdcard: setup read/write mounts like the default one, not remounting it  [Mirko]
    * vendor/validus/
 dbcb8b8  v16.4 for DUI  [martinusbe]
-====================
-     12-01-2017
-====================
-
 
    * frameworks/base/
 bd444f8  SystemUI: Restrict persistent USB drive notifications to USB disks  [martinusbe]
 2e533cc  Download: Add support to manually pause/resume download  [martinusbe]
    * manifest/
 6752f32  track system libhidl, netd, downloadprovider, hw_interfaces from gzosp  [martinusbe]
-   * system/core/
-dc80657  init: Fire a trigger when a class is started/stopped  [Mirko]
-b87e6bd  init:  optimize shutdown time  [Mirko]
-451c583  healthd: Add support for HVDCP_3 chargers  [Mirko]
-5051800  sdcard: setup read/write mounts like the default one, not remounting it  [Mirko]
-====================
-     11-30-2017
-====================
 
-
-====================
-     11-29-2017
-====================
-
-
+   * frameworks/base/
+22dba9c  fix screenshot tile  [Mirko]
    * packages/providers/DownloadProvider/
 9c047ab  Add support to manually pause/resume downloads [2/2]  [martin coulon]
 1f03c2e  Remove download notification after preview  [martin coulon]
 b07a45d  Add download speed, remaining time, and percentage in notification  [martin coulon]
    * packages/providers/MediaProvider/
 25bf368  Add READ_EXTERNAL_STORAGE permission Logcat shows the following error,  [martin coulon]
-====================
-     11-28-2017
-====================
 
-
-   * frameworks/base/
-22dba9c  fix screenshot tile  [Mirko]
    * system/hardware/interfaces/
 ed07f2d  Create Minimal HAL for NETD  [Martinusbe]
    * system/libhidl/
@@ -77,101 +118,22 @@ cbe45ad  netd: HAL implmentation  [Martinusbe]
 c6b2fc7  netd: recognize NDK type in ndc network api  [Martinusbe]
 51922af  Invalidate dst caches when changing network permissions.  [Martinusbe]
 79f6021  Don't allow seamless handover to networks requiring permissions.  [Martinusbe]
-====================
-     11-27-2017
-====================
-
-
-====================
-     11-26-2017
-====================
-
 
    * frameworks/base/
 1685c4d  Dark UI: Touch-ups Adjust a few styles. Add in a few tinted progress spinners. Added missing color reference  [theringmaster]
-   * packages/apps/Settings/
-ae96a7f  DarkUI: Touchups  [theringmaster]
-   * packages/apps/WolvesDen/
-bcb87ea  its wolvesden  [Mirko]
-7a22c59  Merge pull request #1 from HassanSardar/patch-1  [GitHub]
-0cfac06  Buttons: Capitalize string descriptions  [GitHub]
-1afb994  fix my derp  [Mirko]
-====================
-     11-25-2017
-====================
-
-
-   * frameworks/base/
 8f32388  DUI: Initial checkin for Oreo [5/7]  [Mirko]
 90ca7ba  Revert Navbar commits... ...this revert  [Mirko]
    * manifest/
 bb3e43b  DUI  [Mirko]
    * packages/apps/Settings/
+ae96a7f  DarkUI: Touchups  [theringmaster]
 e68bc44  DUI: Initial checkin for Oreo [3/7]  [Mirko]
    * packages/apps/WolvesDen/
+bcb87ea  its wolvesden  [Mirko]
+7a22c59  Merge pull request #1 from HassanSardar/patch-1  [GitHub]
+0cfac06  Buttons: Capitalize string descriptions  [GitHub]
+1afb994  fix my derp  [Mirko]
 4f04dfc  DUI: Initial checkin for Oreo [4/7]  [Mirko]
 bd841f6  Revert Navbar commits... ...this revert  [Mirko]
    * vendor/validus/
 fae70bf  DUI  [Mirko]
-====================
-     11-24-2017
-====================
-
-
-====================
-     11-23-2017
-====================
-
-
-   * build/make/
-e46fe07  fs_config: Allow targets to override OEM AID restrictions  [Martinusbe]
-====================
-     11-22-2017
-====================
-
-
-====================
-     11-21-2017
-====================
-
-
-   * hardware/qcom/display-caf/msm8974/
-844c433  Move some qcom libraries to vendor partition  [Martinusbe]
-f8c6ac2  Move QCOM HALs to vendor partition  [Martinusbe]
-2623b1e  Revert "hwc: Set ioprio for vsync thread"  [Martinusbe]
-   * hardware/qcom/media-caf/msm8974/
-6ea5850  Move QCOM mm codecs to vendor partition  [Martinusbe]
-====================
-     11-20-2017
-====================
-
-
-   * hardware/qcom/audio-caf/msm8974/
-56e812a  Equalizer: Check value size for get preset name  [Martinusbe]
-ac5b1c2  Fix parameters passed to pcm_open to include PCM_MONOTONIC  [Martinusbe]
-531a426  hal: configs: effects: update conf & lib paths  [Martinusbe]
-====================
-     11-19-2017
-====================
-
-
-   * frameworks/base/
-45d35ff  Fix NPE when AOSP ambient display preference is removed  [Mirko]
-0ae4da2  Update battery tile to show charging state  [Mirko]
-   * packages/apps/Settings/
-6e77e4a  Remove empty category under tts  [Martinusbe]
-689cc6d  Category with no title strikes again  [Martinusbe]
-   * vendor/validus/
-be27889  v16.3.1  [Martinusbe]
-====================
-     11-18-2017
-====================
-
-
-   * frameworks/opt/telephony/
-bfcfc2b  Use a config to enable MMS when mobile data is off  [Martinusbe]
-   * hardware/qcom/wlan-caf/
-cc3664c  wcnss_service: Read serial number from custom property  [Martinusbe]
-   * vendor/validus/
-25c8fee  Revert "common: Add themes"  [Martinusbe]
-f668798  Revert "theme: exclude the theme apk's from dexpreopt"  [Martinusbe]
