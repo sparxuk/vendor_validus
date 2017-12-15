@@ -114,6 +114,14 @@ PRODUCT_PACKAGES += \
 #    libhealthd.cm
 #endif
 
+# DU Utils library
+PRODUCT_BOOT_JARS += \
+    org.dirtyunicorns.utils
+
+# DU Utils library
+PRODUCT_PACKAGES += \
+    org.dirtyunicorns.utils
+
 # Stagefright FFMPEG plugin
 PRODUCT_PACKAGES += \
     libffmpeg_extractor \
