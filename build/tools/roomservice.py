@@ -43,7 +43,7 @@ except ImportError:
 DEBUG = False
 default_manifest = ".repo/manifests/validus_default.xml"
 custom_local_manifest = ".repo/local_manifests/validus_manifest.xml"
-custom_default_revision = "8.0"
+custom_default_revision = "8.1"
 custom_dependencies = "validus.dependencies"
 org_manifest = "ValidusOs-Devices"  # leave empty if org is provided in manifest
 org_display = "ValidusOs-Devices"  # needed for displaying
