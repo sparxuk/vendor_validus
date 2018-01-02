@@ -22,7 +22,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_COPY_FILES += \
     vendor/validus/prebuilt/common/bin/backuptool.sh:install/bin/backuptool.sh \
     vendor/validus/prebuilt/common/bin/backuptool.functions:install/bin/backuptool.functions \
-    vendor/validus/prebuilt/common/bin/50-validus.sh:system/addon.d/50-validus.sh
+    vendor/validus/prebuilt/common/bin/50-validus.sh:system/addon.d/50-validus.sh \
+    vendor/validus/prebuilt/common/bin/clean_cache.sh:system/bin/clean_cache.sh
 
 # Backup services whitelist
 PRODUCT_COPY_FILES += \
