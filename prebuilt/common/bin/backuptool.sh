@@ -5,7 +5,7 @@
 
 export C=/tmp/backupdir
 export S=/system
-export V=8.1
+export V=8.1.0
 
 # Scripts in /system/addon.d expect to find backuptool.functions in /tmp
 cp -f /tmp/install/bin/backuptool.functions /tmp
@@ -17,6 +17,19 @@ preserve_addon_d() {
     cp -a /system/addon.d/* /tmp/addon.d/
     chmod 755 /tmp/addon.d/*.sh
   fi
+}
+
+# Proceed only if /system is the expected Validus version
+check_prereq() {
+# If there is no build.prop file the partition is probably empty.
+if [ ! -r /system/build.prop ]; then
+    return 0
+fi
+if ( ! grep -q "^ro.build.version.release=$V.*" /system/build.prop ); then
+  echo "Not backing up files from incompatible version: $V"
+  return 0
+fi
+return 1
 }
 
 # Restore /system/addon.d from /tmp/addon.d
