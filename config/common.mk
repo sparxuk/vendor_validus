@@ -94,7 +94,8 @@ PRODUCT_PACKAGES += \
     BluetoothExt \
     WolesDen \
     GZRoms \
-    SoundRecorder
+    SoundRecorder \
+    Launcher3Dark
 
 # 3rd party packages
 PRODUCT_PACKAGES += \
