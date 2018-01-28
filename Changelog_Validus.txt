@@ -5,36 +5,6 @@
 
    * build/make/
 dadd0c7  Revert "Revert "Remove assert references""  [Prema Chand Alugu]
-   * device/motorola/sanders/
-11a8090  sanders: Cleanup device  [Prema Chand Alugu]
-8c4b527  sanders: Move to kernel based on Moto Stock  [Prema Chand Alugu]
-df6305a  multirom_fix: Revert "sanders: move init.*.rc to vendor"  [Prema Chand Alugu]
-e34b8fa  sanders: Nuke data-ipa-cfg-mgr  [Prema Chand Alugu]
-031768b  sanders: rootdir: Remove some interactive and lowmemorykiller nodes  [Prema Chand Alugu]
-88e165c  sanders: MotoActions: Nuke PiP action  [Prema Chand Alugu]
-5dc3e88  sanders: use /system/vendor/bin/sh for init scripts  [Prema Chand Alugu]
-ad886b9  sanders: drop libqsap_sdk  [Prema Chand Alugu]
-76c2e2c  Revert "potter: enable WITH_DEXPREOPT"  [Prema Chand Alugu]
-53bae81  sanders: Build dummy android.hidl.[base,manager]@1.0  [Prema Chand Alugu]
-b1e1d4f  Revert latest hidl dummy libs commits  [Prema Chand Alugu]
-b51611e  sanders: Directly copy wlan files  [Prema Chand Alugu]
-480c4a6  sanders: WCNSS update  [Prema Chand Alugu]
-1213180  sanders: use /system/vendor/bin/sh for init scripts  [Prema Chand Alugu]
-5f00919  sanders: remove fingerprintd service  [Prema Chand Alugu]
-44741ab  LineageActions: remove unused debug logs  [Prema Chand Alugu]
-7f76cd0  sanders: [1/2] Move DTV blobs to vendor  [Prema Chand Alugu]
-bf21783  sanders: check_features: Update DTV libs path  [Prema Chand Alugu]
-8aaf947  sanders: rootdir: Move swapon_all to right place  [Prema Chand Alugu]
-e5a4ccd  sanders: update post-install script  [Prema Chand Alugu]
-757b2ed  sanders: add telephony-ext to boot JARs  [Prema Chand Alugu]
-90b58fe  sanders: libshims: Remove unused files  [Prema Chand Alugu]
-072fdc8  sanders: Set IMS to use CodeAurora extension  [Prema Chand Alugu]
-46af3f3  sanders: move init.*.rc to vendor  [Prema Chand Alugu]
-d438eac  sanders: shims cleanup  [Prema Chand Alugu]
-2c64b23  sanders: update for IMS  [Prema Chand Alugu]
-136906c  sanders: libshims: Nuke rild socket shim  [Prema Chand Alugu]
-e7db6da  sanders: use 64bit rild  [Prema Chand Alugu]
-d926842  sanders: switch to O 64bit RIL stack  [Prema Chand Alugu]
    * frameworks/base/
 ef4afcf  Frameworks: Statusbar clock customizations (1/2)  [Mirko]
 c1b31e4  Screenrecord tile: save quality level  [Mirko]
@@ -42,8 +12,9 @@ c1b31e4  Screenrecord tile: save quality level  [Mirko]
 463aac5  Screenrecord notification: tap on it to open the video  [Mirko]
 3943f11  lockscreen: Add option to pass swipe-up-to-unlock (1/2)  [martinusbe]
 7743035  base: add overlay to config AOD enable default  [martinusbe]
+   * frameworks/native/
+8879c3d  Revert "Revert "Revert "Mark libEGL, GLESv1_CM, GLESv2, and GLESv3 as LLNDK"""  [Prema Chand Alugu]
    * packages/apps/Settings/
-6c14dab  Accessibility: remove double Font & Display size settings  [Mirko]
 903b6d0  Kill the logspam due to BackupSettingsActivity  [Mirko]
 c096bc4  DisplaySettings: font size in 5% steps from 80% to 130%  [martinusbe]
 91a74cd  Settings: Wi-Fi WPS Materialized icon  [martinusbe]
@@ -58,32 +29,16 @@ c0e4c27  lockscreen: Add option to pass swipe-up-to-unlock (2/2)  [martinusbe]
 790baa9  brightness icon is on the right site.....  [Mirko]
 72dbc1e  Settings: statusbar clock customization (2/2)  [Mirko]
    * vendor/validus/
+69bb972  clog: Remove device specific repo(s)  [Prema Chand Alugu]
+aaa8f55  clog: Generate the changelog for 1.3 Beta  [Prema Chand Alugu]
 0db0ef3  clog: Update the repos  [Prema Chand Alugu]
 ====================
      01-28-2018
 ====================
 
 
-   * device/motorola/sanders/
-84fdb92  Revert "Revert "sanders: update display flags""  [Prema Chand Alugu]
    * frameworks/base/
 de8596b  Add auth framework for outgoing SMS messages.  [martinusbe]
-   * hardware/qcom/audio-caf/msm8916/
-9174147  policy_hal: fix for MR1 function prototype.  [DroidFreak32]
-03e5b0c  policy_hal: update custom audio policy against OPR1.170521.001_AOSP  [DroidFreak32]
-2fa082a  policy_hal: update custom audio policy APIs against AOSP  [DroidFreak32]
-ff96e55  Fix parameters passed to pcm_open to include PCM_MONOTONIC  [DroidFreak32]
-4dc0c06  Equalizer: Check value size for get preset name  [DroidFreak32]
-72f6196  visualizer: fix warnings due to uninitialized return values  [DroidFreak32]
-5a996c1  post_proc: return proper volume in reply data for offload effect  [DroidFreak32]
-f976f12  Move device dependent modules to /vendor  [DroidFreak32]
-64d72a8  policy_hal: update custom audio policy implementation APIs against O-AOSP  [DroidFreak32]
-291de01  Fix potential NULL dereference in Visualizer effect  [DroidFreak32]
-f00cb20  hal : Fix data initialization and input validation errors  [DroidFreak32]
-f229796  post_proc: complete reverb environmental interfaces  [DroidFreak32]
-eff5992  hal: effect: visualizer: support two offload sessions  [DroidFreak32]
-e367486  hal: Clean up compilation warnings  [DroidFreak32]
-47c7a6b  hal: Fix voice call recording  [DroidFreak32]
    * manifest/
 28eaf3c  manifest: track caf rcs-service  [martinusbe]
    * packages/apps/Settings/
@@ -257,8 +212,6 @@ d7fd7ae  mm-video: venc: Use correct flag for buffer index selection  [GtrCraft]
 ====================
 
 
-   * hardware/qcom/display-caf/msm8998/
-2f5f309  qdutils: Remove qdutils source files from libqdMetaData  [martinusbe]
    * vendor/validus/
 d047653  Fix kernel build failure on some devices and build hosts  [martinusbe]
 ====================
@@ -291,8 +244,6 @@ d2b1511  try a quick backuptool fix  [martinusbe]
 
    * build/make/
 ca4b7ec  build: Launcher3 instead of 2  [martinusbe]
-   * device/motorola/sanders/
-1c67d25  Revert "sanders: update display flags"  [Prema Chand Alugu]
    * frameworks/base/
 96628b3  Add feature for process auto start restriction.  [martinusbe]
 e0a8e91  Don't wait for Bluetooth when shutting down  [martinusbe]
@@ -303,11 +254,6 @@ a7c648a  [AM WM]Reduce the uncessery wm call while checkKeyguardVisibility  [mar
 fbb822b  framework/base: use multithread to verify files contained in APK  [martinusbe]
 61cc900  [1/2] base: poor man battery style tweaks  [martinusbe]
 b5fc765  audio: VOLUME_KEYS_CONTROL_MEDIA default off  [martinusbe]
-4ec10d0  Alarm Blocker: Shut up CONTEXT_MANAGER_ALARM_WAKEUP  [martinusbe]
-   * hardware/qcom/audio-caf/msm8916/
-98658aa  hal: audio-test: Move omx tests mm-audio-internal  [GtrCraft]
-   * hardware/qcom/media-caf/msm8916/
-3fa50b6  mm-video-v4l2: Fix compilation dependencies with O-MR1  [GtrCraft]
    * hardware/qcom/power/
 e2578c5  power: Update perf hint ID's for display on off  [martinusbe]
    * manifest/
@@ -330,6 +276,7 @@ cc83a5f  Revert "Add Nova and Google Companion"  [Prema Chand Alugu]
    * frameworks/av/
 2c39f20  Multi screenrecord tile, blinking stop button, screenrecord service impr[2/2]  [Mirko]
    * frameworks/base/
+4ec10d0  Alarm Blocker: Shut up CONTEXT_MANAGER_ALARM_WAKEUP  [martinusbe]
 16e4e5b  Themes: SystemUI: Expose QS background opacity  [Mirko]
 9377a00  Themes: SystemUI: Expose QS edit item decoration background color  [Mirko]
 2c9a362  Themes: Allow Permission Icons to be fully themed  [Mirko]
