@@ -41,7 +41,6 @@ device/linaro/bootloader/arm-trusted-firmware
 device/linaro/bootloader/edk2
 device/linaro/hikey
 device/linaro/hikey-kernel
-ValidusOs-Devices/device_motorola_sanders
 device_qcom_common
 device_qcom_sepolicy
 device/sample
