@@ -358,14 +358,14 @@ platform/frameworks/opt/net/ethernet
 platform/frameworks/opt/net/ims
 platform/frameworks/opt/net/lowpan
 platform/frameworks/opt/net/voip
-platform/frameworks/opt/net/wifi
+frameworks/opt/net/wifi
 platform/frameworks/opt/photoviewer
 platform/frameworks/opt/setupwizard
 frameworks_opt_telephony
 platform/frameworks/opt/timezonepicker
 platform/frameworks/opt/vcard
 platform/frameworks/rs
-platform/frameworks/support
+frameworks/support
 platform/frameworks/webview
 platform/frameworks/wilhelm
 platform/hardware/akm
@@ -394,10 +394,9 @@ hardware_libhardware
 hardware_libhardware_legacy
 platform/hardware/marvell/bt
 hardware_qcom_audio
-platform/hardware/qcom/bootctrl
+hardware/qcom/bootctrl
 hardware_qcom_bt
-platform/hardware/qcom/camera
-platform/hardware/qcom/data/ipacfg-mgr
+hardware/qcom/camera
 hardware_qcom_display
 hardware_qcom_fm
 hardware_qcom_gps
@@ -458,7 +457,6 @@ packages_apps_Launcher3
 platform/packages/apps/LegacyCamera
 platform/packages/apps/ManagedProvisioning
 platform/packages/apps/Messaging
-platform/packages/apps/Music
 platform/packages/apps/MusicFX
 packages_apps_Nfc
 platform/packages/apps/OneTimeInitializer
@@ -569,7 +567,7 @@ platform/system/timezone
 platform/system/tools/aidl
 platform/system/tools/hidl
 platform/system/tpm
-platform/system/update_engine
+system/update_engine
 system_vold
 platform/test/framework
 platform/test/sts
