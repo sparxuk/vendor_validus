@@ -93,7 +93,8 @@ PRODUCT_PACKAGES += \
     LatinIME \
     BluetoothExt \
     WolesDen \
-    GZRoms
+    GZRoms \
+    SoundRecorder
 
 # 3rd party packages
 PRODUCT_PACKAGES += \
