@@ -467,9 +467,9 @@ platform/packages/apps/QuickSearchBox
 platform/packages/apps/SafetyRegulatoryInfo
 packages_apps_Settings
 packages_apps_SlimRecents
-platform/packages/apps/SoundRecorder
+packages/apps/SoundRecorder
 platform/packages/apps/SpareParts
-platform/packages/apps/Stk
+packages/apps/Stk
 platform/packages/apps/StorageManager
 platform/packages/apps/TV
 platform/packages/apps/Tag
