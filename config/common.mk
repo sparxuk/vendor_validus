@@ -35,7 +35,7 @@ PRODUCT_COPY_FILES += \
 
 # Validus-specific init file
 PRODUCT_COPY_FILES += \
-    vendor/validus/prebuilt/common/etc/init.local.rc:root/init.validus.rc
+    vendor/validus/prebuilt/common/etc/init.local.rc:system/etc/init/init.validus.rc
 
 # Copy LatinIME for gesture typing
 PRODUCT_COPY_FILES += \
