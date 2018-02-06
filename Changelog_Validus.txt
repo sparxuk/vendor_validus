@@ -1,26 +1,129 @@
 ====================
+     02-06-2018
+====================
+
+
+   * build/make/
+057a8e7  Merge tag 'android-8.1.0_r11' into HEAD  [martinusbe]
+e50d766  Merge pull request #2 from ygorigor/8.1  [GitHub]
+7b378d2  makefile: change LINEAGE_BUILD to VALIDUS_BUILD  [GitHub]
+   * frameworks/av/
+4de15a2  Merge tag 'android-8.1.0_r11' into HEAD  [martinusbe]
+   * frameworks/base/
+da4f1f6  Merge tag 'android-8.1.0_r11' into HEAD  [martinusbe]
+c77cabb  face auto unlock toggle default enabled (1/2)  [martinusbe]
+   * packages/apps/Settings/
+25c2cfe  Merge tag 'android-8.1.0_r11' into HEAD  [martinusbe]
+   * packages/apps/WolvesDen/
+dfad8f3  face auto unlock toggle default enabled (2/2)  [martinusbe]
+   * vendor/validus/
+96ff24a  Beta 1.4 for feb patches  [martinusbe]
+124ecf0  Merge pull request #11 from ygorigor/8.1  [GitHub]
+922f7ba  also set io scheduler for mmcblk1  [GitHub]
+cab54e8  move init.validus.rc to system/etc/init to ensure that it's executed  [GitHub]
+
+   * frameworks/base/
+97a2552  Revert "base: touch response optimizations"  [martinusbe]
+b9529ce  PackageManagerService: Avoid NPE in matchComponentForVerifier  [martinusbe]
+84b6736  base: touch response optimizations  [martinusbe]
+3016b76  ToastIcon: Update padding properly for 8.1  [martinusbe]
+11f4e39  FingerprintService: use fastJni for nativeAuthenticate  [martinusbe]
+60b1f4c  ExifInterface: fix incorrect thumbnailLength in handleThumbnailFromJfif  [martinusbe]
+5734150  services: fix the NPE in RankingHelper  [martinusbe]
+744af88  framework/base: fix multithread synchronization  [martinusbe]
+fac20b5  Fix and work around aliasing rule violations  [martinusbe]
+5704064  Turning screen on without creating surface  [martinusbe]
+   * frameworks/native/
+b7b1c7e  native: touch response optimizations  [martinusbe]
+   * frameworks/support/
+6978f4b  v14: Fix margin inconsistency with framework version of PreferenceCategory  [martinusbe]
+061e42d  Factor out preference-in-storage check to overridable method.  [martinusbe]
+4090959  support: touch response optimizations  [martinusbe]
+   * packages/apps/Gallery2/
+ac29dae  Gallery: Fix translatability of CAF additions to filtershow  [martinusbe]
+463e199  Gallery2: Remove more CAF Chinese translation modifications  [martinusbe]
+   * vendor/validus/
+8d09158  Merge pull request #10 from ygorigor/8.1  [GitHub]
+9561027  fix bfqio dirs  [GitHub]
+====================
      02-04-2018
 ====================
 
 
+   * hardware/qcom/audio-caf/msm8960/
+a182b07  policy_hal: Partial revert "audio: remove 5.1 channel mask if SSR is not supported"  [hardwareadictos]
+32aedcd  msm8960: treblize configuration  [hardwareadictos]
+6c28276  hal: audio-test: Move omx tests mm-audio-internal  [hardwareadictos]
+2c43406  mm-audio: Remove omx decoder components from mm-audio folder  [hardwareadictos]
+5e6f592  policy_hal: fix for MR1 function prototype.  [hardwareadictos]
+fac5338  policy_hal: update custom audio policy against OPR1.170521.001_AOSP  [hardwareadictos]
+   * hardware/qcom/media-caf/msm8960/
+6602c42  mm-video: Fix compilation dependencies with O-MR1  [hardwareadictos]
+   * packages/apps/Gallery2/
+3e704c5  Gallery: fix Pause button position  [martinusbe]
+3ee2c82  SnapdragonGallery: Fix FC when init() before setContentView  [martinusbe]
+ef18414  Gallery: define app category  [martinusbe]
+bf68265  Gallery2: Get rid of packages monitor  [martinusbe]
+a2238ac  Gallery2: Use custom transition aar lib  [martinusbe]
+01ccacc  Fix crash after deleting a video on Albums tab  [martinusbe]
+950a942  Gallery: Kill media effect dialog on movies  [martinusbe]
+6d40d59  Gallery2: Fix crash when muting a video  [martinusbe]
+684a5ac  Fix gallery crash when trimming video  [martinusbe]
+2bb4776  Automatic translation import  [martinusbe]
+59f5d47  Gallery2: Fix various issues and glitches  [martinusbe]
+238efe1  Gallery2: Fix potential crash  [martinusbe]
+dacbe5e  Gallery2: Switch to navigationbar from support libs  [martinusbe]
+f215df6  Gallery2: Fix can't parse documents uri  [martinusbe]
+f7a2f60  Gallery2: Fix views overlap  [martinusbe]
+fabc29b  Gallery2: Support GIF animation  [martinusbe]
+fca9a57  Gallery2: Increase the size of the tiles when decoding images  [martinusbe]
+54f247c  Gallery2: Support the newly added media file types in MTP mode  [martinusbe]
+33ac28a  Gallery2: Fix use of uninitialized stack variables  [martinusbe]
+2999d89  Gallery2: Remove unused renderscript class  [martinusbe]
+edf0b0e  Gallery2: Fix spelling error  [martinusbe]
+4bce32b  Gallery2: Properly declare the own permissions  [martinusbe]
+33f35f5  Gallery2: Remove more possible NPEs  [martinusbe]
+778354f  Gallery2: Enable frames in the editor  [martinusbe]
+b281974  Gallery2: Remove slideshow option if there are only videos  [martinusbe]
+1946beb  Gallery2: Remove 3D overscroll effect  [martinusbe]
+68762c4  Gallery2: Disable dummy starting window  [martinusbe]
+b15b5d1  Gallery2: Fix up audio effects dialog  [martinusbe]
+5665717  Gallery2: Everyone or no one  [martinusbe]
+fed35f1  Gallery2: Replace hamburger menu with bottom bar  [martinusbe]
+f928eee  Gallery2: Change all share intents to chooser style  [martinusbe]
+5b701c6  Gallery2: Update menu  [martinusbe]
+1c07fb2  Gallery2: Update theme  [martinusbe]
+6b138c7  Gallery2: Move & improve CAF strings  [martinusbe]
+eaaca5c  Gallery2: Make sure no NPE happens  [martinusbe]
+a4daf73  Gallery2: Remove invalid comment from manifest  [martinusbe]
+657c833  Gallery2: Cleanup renderscript flags in Android.mk  [martinusbe]
+c0a9138  Gallery2: Reduce logspam in video player  [martinusbe]
+77f93a5  Gallery2: Store DATE_TAKEN as milliseconds  [martinusbe]
+7591d82  Gallery2: Modify AOSP EL translations  [martinusbe]
+b2c1990  Gallery2: Remove CAF translations  [martinusbe]
+650047e  Gallery2: Add record time to details view  [martinusbe]
+b0703eb  Gallery2: Fix crash of gallery on showing details  [martinusbe]
+176e727  Gallery2: Try to open existing camera  [martinusbe]
+1f83203  Gallery2: New icon  [martinusbe]
+3ce1c44  Gallery2: Bump minsdk and targetsdk version  [martinusbe]
+f109cb6  Gallery: TileImageView: fix NPE  [martinusbe]
+c0ebe70  FaceDetect: Catch more linker errors during initialization  [martinusbe]
+5767859  FaceDetect: Catch linker errors during initialization  [martinusbe]
+9b15e54  Stop using junit classes in production  [martinusbe]
+6eaa34b  Add missing includes.  [martinusbe]
+0e71060  Cleanup warnings in jni.  [martinusbe]
+9345b41  Fix misc-macro-parentheses warnings in Gallery2.  [martinusbe]
+80e1a7d  Float.NaN != ... always evaluates to true, use Float.isNaN.  [martinusbe]
+1fad6f7  Rename app back to Gallery  [martinusbe]
+   * packages/apps/Launcher3/
+76acf86  Launcher3: restore accidentially removed LauncherStyle  [martinusbe]
+   * vendor/validus/
+a28411e  clog: Update    *s and generate changelog  [Prema Chand Alugu]
+e047e4f  GzrApp v4.5  [Prema Chand Alugu]
+
    * frameworks/base/
 e9918c8  Bring back less notification sounds [1/2]  [Mirko]
 d3b8857  Allow USB mode dialog to be enabled/disabled [2/2]  [martinusbe]
-   * packages/apps/Settings/
-6e97023  InstalledAppDetails: fix refreshing storage summary after force stop  [martinusbe]
-f2fc5f3  Allow USB mode dialog to be enabled/disabled [1/2]  [martinusbe]
-   * packages/apps/WolvesDen/
-83b2b56  Bring back less notification sounds [2/2]  [Mirko]
-   * vendor/validus/
-e047e4f  GzrApp v4.5  [Prema Chand Alugu]
-====================
-     02-03-2018
-====================
-
-
-   * frameworks/base/
-75fe792  Simplify successful screenrecord notification strings  [Mirko]
-792f90e  Add api to force show led lights  [Mirko]
    * packages/apps/Bluetooth/
 1c10652  consider the situations where the device has only one volume level set.  [martinusbe]
 7137676  Avrcp: disable debugging  [martinusbe]
@@ -30,7 +133,19 @@ e047e4f  GzrApp v4.5  [Prema Chand Alugu]
 ff53f7f  Fix PackageInstaller FC when tapping on a downloaded apk notification 2  [martinusbe]
 d5c0d8f  Fix PackageInstaller FC when tapping on a downloaded apk notification  [martinusbe]
    * packages/apps/Settings/
+6e97023  InstalledAppDetails: fix refreshing storage summary after force stop  [martinusbe]
+f2fc5f3  Allow USB mode dialog to be enabled/disabled [1/2]  [martinusbe]
 c915125  Show USB Mode Dialog  [martinusbe]
+   * packages/apps/WolvesDen/
+83b2b56  Bring back less notification sounds [2/2]  [Mirko]
+
+   * frameworks/base/
+75fe792  Simplify successful screenrecord notification strings  [Mirko]
+792f90e  Add api to force show led lights  [Mirko]
+422f7f3  Use correct user id for permission check for instant foreground service.  [martinusbe]
+   * hardware/qcom/media-caf/msm8994/
+eebdf9c  mm-video-v4l2: Fix compilation dependencies with O-MR1  [hardwareadictos]
+   * packages/apps/Settings/
 33447a6  Disable useless alpha slider for notification lights color picker  [Mirko]
 c733ad5  App notification led customization: activate led preview  [Mirko]
 b64761c  Notification log improvements  [Mirko]
@@ -39,36 +154,36 @@ b64761c  Notification log improvements  [Mirko]
 c3c9548  Disable useless alphaslider for battery led customization  [Mirko]
 e32825a  Battery led customization: activate led light preview  [Mirko]
 c12a990  Color picker: allow to activate ongoing led light as color preview  [Mirko]
-====================
-     02-02-2018
-====================
-
-
-   * frameworks/base/
-422f7f3  Use correct user id for permission check for instant foreground service.  [martinusbe]
-533bda4f  CamcorderProfiles: Add new profiles for recorder  [martinusbe]
-   * hardware/gzosp/interfaces/
-6f31092  Camera:CameraDevice@1.0: Added mutex lock for mMemoryMap.  [martinusbe]
    * system/core/
 e12ec8b  set /system/etc/init.d/* permissions  [martinusbe]
    * vendor/validus/
 66a69fc  bfqio: Add missing include header  [martinusbe]
-====================
-     02-01-2018
-====================
 
+   * frameworks/base/
+533bda4f  CamcorderProfiles: Add new profiles for recorder  [martinusbe]
+   * hardware/gzosp/interfaces/
+6f31092  Camera:CameraDevice@1.0: Added mutex lock for mMemoryMap.  [martinusbe]
 
    * frameworks/base/
 fb1e784  ListView: Fix Widget couldn't find any view  [Prema Chand Alugu]
-====================
-     01-31-2018
-====================
-
-
-   * frameworks/base/
 8496221  Camera: Extend face detection  [martinusbe]
 bcd80be  Add toggle for face auto unlock (1/2)  [martinusbe]
 4dcc883  KeyguardHostView: Dismiss keyguard automatically when face is recognized  [martinusbe]
+   * hardware/qcom/audio-caf/msm8994/
+8bdaccf  policy_hal: fix for MR1 function prototype.  [hardwareadictos]
+b7294e0  audio: enable compilation  without flag TARGET_USES_AOSP_FOR_AUDIO  [hardwareadictos]
+e463dfe  audio: change TARGET_USES_AOSP to TARGET_USES_AOSP_FOR_AUDIO  [hardwareadictos]
+252b6e2  audio: correct dependencies for compilation with AOSP flag  [hardwareadictos]
+79dce6f  hal: audio-test: Move omx tests mm-audio-internal  [hardwareadictos]
+   * hardware/qcom/audio-caf/msm8998/
+3d1ddf5  audio-caf/msm8998: fix missing dependency error  [Dan Cartier]
+2f26024  policy_hal: Remove bogus symbol on AUDIO_FEATURE_ENABLED_COMPRESS_VOIP flag  [Dan Cartier]
+   * packages/apps/Settings/
+89073d4  Prevent users from sharing sensitive information  [martinusbe]
+   * packages/apps/WolvesDen/
+4a037db  wolvesden: Add toggle for face auto unlock (2/2)  [martinusbe]
+
+   * frameworks/base/
 85fd022  DUI Pulse: add Automatic albumart base color mode [1/3]  [Mirko]
 f56a48d  Ambient ticker: make it work if secure lockscreen notifs are blocked  [Mirko]
 9dd2df1  Allow Ambient music ticker for devices with custom doze manager  [Mirko]
@@ -79,22 +194,19 @@ e6a53b7  Ambient display music ticker [1/2]  [Mirko]
 f8244b6  Wifi: Send DHCP DISCOVER with rapid commit  [martinusbe]
 059f71d  Wifi: Fix the signal weak when forget the connected AP  [martinusbe]
 b84b167  display: Don't animate screen brightness when turning the screen on  [martinusbe]
+   * hardware/gzosp/interfaces/
+c98a2ac  gzosp/interfaces: camera: provider: Remove HAL3 codepaths  [martinusbe]
+6679d43  gzosp/interfaces: bring to a state maintainers understand  [martinusbe]
    * packages/apps/DUI/
 d280c51  DUI Pulse: add Automatic albumart base color mode [2/3]  [Mirko]
    * packages/apps/Settings/
-89073d4  Prevent users from sharing sensitive information  [martinusbe]
 95031ca  InstalledApp: show link to Google Play  [Mirko]
    * packages/apps/WolvesDen/
-4a037db  wolvesden: Add toggle for face auto unlock (2/2)  [martinusbe]
 473cd29  DUI Pulse: add Automatic albumart base color mode [3/3]  [Mirko]
 cfcad3e  Ambient music ticker strings improvements  [Mirko]
 1255bab  Ambient music ticker: add a full disable mode [2/2]  [Mirko]
 5c10363  Ambient music notifications: allow to show track info only [2/2]  [Mirko]
 3bcded7  Ambient display music ticker [2/2]  [Mirko]
-====================
-     01-30-2018
-====================
-
 
    * build/make/
 8d3e123  core: remove duplicated boot jars  [martinusbe]
@@ -109,9 +221,6 @@ a7668f4  mountservice: Don't nuke all volumes when decrypting  [martinusbe]
 3041b65  Camera: Force HAL1 for predefined package list.  [martinusbe]
 cb46bb6  Silence camera policy keyguard check logspam  [martinusbe]
 4fe4654  Allow to dismiss notifications with FP left/right swipe [1/2]  [martinusbe]
-   * hardware/gzosp/interfaces/
-c98a2ac  gzosp/interfaces: camera: provider: Remove HAL3 codepaths  [martinusbe]
-6679d43  gzosp/interfaces: bring to a state maintainers understand  [martinusbe]
    * manifest/
 3c4c05f  track validus soundrecorder  [martinusbe]
 1501eb2  manifest: gzosp: track our Stk app  [martinusbe]
@@ -122,10 +231,6 @@ d33f488  FP swipe to dismiss: move to existing Swipe down menu  [martinusbe]
 0bd1791  STK application should not show the STK menu for unsupported card.  [martinusbe]
    * vendor/validus/
 be50ae5  common: build soundrecorder  [martinusbe]
-====================
-     01-29-2018
-====================
-
 
    * build/make/
 dadd0c7  Revert "Revert "Remove assert references""  [Prema Chand Alugu]
@@ -136,6 +241,8 @@ ef4afcf  Frameworks: Statusbar clock customizations (1/2)  [Mirko]
 c1b31e4  Screenrecord tile: save quality level  [Mirko]
 040cf94  Screenrecord: show chrono and total recording duration/size  [Mirko]
 463aac5  Screenrecord notification: tap on it to open the video  [Mirko]
+3943f11  lockscreen: Add option to pass swipe-up-to-unlock (1/2)  [martinusbe]
+7743035  base: add overlay to config AOD enable default  [martinusbe]
    * frameworks/opt/telephony/
 d89d33a  MMS: Update apnProfileID for MMS only apn.  [martinusbe]
    * hardware/qcom/display-caf/msm8996/
@@ -143,23 +250,6 @@ d89d33a  MMS: Update apnProfileID for MMS only apn.  [martinusbe]
    * packages/apps/Settings/
 6c14dab  Accessibility: remove double Font & Display size settings  [Mirko]
 903b6d0  Kill the logspam due to BackupSettingsActivity  [Mirko]
-   * packages/apps/WolvesDen/
-790baa9  brightness icon is on the right site.....  [Mirko]
-72dbc1e  Settings: statusbar clock customization (2/2)  [Mirko]
-   * vendor/validus/
-ee03992  clog: Regenerate changelog  [Prema Chand Alugu]
-69bb972  clog: Remove device specific repo(s)  [Prema Chand Alugu]
-aaa8f55  clog: Generate the changelog for 1.3 Beta  [Prema Chand Alugu]
-0db0ef3  clog: Update the repos  [Prema Chand Alugu]
-====================
-     01-28-2018
-====================
-
-
-   * frameworks/base/
-3943f11  lockscreen: Add option to pass swipe-up-to-unlock (1/2)  [martinusbe]
-7743035  base: add overlay to config AOD enable default  [martinusbe]
-   * packages/apps/Settings/
 c096bc4  DisplaySettings: font size in 5% steps from 80% to 130%  [martinusbe]
 91a74cd  Settings: Wi-Fi WPS Materialized icon  [martinusbe]
 aef0ea8  Settings: Fix settings force close  [martinusbe]
@@ -169,39 +259,53 @@ c6340a7  Setting:BugFix for OOM caused by looper leak in settings  [martinusbe]
 4efad41  MultiSim: Fix hardcoded text color  [martinusbe]
 6f69001  Refresh UI on force stop/disable  [martinusbe]
 c0e4c27  lockscreen: Add option to pass swipe-up-to-unlock (2/2)  [martinusbe]
-bb9b176  IMS: Do not disable WiFi Calling for "registration error"  [martinusbe]
+   * packages/apps/WolvesDen/
+790baa9  brightness icon is on the right site.....  [Mirko]
+72dbc1e  Settings: statusbar clock customization (2/2)  [Mirko]
    * vendor/validus/
-27b701a  Beta v1.3 for the IMS cr**  [martinusbe]
-====================
-     01-27-2018
-====================
-
+ee03992  clog: Regenerate changelog  [Prema Chand Alugu]
+69bb972  clog: Remove device specific repo(s)  [Prema Chand Alugu]
+aaa8f55  clog: Generate the changelog for 1.3 Beta  [Prema Chand Alugu]
+0db0ef3  clog: Update the repos  [Prema Chand Alugu]
 
    * frameworks/base/
 de8596b  Add auth framework for outgoing SMS messages.  [martinusbe]
+   * hardware/qcom/audio-caf/msm8916/
+9174147  policy_hal: fix for MR1 function prototype.  [DroidFreak32]
+03e5b0c  policy_hal: update custom audio policy against OPR1.170521.001_AOSP  [DroidFreak32]
+2fa082a  policy_hal: update custom audio policy APIs against AOSP  [DroidFreak32]
+ff96e55  Fix parameters passed to pcm_open to include PCM_MONOTONIC  [DroidFreak32]
+4dc0c06  Equalizer: Check value size for get preset name  [DroidFreak32]
+72f6196  visualizer: fix warnings due to uninitialized return values  [DroidFreak32]
+5a996c1  post_proc: return proper volume in reply data for offload effect  [DroidFreak32]
+f976f12  Move device dependent modules to /vendor  [DroidFreak32]
+64d72a8  policy_hal: update custom audio policy implementation APIs against O-AOSP  [DroidFreak32]
+291de01  Fix potential NULL dereference in Visualizer effect  [DroidFreak32]
+f00cb20  hal : Fix data initialization and input validation errors  [DroidFreak32]
+f229796  post_proc: complete reverb environmental interfaces  [DroidFreak32]
+eff5992  hal: effect: visualizer: support two offload sessions  [DroidFreak32]
+e367486  hal: Clean up compilation warnings  [DroidFreak32]
+47c7a6b  hal: Fix voice call recording  [DroidFreak32]
    * manifest/
 28eaf3c  manifest: track caf rcs-service  [martinusbe]
    * packages/apps/Settings/
+bb9b176  IMS: Do not disable WiFi Calling for "registration error"  [martinusbe]
 3e4a0db  SimSettings: improve dialogs  [martinusbe]
 665b551  SimSettings: Correctly disabling sim switch without sim card  [martinusbe]
 526a20d  SimSettings: port manual provisiong support  [martinusbe]
-====================
-     01-26-2018
-====================
+   * vendor/validus/
+27b701a  Beta v1.3 for the IMS cr**  [martinusbe]
 
+   * packages/services/Telephony/
+2b718c4  Fix non-protected broadcasts sent from phone process.  [martinusbe]
 
    * frameworks/opt/telephony/
 981d324  Default Data connection with Single SIM  [martinusbe]
 f1296d9  Fix data call issue during dds switch  [martinusbe]
 59c45f5  [OP5] add for community - community is not pleased  [martinusbe]
    * packages/services/Telephony/
-2b718c4  Fix non-protected broadcasts sent from phone process.  [martinusbe]
 f378574  Telephony: Fix translatability of network modes  [martinusbe]
 55b3af2  Fix multiple apn items issue  [martinusbe]
-====================
-     01-25-2018
-====================
-
 
    * frameworks/opt/telephony/
 21c8000  Telephony: Fix loading of older QTI blobs  [martinusbe]
@@ -220,10 +324,6 @@ fb3a444  Initial implementation of QtiTelephonyComponentFactory  [martinusbe]
 e638712  Use subscription info for ImsManager queries.  [martinusbe]
    * hardware/libhardware_legacy/
 50d702e  Wifi: Add Qpower interface to libhardware_legacy  [martinusbe]
-====================
-     01-24-2018
-====================
-
 
    * bootable/recovery/
 6881b02  Revert "otautil: Android.mk -> Android.bp"  [martinusbe]
@@ -232,60 +332,3 @@ b50e8b1  recovery: Use pathmap for recovery  [martinusbe]
    * packages/apps/Settings/
 c24041e  MSIM: Fix user set DDS sub in hotswap cases.  [martinusbe]
 e029d65  InstalledAppDetails: fix refreshing storage summary after force stop  [martinusbe]
-====================
-     01-23-2018
-====================
-
-
-   * device/qcom/sepolicy/
-e067f3a  Merge tag 'LA.UM.6.4.r1-05700-8x98.0' of https://source.codeaurora.org/quic/la/device/qcom/sepolicy into HEAD  [martinusbe]
-   * packages/apps/Launcher3/
-54e99e3  Launcher3: fix wrong text color in all apps search view  [martinusbe]
-5907e3a  Launcher3: color split and add dark launcher3 overlay  [martinusbe]
-15eee05  Launcher3: disable DOTS_ONLY for badge renderer  [martinusbe]
-5a0b7cb  Launcher3: fix resizing of detailed weather view  [martinusbe]
-   * system/core/
-c69da13  init: Remove unnecessary undefine  [martinusbe]
-a028d63  utils: Threads: Handle empty thread names  [martinusbe]
-cbd1493  init: always allow local.prop overrides  [martinusbe]
-   * system/sepolicy/
-03b77e5  treble sepolicy tests: Workaround /sbin services labels  [martinusbe]
-86b171f  sepolicy: Add missing exfat and fuseblk types  [martinusbe]
-3aff499  sepolicy: Fix up exfat and ntfs support  [martinusbe]
-34d9519  sepolicy: Ignore custom gzosp additions  [martinusbe]
-4615201  sepolicy: Allow system apps to access selinuxfs  [martinusbe]
-d716c7f  Allow redeclaring typeattributes  [martinusbe]
-====================
-     01-22-2018
-====================
-
-
-   * device/gzosp/sepolicy/
-09d7c58  sepolicy: allow vold to mount fuse-based sdcard  [martinusbe]
-f9ee633  sepolicy: Allow vold to `getattr` on mkfs_exec  [martinusbe]
-744a628  sepolicy: fix denials for external storage  [martinusbe]
-e04039a  sepolicy: treat fuseblk as sdcard_external  [martinusbe]
-6a0fa18  sepolicy: label exfat and ntfs mkfs executables  [martinusbe]
-530f5a5  sepolicy: Add domain for mkfs binaries  [martinusbe]
-31e8daf  sepolicy: Set the context for fsck.exfat/ntfs to fsck_exec  [martinusbe]
-143850c  sepolicy: Fix sysinit denials  [martinusbe]
-4c37dc4  sepolicy: Permissions for userinit  [martinusbe]
-3b58869  sepolicy: allow userinit to set its property  [martinusbe]
-5e223d9  sepolicy: Add policy for sysinit  [martinusbe]
-1fbd0dc  sepolicy: qcom: add persist_block_device type  [martinusbe]
-====================
-     01-21-2018
-====================
-
-
-   * frameworks/base/
-fb8768c  NSRM: Fix: Added safe check to prevent app crash.  [martinusbe]
-   * manifest/
-338eb1f  track bootctrl, update_engine & net/wifi from gzosp  [martinusbe]
-   * packages/apps/WolvesDen/
-39227b1  Suppress notification vib/sound feature: add "if no media playing" mode [2/2]  [Mirko]
-   * packages/services/Telecomm/
-0406680  Telecomm: Squashed phone_type switch support  [Mirko]
-   * vendor/validus/
-e560c54  beta v1.2  [martinusbe]
-da0df42  roomservice: fix the missing space, my ocd got triggered  [martinusbe]
