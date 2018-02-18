@@ -206,7 +206,7 @@ platform/external/libopus
 platform/external/libpcap
 platform/external/libphonenumber
 platform/external/libpng
-platform/external/libtextclassifier
+external/libtextclassifier
 platform/external/libunwind
 platform/external/libunwind_llvm
 platform/external/libusb
@@ -369,7 +369,7 @@ platform/frameworks/webview
 platform/frameworks/wilhelm
 platform/hardware/akm
 hardware_broadcom_libbt
-platform/hardware/broadcom/wlan
+hardware/broadcom/wlan
 platform/hardware/google/apf
 platform/hardware/google/easel
 hardware_gzosp_interfaces
@@ -442,7 +442,7 @@ packages_apps_DUI
 packages_apps_DeskClock
 platform/packages/apps/DevCamera
 packages_apps_Dialer
-platform/packages/apps/DocumentsUI
+packages/apps/DocumentsUI
 platform/packages/apps/Email
 platform/packages/apps/EmergencyInfo
 platform/packages/apps/ExactCalculator
@@ -485,7 +485,7 @@ platform/packages/experimental
 packages_inputmethods_LatinIME
 platform/packages/inputmethods/OpenWnn
 platform/packages/providers/ApplicationsProvider
-platform/packages/providers/BlockedNumberProvider
+packages/providers/BlockedNumberProvider
 platform/packages/providers/BookmarkProvider
 platform/packages/providers/CalendarProvider
 platform/packages/providers/CallLogProvider
