@@ -437,7 +437,7 @@ platform/packages/apps/Car/libs
 platform/packages/apps/CarrierConfig
 platform/packages/apps/CellBroadcastReceiver
 platform/packages/apps/CertInstaller
-platform/packages/apps/Contacts
+packages/apps/Contacts
 packages_apps_DUI
 packages_apps_DeskClock
 platform/packages/apps/DevCamera

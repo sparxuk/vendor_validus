@@ -1,296 +1,188 @@
 ====================
-     02-18-2018
+     03-10-2018
 ====================
 
-   * external/DUtils/
-eb92608  DUI: Add Google Sound Search action [2/2]  [Mirko]
-   * frameworks/base/
-82046bb  Fix shared libraries loading during backup  [martinusbe]
-2739b56  Handle Backup onUnlockUser on fg thread  [martinusbe]
-ddf2426  SystemUI: No Signal bar displays for a moment in UI after Bootup  [martinusbe]
-   * packages/apps/DUI/
-dd4e6ec  DUI: Add Google Sound Search action [1/2]  [Mirko]
-2ff84ae  Pulse: don't lose color when changing render mode  [Mirko]
-0037922  Pulse fading blocks render: use more visible colors  [Mirko]
-   * packages/apps/Launcher3/
-260bd58  Launcher3: add config to show notification dot numbers  [martinusbe]
-3ff1392  Launcher3: use dock instead of hotseat in strings  [martinusbe]
-   * system/sepolicy/
-a7bbf57  add sload_f2fs permission  [Mirko]
-765799d  make_f2fs: grant rw to vold  [Mirko]
-b529fcf  Allow e2fs to format cache  [Mirko]
-3fc6fd3  Allow e2fs to rw devpts  [Mirko]
-ff59334  sepolicy: add sudaemon to ignore list  [Mirko]
-0f814ab  sepolicy: update policies for sudaemon on O  [Mirko]
-508cbb1  sepolicy: Allow su by apps on userdebug_or_eng  [Mirko]
-c78891a  sepolicy: We need to declare before referencing  [Mirko]
 
-   * frameworks/base/
-fe0345a  Portrait/hidden battery: show percentage in quick statusbar header  [Mirko]
-d130a08  Text battery style: show a tilde when charging  [Mirko]
-7b7aeb6  Fix right padding when using hidden/text battery style  [Mirko]
-00e0734  Circle and dot battery fixes and improvements  [Mirko]
-52d992e  Move sysui tuner percentage settings to custom battery settings [1/2]  [Mirko]
-1dfc983  BatteryMeterDrawable: add hidden option  [Mirko]
-7f226ad  BatteryMeterDrawable: add text style  [Mirko]
-a3de322  BatteryMeterDrawable: add dotted circle style  [Mirko]
-6ccc6a0  BatteryMeterDrawable: add battery styles [1/2]  [Mirko]
-e565ef1  Revert "[1/2] base: poor man battery style tweaks"  [Mirko]
-f206e02  add back ScreenrecordChord  [Mirko]
-ccec569  Support enhanced call blocking function  [Mirko]
-   * frameworks/opt/telephony/
-4a0fcc7  PhoneFactory: fix creating a cdma phone type  [martinusbe]
-a0250b0  Telephony: Enable NV based CDMA data call.  [martinusbe]
-881f089  Support enhanced call blocking function  [Mirko]
-   * manifest/
-7c39261  track BlockedNumberProvider, frameworks_opt_telephony  [Mirko]
-   * packages/apps/Settings/
-eb2218e  Revert "[2/2] Settings: poor man battery style tweaks"  [Mirko]
-335f43a  Remove battery percentage switch in stock battery settings  [Mirko]
-   * packages/apps/WolvesDen/
-fc2cbb0  Hide landscape battery mode for now  [Mirko]
-dc95f60  Move sysui tuner percentage settings to custom battery settings [2/2]  [Mirko]
-41842d7  BatteryMeterDrawable: add battery styles [2/2]  [Mirko]
-   * packages/services/Telecomm/
-f2da323  Support enhanced call blocking function  [Mirko]
-
-
-   * device/gzosp/sepolicy/
-1293181  sepolicy: remove duplicates  [martin coulon]
-f3f8da0  sepolicy: actually load this stuff  [martin coulon]
-
-   * external/selinux/
-adbf09b  (re)declare versioned attributes in mapping file  [martinusbe]
-d12ca8e  libsepol: cil: Add ability to redeclare types[attributes]  [martinusbe]
-   * frameworks/av/
-c2b5493  soundtrigger: fill in default extras from dsp  [martinusbe]
-   * packages/apps/Settings/
-f15863c  Strings: Italian: enforcing sepolicy should be restrittivo  [martinusbe]
-   * system/core/
-6d73549  Allow redeclaring typeattributes  [martinusbe]
-
-
-   * frameworks/base/
-fb6cc03  Make status bar ticker play nice with center clock  [martinusbe]
-   * packages/apps/DeskClock/
-21aa60f  DeskClock: use low priority channel for snooze notification  [martinusbe]
-6c2d5ca  DeskClock: introduce low priority alarm notification channel  [martinusbe]
-a016c98  Deskclock: define app category  [martinusbe]
-3aaefca  DeskClock: Use accelerometer instead of orientation sensor  [martinusbe]
-d7dc471  DeskClock: Add back flip and shake actions  [martinusbe]
-0ced320  Make new menu entry to link to cLock widget settings.  [martinusbe]
-
-   * frameworks/base/
-142abfe  hwui: Disable fine-grained logging  [martinusbe]
-bbf99e5  Fix available/remaining PIN/PUK attempts.  [martinusbe]
-0cc532d  core: Check attached voiceInteractors activity is not null  [martinusbe]
-779d491  services: Skip net_transition_wakelock if timeout is <= 0  [martinusbe]
-8d0cc47  Hide keyguard shortcuts when quick settings disabled on secure lockscreen  [martinusbe]
-   * packages/apps/WolvesDen/
-8a1617a  strings: adjust hide QS on secure LS string for bottom shortcuts  [martinusbe]
-
-
-   * frameworks/base/
-02d56d6  [1/2] base: allow disabling quick settings on secure lock screens  [martinusbe]
-   * packages/apps/WolvesDen/
-b37a7db  Disable Quick Settings on secure lockscreen (2/2)  [martinusbe]
-
-
-   * device/gzosp/sepolicy/
-7d7a19d  sepolicy: qcom: Fixing camera app not launching  [martinusbe]
-e153e2a  sepolicy: suppress denial logspam  [martinusbe]
-   * frameworks/native/
-403e4b7  servicemanager: Restart keystore and gatekeeper after crash  [martinusbe]
-   * manifest/
-eb0aa27  manifest: val: track DocumentsUI from gzosp  [martinusbe]
-   * packages/providers/MediaProvider/
-ba6c434  Register mStorageEventListener after mVolumes initialize.  [martinusbe]
-b4190b6  MediaProvider: Fix SQLiteDiskIOException.  [martinusbe]
+   * bootable/recovery/
+5be238d  updater: Fix allowing devices to suppress BLKDISCARD  [martinusbe]
    * vendor/validus/
-90883a6  version: RC v1.5  [martinusbe]
+19ebf1f  v1.8 for 8.1_r18 ;-)  [martinusbe]
 ====================
-     02-10-2018
-====================
-
-
-   * external/libtextclassifier/
-846fca7  libtextclassifier: enable more languages  [martinusbe]
-   * frameworks/base/
-9f40f9c  NtpTrustedTime: Refresh NTP server from resources before requesting time  [martinusbe]
-   * manifest/
-9ca3d64  manifest: track libtextclassifier from gzosp  [martinusbe]
-   * packages/apps/DocumentsUI/
-983fb71  DocumentsUI: Enable show device root by default  [martinusbe]
-929f55d  Fix crash when DocumentsProviders using duplicate authority exist  [martinusbe]
-09b1b77  Fix crash when loading roots from invalid provider  [martinusbe]
-   * packages/providers/BlockedNumberProvider/
-71cc883  Support enhanced call blocking function  [Mirko]
-   * vendor/validus/
-55679eb  overlay: Use old NTP server in China  [martinusbe]
-96060af  Revert "overlay: Use old NTP server"  [martinusbe]
-c7b20a5  common: product 8.1.0  [martinusbe]
-
-
-   * frameworks/base/
-8b8b86e  QS: add Sync tile  [martinusbe]
-aee9858  Screen off animations [1/2]  [martinusbe]
-25bc804  Ticker: Clear ticker regardless of setting  [martinusbe]
-7bb1f8d  Remove call to expand QS panel while pressing the Airplane QS tile  [martinusbe]
-03c8063  Ask pin when tapping Airplane tiles on secure lockscreen  [martinusbe]
-   * manifest/
-244ea88  Track our own hardware/broadcom/wlan  [martinusbe]
-   * packages/apps/WolvesDen/
-259b9aa  Screen off animations [2/2]  [martinusbe]
-
-
-   * device/gzosp/sepolicy/
-5a31135  sepolicy: gzosp userinit  [martinusbe]
-   * frameworks/base/
-a2d6d95  Themes: SystemUI: expose screen pinning colors  [martinusbe]
-fdff255  Themes: Expose power save mode color  [martinusbe]
-e285363  Screenrecord: remove power button part, we can use qs tile or smartbar for this.  [Mirko]
-   * system/vold/
-a9d5898  vold: Accept Linux GPT partitions on external SD cards  [martinusbe]
-   * vendor/validus/
-9099a4f  overlay: Use old NTP server  [martinusbe]
-====================
-     02-07-2018
+     03-09-2018
 ====================
 
 
    * build/make/
-057a8e7  Merge tag 'android-8.1.0_r11' into HEAD  [martinusbe]
-e50d766  Merge pull request #2 from ygorigor/8.1  [GitHub]
-7b378d2  makefile: change LINEAGE_BUILD to VALIDUS_BUILD  [GitHub]
+5c69a00  Specify --max_timestamp when calling brillo_update_payload.  [martinusbe]
+d285db6  [DO NOT MERGE] Update security string to 2018-03-05 for oc-dev Bug:71860241 (cherry picked from commit 44861dc6dd36e1a54bdb67f072667452a1f80991)  [martinusbe]
+f42c782  [DO NOT MERGE] Update security string to 2018-03-01 for oc-dev Bug:71860241 (cherry picked from commit 275847767a1349fd6887ca67501474c593a21622)  [martinusbe]
+510a440  Version bump to OPM5.171019.017  [martinusbe]
    * frameworks/av/
-4de15a2  Merge tag 'android-8.1.0_r11' into HEAD  [martinusbe]
-   * frameworks/base/
-da4f1f6  Merge tag 'android-8.1.0_r11' into HEAD  [martinusbe]
-c77cabb  face auto unlock toggle default enabled (1/2)  [martinusbe]
-   * hardware/interfaces/
-b7ee866  Merge tag 'android-8.1.0_r11' into HEAD  [martinusbe]
-   * hardware/qcom/camera/
-76a4991  Merge tag 'android-8.1.0_r11' into HEAD  [martinusbe]
-   * hardware/qcom/power/
-c23b7ad  power: Fix up compilation with 1.1 hal and legacy stats  [martinusbe]
-8ce115e  power: Remove mutex to camera hints  [martinusbe]
+59cb0f2  Fix use of uninitialized value in libmediadrm  [martinusbe]
+67242a3  Fix potential buffer overflow in mediadrmserver  [martinusbe]
+1d977b3  AACExtractor: check bounds during seek  [martinusbe]
    * manifest/
-825555a  8.1.0_r11  [martinusbe]
+49d06a1  8.1.0_r18  [martinusbe]
+   * system/bt/
+909c07c  Merge tag 'android-8.1.0_r18' into HEAD  [martinusbe]
+4d302b0  Merge tag 'android-8.1.0_r15' into HEAD  [martinusbe]
+   * system/sepolicy/
+e1f0fbc  sepolicy: Allow recovery to write to rootfs  [martinusbe]
+
+
+   * hardware/qcom/audio-caf/msm8998/
+940faa5  hal: switch audio_extn_set_parameters and amplifier_set_parameters  [martinusbe]
+6b8dc2b  hal: Support the audio amplifier hook  [martinusbe]
+
+
+   * device/gzosp/sepolicy/
+1a4ad7d  sepolicy: Add policy for vendor.lineage.power HAL  [martin coulon]
+   * frameworks/base/
+419b20b  Merge pull request #14 from GtrCraft/8.1  [GitHub]
+01b88c6  Add stub for setCursorVisibility  [GtrCraft]
+5ae8a5d  Add powerhint function that accepts an array of data  [GtrCraft]
+178b322  Revert no time now "keyguard: Actually kill Fancy Colon"  [martinusbe]
+26e52a7  ViewConfiguration: misc changes (rev)  [martinusbe]
+720ca42  SystemUI: QS: keep emergency call only text consistent  [martinusbe]
+3655b33  Forward Port: Smoother Upload and Download Animation  [martinusbe]
+fd56c38  hwui: Fix HWUI_COMPILE_FOR_PERF for non-arm  [martinusbe]
+56d40d3  FATAL EXCEPTION IN SYSTEM PROCESS: android.ui  [martinusbe]
+1e57411  keyguard: Actually kill Fancy Colon  [martinusbe]
+1bf15d0  perf: Adapt for HIDL Lineage power hal  [martinusbe]
+fdc2058  perf: Add plumbing for PerformanceManager  [martinusbe]
+   * hardware/qcom/power/
+407dc3d  msm8952: Fix typo  [martinusbe]
+05b783d  msm8952: Use is_interactive_governor  [martinusbe]
+e61292d  msm8952: Clean up formatting  [martinusbe]
+f9d6460  msm8952: Use log/log.h instead of utils/Log.h  [martinusbe]
+43bf9f4  power: Allow devices to override RPM stat nodes  [martinusbe]
+75b5a73  power: msm8974: Add support for power profile  [martinusbe]
+a0a151d  power: Use monotonic time for interaction boost  [martinusbe]
+cf247dc  power: msm8998: Fix perf mode switch  [martinusbe]
+4af50dd  power: msm8996: Support VR + Sustained performance mode  [martinusbe]
+10ce26c  power: msm8996: Using PerfHAL API  [martinusbe]
+576c7e2  power: Prepare for power profile support  [martinusbe]
+bec74a0  power: Add known perf hint IDs  [martinusbe]
+93af5b9  power: msm8996: Add support for power profiles  [martinusbe]
+9e1082d  power: msm8998: Support power profiles  [martinusbe]
+
+   * frameworks/base/
+c5407a6  Merge pull request #13 from GtrCraft/8.1  [GitHub]
+fb4fceb  Merge pull request #12 from nichcream/dt2s-fixes  [GitHub]
+3a86757  Merge pull request #11 from psy-herolte/8.1  [GitHub]
    * packages/apps/Settings/
-25c2cfe  Merge tag 'android-8.1.0_r11' into HEAD  [martinusbe]
+38c1a57  Merge pull request #4 from psy-herolte/8.1  [GitHub]
    * packages/apps/WolvesDen/
-dfad8f3  face auto unlock toggle default enabled (2/2)  [martinusbe]
+ece1cb0  Merge pull request #5 from GtrCraft/8.1  [GitHub]
    * vendor/validus/
-d5ed2b4  generate changelog for 1.4  [martinusbe]
-96ff24a  Beta 1.4 for feb patches  [martinusbe]
-124ecf0  Merge pull request #11 from ygorigor/8.1  [GitHub]
-922f7ba  also set io scheduler for mmcblk1  [GitHub]
-cab54e8  move init.validus.rc to system/etc/init to ensure that it's executed  [GitHub]
+723416c  ValidusOS: Add tissot to Official Devices  [hardwareadictos]
 
 
    * frameworks/base/
-97a2552  Revert "base: touch response optimizations"  [martinusbe]
-   * frameworks/support/
-6978f4b  v14: Fix margin inconsistency with framework version of PreferenceCategory  [martinusbe]
-061e42d  Factor out preference-in-storage check to overridable method.  [martinusbe]
-4090959  support: touch response optimizations  [martinusbe]
-   * packages/apps/Gallery2/
-ac29dae  Gallery: Fix translatability of CAF additions to filtershow  [martinusbe]
-463e199  Gallery2: Remove more CAF Chinese translation modifications  [martinusbe]
+95fa943   BatteryMeterDrawable: add square style (1/2)  [GtrCraft]
+9380ccc  SystemUI: Report touch events when QS is expanded  [nichcream]
+98f7313  SystemUI: Re-enable status bar peek on double tap to sleep enable  [nichcream]
+   * hardware/ril-caf/
+5342dae  Sending empty strings instead of NULL for some RIL requests  [martinusbe]
+   * packages/apps/WolvesDen/
+f9d084e   BatteryMeterDrawable: add square style (2/2)  [GtrCraft]
+   * system/nfc/
+d7ae067  Fix misc-macro-parentheses warnings in system/nfc.  [martinusbe]
+   * vendor/codeaurora/telephony/
+87bdc81  telephony: Allow devices to provide their own telephony-ext  [martinusbe]
    * vendor/validus/
-8d09158  Merge pull request #10 from ygorigor/8.1  [GitHub]
-9561027  fix bfqio dirs  [GitHub]
+99c709c  v1.7 Stable for the xda types  [martinusbe]
 
 
    * frameworks/base/
-b9529ce  PackageManagerService: Avoid NPE in matchComponentForVerifier  [martinusbe]
-84b6736  base: touch response optimizations  [martinusbe]
-3016b76  ToastIcon: Update padding properly for 8.1  [martinusbe]
-11f4e39  FingerprintService: use fastJni for nativeAuthenticate  [martinusbe]
-60b1f4c  ExifInterface: fix incorrect thumbnailLength in handleThumbnailFromJfif  [martinusbe]
-5734150  services: fix the NPE in RankingHelper  [martinusbe]
-744af88  framework/base: fix multithread synchronization  [martinusbe]
-fac20b5  Fix and work around aliasing rule violations  [martinusbe]
-5704064  Turning screen on without creating surface  [martinusbe]
-   * frameworks/native/
-b7b1c7e  native: touch response optimizations  [martinusbe]
-   * hardware/qcom/audio-caf/msm8960/
-a182b07  policy_hal: Partial revert "audio: remove 5.1 channel mask if SSR is not supported"  [hardwareadictos]
-32aedcd  msm8960: treblize configuration  [hardwareadictos]
-6c28276  hal: audio-test: Move omx tests mm-audio-internal  [hardwareadictos]
-2c43406  mm-audio: Remove omx decoder components from mm-audio folder  [hardwareadictos]
-5e6f592  policy_hal: fix for MR1 function prototype.  [hardwareadictos]
-fac5338  policy_hal: update custom audio policy against OPR1.170521.001_AOSP  [hardwareadictos]
-   * hardware/qcom/media-caf/msm8960/
-6602c42  mm-video: Fix compilation dependencies with O-MR1  [hardwareadictos]
-   * packages/apps/Gallery2/
-3e704c5  Gallery: fix Pause button position  [martinusbe]
-3ee2c82  SnapdragonGallery: Fix FC when init() before setContentView  [martinusbe]
-ef18414  Gallery: define app category  [martinusbe]
-bf68265  Gallery2: Get rid of packages monitor  [martinusbe]
-a2238ac  Gallery2: Use custom transition aar lib  [martinusbe]
-01ccacc  Fix crash after deleting a video on Albums tab  [martinusbe]
-950a942  Gallery: Kill media effect dialog on movies  [martinusbe]
-6d40d59  Gallery2: Fix crash when muting a video  [martinusbe]
-684a5ac  Fix gallery crash when trimming video  [martinusbe]
-2bb4776  Automatic translation import  [martinusbe]
-59f5d47  Gallery2: Fix various issues and glitches  [martinusbe]
-238efe1  Gallery2: Fix potential crash  [martinusbe]
-dacbe5e  Gallery2: Switch to navigationbar from support libs  [martinusbe]
-f215df6  Gallery2: Fix can't parse documents uri  [martinusbe]
-f7a2f60  Gallery2: Fix views overlap  [martinusbe]
-fabc29b  Gallery2: Support GIF animation  [martinusbe]
-fca9a57  Gallery2: Increase the size of the tiles when decoding images  [martinusbe]
-54f247c  Gallery2: Support the newly added media file types in MTP mode  [martinusbe]
-33ac28a  Gallery2: Fix use of uninitialized stack variables  [martinusbe]
-2999d89  Gallery2: Remove unused renderscript class  [martinusbe]
-edf0b0e  Gallery2: Fix spelling error  [martinusbe]
-4bce32b  Gallery2: Properly declare the own permissions  [martinusbe]
-33f35f5  Gallery2: Remove more possible NPEs  [martinusbe]
-778354f  Gallery2: Enable frames in the editor  [martinusbe]
-b281974  Gallery2: Remove slideshow option if there are only videos  [martinusbe]
-1946beb  Gallery2: Remove 3D overscroll effect  [martinusbe]
-68762c4  Gallery2: Disable dummy starting window  [martinusbe]
-b15b5d1  Gallery2: Fix up audio effects dialog  [martinusbe]
-5665717  Gallery2: Everyone or no one  [martinusbe]
-fed35f1  Gallery2: Replace hamburger menu with bottom bar  [martinusbe]
-f928eee  Gallery2: Change all share intents to chooser style  [martinusbe]
-5b701c6  Gallery2: Update menu  [martinusbe]
-1c07fb2  Gallery2: Update theme  [martinusbe]
-6b138c7  Gallery2: Move & improve CAF strings  [martinusbe]
-eaaca5c  Gallery2: Make sure no NPE happens  [martinusbe]
-a4daf73  Gallery2: Remove invalid comment from manifest  [martinusbe]
-657c833  Gallery2: Cleanup renderscript flags in Android.mk  [martinusbe]
-c0a9138  Gallery2: Reduce logspam in video player  [martinusbe]
-77f93a5  Gallery2: Store DATE_TAKEN as milliseconds  [martinusbe]
-7591d82  Gallery2: Modify AOSP EL translations  [martinusbe]
-b2c1990  Gallery2: Remove CAF translations  [martinusbe]
-650047e  Gallery2: Add record time to details view  [martinusbe]
-b0703eb  Gallery2: Fix crash of gallery on showing details  [martinusbe]
-176e727  Gallery2: Try to open existing camera  [martinusbe]
-1f83203  Gallery2: New icon  [martinusbe]
-3ce1c44  Gallery2: Bump minsdk and targetsdk version  [martinusbe]
-f109cb6  Gallery: TileImageView: fix NPE  [martinusbe]
-c0ebe70  FaceDetect: Catch more linker errors during initialization  [martinusbe]
-5767859  FaceDetect: Catch linker errors during initialization  [martinusbe]
-9b15e54  Stop using junit classes in production  [martinusbe]
-6eaa34b  Add missing includes.  [martinusbe]
-0e71060  Cleanup warnings in jni.  [martinusbe]
-9345b41  Fix misc-macro-parentheses warnings in Gallery2.  [martinusbe]
-80e1a7d  Float.NaN != ... always evaluates to true, use Float.isNaN.  [martinusbe]
-1fad6f7  Rename app back to Gallery  [martinusbe]
-   * packages/apps/Launcher3/
-76acf86  Launcher3: restore accidentially removed LauncherStyle  [martinusbe]
-
-
-   * frameworks/base/
-e9918c8  Bring back less notification sounds [1/2]  [Mirko]
-d3b8857  Allow USB mode dialog to be enabled/disabled [2/2]  [martinusbe]
+921c493  Add back volume button control [1/2] this commit adds:  [psyafter]
+34a7ff6  fb: add back all keyboard IME features back (1/2) this commit adds:  [psyafter]
+f87a98f  Wolvesden metrics  [psyafter]
+71aa2a9a  InputWrapper: opt out early if session == null  [psyafter]
+5972cb5  Merge pull request #10 from psy-herolte/8.1  [GitHub]
    * packages/apps/Settings/
-6e97023  InstalledAppDetails: fix refreshing storage summary after force stop  [martinusbe]
-f2fc5f3  Allow USB mode dialog to be enabled/disabled [1/2]  [martinusbe]
+b2b90be  Add back volume button control [2/2] this commit adds:  [psyafter]
+626e4a5  Settings: add back all keyboard IME features back (2/2) this commit adds:  [psyafter]
    * packages/apps/WolvesDen/
-83b2b56  Bring back less notification sounds [2/2]  [Mirko]
+bf097c9  Merge pull request #4 from psy-herolte/8.1  [GitHub]
+
+   * frameworks/base/
+1b6dd22  temp:fw/base: Enable home button wake  * Validus: adding this for now until we have our hw keys stuff added  [psyafter]
+182c375  Revert "fw/base: allow home button to wake device [1/2]"  [psyafter]
+d89c123  Merge pull request #9 from psy-herolte/8.1  [GitHub]
+   * packages/apps/Settings/
+4a53b43  Merge pull request #3 from psy-herolte/8.1  [GitHub]
+   * packages/apps/WolvesDen/
+d80ff20  Revert "Settings: allow home button to wake device [2/2]"  [psyafter]
+
+   * frameworks/base/
+956a4d2  Keyguard: Forward port lockscreen quick unlock (1/2) * PasswordTextView QuickUnlock listener functions and method thanks to   ParanoidAndroid    *:     Keyguard: Implement quick unlock feature [1/2]     BigBrother1984 <carlosavignano@aospa.co>     I0b3d92b91f72020d327a7f2f184c2fbc5519a5df  [psyafter]
+4fa7e33  Revert "Lockscreen PIN quick unlock [1/2]"  [psyafter]
+c7df093  Merge pull request #8 from psy-herolte/8.1  [GitHub]
+eb23628  SystemUI : Port forward statusbar brightness control Brings back the … …status bar brightness control from cm-10.2/cm-11  [psyafter]
+   * packages/apps/Settings/
+fddeae9  Keyguard: Forward port lockscreen quick unlock (2/2)  [psyafter]
+c2667e8  Revert "Lockscreen PIN quick unlock [2/2]"  [psyafter]
+d5ae674  Merge pull request #2 from psy-herolte/8.1  [GitHub]
+   * packages/apps/WolvesDen/
+c0e565b  Merge pull request #3 from psy-herolte/8.1  [GitHub]
+ba7a887  Add option to disable brightness slider  [psyafter]
+195caba  statusbar brightness control  [psyafter]
+
+   * frameworks/base/
+cbfa1e9  SystemUI: Fix FC issue  [martinusbe]
+60ebd69  media: jni: Support conversion from jbyte array to ByteBuffer.  [martinusbe]
+407440e  Can not get a thumbnail of Jpeg image of QCIF size.  [martinusbe]
+1619b04  services: Fix low probability deadlock  [martinusbe]
+e02bf81  Store package restriction settings at shutdown  [martinusbe]
+7d5080a  Remove LOCAL_STATIC_SHARED_LIBRARY usage  [martinusbe]
+41243df  Avoid ANR caused by synchronized() of appDiedLocked()  [martinusbe]
+4e87120  am: Add new flag to detect activity "launching" state.  [martinusbe]
+f8e645e  Lockscreen PIN quick unlock [1/2] old way does not work anymore exactly like before. So adapt the idea to new LP code  [psyafter]
+e85e5d3  fw/base: allow home button to wake device [1/2]  [psyafter]
+   * manifest/
+a54de23  manifest: track our Contacts app  [martinusbe]
+   * packages/apps/Contacts/
+451c8cb  Contacts: Enable support for device contact.  [martinusbe]
+   * packages/apps/Settings/
+0e21856  Lockscreen PIN quick unlock [2/2] old way does not work anymore exactly like before. So adapt the idea to new LP code  [psyafter]
+ee84c72  Improve app info screen  [martinusbe]
+7e66e49  Allow sorting Applications by size  [martinusbe]
+54ed72c  SimSettings: Handle NoClassDefFoundError on devices without telephony-ext  [martinusbe]
+   * packages/apps/WolvesDen/
+f0c9ba1  Settings: allow home button to wake device [2/2]  [psyafter]
    * vendor/validus/
-a28411e  clog: Update    *s and generate changelog  [Prema Chand Alugu]
-e047e4f  GzrApp v4.5  [Prema Chand Alugu]
+417dd23  going to v1.6  [martinusbe]
+
+   * frameworks/base/
+7171c53  NfcTile: Avoid NPE during boot up phase  [martinusbe]
+5796ee1  BluetoothTile: Avoid NPE during boot up phase  [martinusbe]
+f9a2061  DndTile: Avoid NPE during boot phase  [martinusbe]
+5ae66ad  WifiTile: Avoid NPE during boot phase  [martinusbe]
+f9fa4e1  SystemUI: fix black scrim when turning screen on from AOD  [martinusbe]
+   * frameworks/opt/net/wifi/
+8b1fafe  wifi: don't check if WIFI_DRIVER_STATE_CTRL_PARAM is readable  [martinusbe]
+ec7f8df  wifi: Check whether dev node is accessible or not before opening  [martinusbe]
+c65cd03  libwifi-hal: add flag to wait for kernel driver to get ready  [martinusbe]
+f66203f  Revert "wifi: add optional wait for driver probe"  [martinusbe]
+   * hardware/qcom/audio-caf/msm8998/
+fd104f0  hal: add support for USB_HEADSET in device selection  [martinusbe]
+d07bb76  msm8909: Disable audio halservice for low ram  [martinusbe]
+c0c588b  audio: Fix out_get_presentation_position for ULL/MMAP streams  [martinusbe]
+329f582  configs: add USB_HEADSET device in policy conf files  [martinusbe]
+548f58b  audio: cleanup adev_open_input_stream  [martinusbe]
+ff1f45c  hal: Fix static analysis errors.  [martinusbe]
+b11c1cb  msm8909:Add 8909 specific device backends  [martinusbe]
+ccbc03d  configs: msm8953: device type correction  [martinusbe]
+86b7b6d  hal: add checks for possible NULL dereferences in hal  [martinusbe]
+9f7726c  configs: sdm660: Update mixer paths for sdm660 internal codec  [martinusbe]
+c4e3bfb  hal: Use call state to ensure voice call start  [martinusbe]
+854360b  audio: Return ENODATA when position is failed to be retreived  [martinusbe]
+ab2f7d3  Merge commit 'AU_LINUX_ANDROID_LA.UM.6.5.08.00.00.306.141 ' into HEAD.  [martinusbe]
+6cc548e  hal: replace strcat with strlcat  [martinusbe]
+   * packages/apps/DeskClock/
+da3849a  DeskClock: adaptive icon  [martinusbe]
+f8e7fbf  Revert "Fix alarm not firing in memory-pressure situations"  [martinusbe]
+768ba05  DeskClock: Failed to set up Alarm  [martinusbe]
+   * packages/apps/WolvesDen/
+5e6eac0  Add toggle for heads up notifications  [martinusbe]
