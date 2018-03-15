@@ -101,6 +101,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     Phonograph
 
+# Fonts
+PRODUCT_PACKAGES += \
+    ValidusFonts
+
 # Extra tools
 PRODUCT_PACKAGES += \
     openvpn \

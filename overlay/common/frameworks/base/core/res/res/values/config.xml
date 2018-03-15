@@ -97,5 +97,10 @@
           1 = Available. -->
     <integer translatable="false" name="config_wifi_wakeup_available">1</integer>
 
+    <!-- System font packages (overlay in vendor) -->
+    <string-array name="config_fontPackages" translatable="false">
+        <item>com.validus.fonts</item>
+    </string-array>
+
 </resources>
 
