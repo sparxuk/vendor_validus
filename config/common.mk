@@ -65,6 +65,10 @@ PRODUCT_COPY_FILES += \
 #PRODUCT_COPY_FILES +=  \
 #    vendor/validus/prebuilt/common/sysconfig/dialer_experience.xml:system/etc/sysconfig/dialer_experience.xml
 
+# Fonts packages
+PRODUCT_PACKAGES += \
+    validus-fonts
+    
 # Validus-specific startup services
 PRODUCT_COPY_FILES += \
     vendor/validus/prebuilt/common/etc/init.d/00banner:system/etc/init.d/00banner \
