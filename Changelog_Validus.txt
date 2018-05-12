@@ -1,170 +1,225 @@
 ====================
-     03-24-2018
+     05-12-2018
 ====================
 
 
    * frameworks/base/
-0e561a2  Quick settings panel : Set transparency [1/2]  [martinusbe]
-   * frameworks/opt/telephony/
-1c34861  Fix Acess modifiers as part of extending ServicestateTracker.  [martinusbe]
-   * packages/apps/WolvesDen/
-dd1a12b  Quick settings panel : Set transparency [2/2]  [martinusbe]
-   * vendor/validus/
-f6adce1  v1.9  [martinusbe]
+238890c  SystemUI: Rotation button can't work at first time after rotate screen  [martinusbe]
+525e907  Don't reset audio route if setBluetoothScoOn is called without SCO connection  [martinusbe]
+5cdf3ab  frameworks/base: Fix ContentService JNI leaks  [martinusbe]
+061c827  Fix array exception in createAutoBrightnessSpline  [martinusbe]
+91a3d3a  SQLite: Do integrity_check only once  [martinusbe]
+53dcbe7  SQLiteDatabase: Catch corrupt exception during transaction  [martinusbe]
+c929093  Extend reboot tile to add power off  [Mirko]
+61c64bf  RebootTile: Fix gradient message display for reboot to recovery  [Mirko]
+4dcdfde  Add Reboot/Recovery QS Tile  [Mirko]
+   * system/core/
+e2a7624  DNM:init: I hate safety net  [martinusbe]
+====================
+     05-11-2018
+====================
 
 
-   * frameworks/av/
-e257d1f  Camera: Add support for preview frame fd  [martinusbe]
-f973bd7  Camera: Skip stream size check for whitelisted apps.  [martinusbe]
-f4ddb9c  libstagefright: Free buffers on observer died  [martinusbe]
-   * frameworks/base/
-07b0342  Use  Auto brightness for Ambient Display  [martinusbe]
-   * packages/apps/Gallery2/
-9fe6fcd  Fix the issue of view don't reload when onPause  [martinusbe]
-b60cac6  Fix FC of parsing uri is null  [martinusbe]
-53a1182  SDGallery:Fix monkey FC when url from pick activity is null  [martinusbe]
-adcd48a  Don't show Camera Icon when no pictures found in Albums  [martinusbe]
-2a6045c  SnapdragonGallery: Fix crash show dialog when activity finished  [martinusbe]
-0577daf  Fix custom filter don't work when first click after back to original  [martinusbe]
-9558cf2  SnapdragonGallery: Fix dialog dismiss when home  [martinusbe]
-cebb02b  SnapdragonGallery: Fix multithread synchronization in screenReceiver  [martinusbe]
-
-
-   * device/gzosp/sepolicy/
-394fa8a  sepolicy: common: Label sdfat as vfat  [martinusbe]
-6c169eb  sepolicy: Cleanup context labelling for external sdcards  [martinusbe]
-   * external/exfat/
-bf3f3c3  exfat: Don't include the fuse module  [martinusbe]
-fbbf666  exfat-fuse: Don't export UTF conversion functions  [martinusbe]
-91204b2  Handle 64-bit offsets correctly on Android  [martinusbe]
-fa2cc57  exfat: Provide pre-generated config.h for android  [martinusbe]
-e5dd57e  Call exit instead of abort on unhandled errors  [martinusbe]
-6be35da  Add support for building on Android  [martinusbe]
-   * frameworks/native/
-13d618a  SF: Fix hwrotation screenshots at surfaceflinger layer  [martinusbe]
-   * hardware/qcom/audio-caf/msm8996/
-67c463f  hal: switch audio_extn_set_parameters and amplifier_set_parameters  [martinusbe]
-5ef6967  msm8996: ultrasound: Initial open source hal for Elliptic Ultrasound  [martinusbe]
-8b2252b  hal: Support the audio amplifier hook  [martinusbe]
-c190dd9  hal: use proper snd_card_name for acdb_init  [martinusbe]
-6e9a60c  hal: Restore proper ACDB loader v2 support after 21be3ac  [martinusbe]
-3a22e4f  hal: Add NULL check for PCM streams in pass though module  [martinusbe]
-59ad6d4  policy_hal: restore device if it differs from the stopped output  [martinusbe]
-77e3f72  Revert "hal: Fix wrong output device for voip/music concurrent playback"  [martinusbe]
-f4eb82a  hal: add check for BT SCO status when start voice call  [martinusbe]
-a83ecaf  mm-audio: add support for techpack.  [martinusbe]
-f02c7d7  hal: add support for USB_HEADSET in device selection  [martinusbe]
-3a3d364  msm8909: Disable audio halservice for low ram  [martinusbe]
-3cf8f17  audio: Fix out_get_presentation_position for ULL/MMAP streams  [martinusbe]
-f835d54  configs: add USB_HEADSET device in policy conf files  [martinusbe]
-   * hardware/qcom/display-caf/msm8996/
-e838108  hwc2: Needs validation on display animation  [martinusbe]
-14d6b2e  hwc2: Validate input parcel values for few qclient methods.  [martinusbe]
-c96e238  sdm: Close stored retire fence on display deinit  [martinusbe]
-4c29fa4  sdm: Move CAPABILITY_SKIP_CLIENT_COLOR_TRANSFORM under flag  [martinusbe]
-80357c0  hwc2: Avoid flush for command mode panels  [martinusbe]
-14ea089  hwc2: Avoid adding default color mode when display PP is unsupported  [martinusbe]
-20be5e0  hwc2: Determine virtual display presence based on target specific property  [martinusbe]
-30a98a9  gralloc1: Get color space from metadata handle  [martinusbe]
-f5a580b  hwc2: Delete hwc layers in display de-init  [martinusbe]
-7821a61  hwc2: Add support for disabling external animation  [martinusbe]
-   * hardware/qcom/media-caf/msm8996/
-2f95d19  media: libOmxSw encoders require prop headers :(  [martinusbe]
-4b081b5  mm-video-v4l2: Avoid buffer access after free buffer call  [martinusbe]
-fafe8f3  mm-video-v4l2: venc: Use client allocated memory if available  [martinusbe]
-c9af450  media - Changes for DIVX playback on O-MR1.  [martinusbe]
-96a95c2  mm-core: Move AIV.play component below dummy component.  [martinusbe]
-   * system/vold/
-f3c6d19  vold: Also wait for dm device when mounting private volume  [martinusbe]
-bd14b95  vold: Make sure block device exists before formatting it  [martinusbe]
-94721c6  Add exfat to supported FSs if exfat is enabled  [martinusbe]
-d3dab5b  Remove unused includes  [martinusbe]
-36695b6  vold: Only include exfat support for devices that specify a driver  [martinusbe]
-7d1f17f  vold: Make exfat driver support generic  [martinusbe]
-0dad851  vold: Don't disable dirsync for exfat  [martinusbe]
-
-
-   * bionic/
-41967c6  linker: allow the linker to shim executables  [Prema Chand Alugu]
-3186a02  linker: Move shims to TARGET_LD_SHIM_LIBS  [Prema Chand Alugu]
-c6ba4ff  Revert "hacky shim"  [Prema Chand Alugu]
-   * vendor/validus/
-0c915e0  validus: Sort soong variables and configurations  [Prema Chand Alugu]
-3add9b3  validus: soong: replace space with colon on TARGET_LD_SHIM_LIBS  [Prema Chand Alugu]
-29f2d03  validus: soong: Add var for linker shim libs  [Prema Chand Alugu]
-
-
-   * bionic/
-2d72eef  bionic: Let popen and system fall back to /sbin/sh  [martinusbe]
-09ed91d  Add ability to read /etc/passwd and /etc/group  [martinusbe]
    * build/make/
-f40888d  releasetools: include INSTALL/ and SYSTEM/build.prop when unzipping  [martinusbe]
-3321fa0  releasetools: Use the first entry of a mount point when reading fstab  [martinusbe]
-02f9ba8  Remove Feedback Directed Optimization support  [martinusbe]
-aabf48d  Use 'release-keys' for build tag  [martinusbe]
-2f26ca0  build: add TARGET_SPECIFIC_HEADER_PATH to config  [martinusbe]
-36073df  build: use the system's ccache by default  [martinusbe]
-8acee2e  Create 0 compression ratio jar files  [martinusbe]
-490b05a  Remove ro.kernel.android.checkjni  [martinusbe]
-18a1b33  Revert "Specify --max_timestamp when calling brillo_update_payload."  [martinusbe]
-   * frameworks/base/
-0b73a94  Camera: Expose Aux camera to apps present in the whitelist  [martinusbe]
+cd5929b  Move ART default properties into system partition  [martinusbe]
+   * device/gzosp/sepolicy/
+8be968a  gzosp_sepolicy: Add sf_lcd_density_prop type and labelled props  [martinusbe]
+eb363ce  sepolicy: userinit data_file_type  [martinusbe]
+a5b966a  sepolicy: add sysinit to coredomain  [martinusbe]
+4654ee9  sepolicy: add mkfs to coredomain  [martinusbe]
+5403d24  sepolicy: use correct flag for PRIVATE_SEPOLICY_DIR  [martinusbe]
+c4afa8c  sepolicy: Fix neverallow on user builds  [martinusbe]
+9ceaed9  sepolicy: Isolate qcom sysfs_graphics policy for recovery  [martinusbe]
+8a0aa30  sepolicy: recovery: Clean up recovery SELinux policy  [martinusbe]
+10c08a3  sepolicy: Initial policy for recovery  [martinusbe]
+cbf4800  Remove duplicated genfscon  [martinusbe]
+   * device/qcom/sepolicy/
+cb36f9b  sepolicy: Remove definition and labelling of sf_lcd_density_prop  [martinusbe]
    * frameworks/native/
-3ac3125  [HAX] remove stylus shit from touchscreen input  [martinusbe]
-   * packages/apps/Settings/
-86430cb  strings/validus: import russian translation from crowdin  [martinusbe]
-   * packages/apps/WolvesDen/
-f30289f  strings: import russian translation from crowdin  [martinusbe]
-   * vendor/validus/
-e6ab388  soong_config: Add TARGET_USES_QCOM_BSP_LEGACY  [martinusbe]
-fa5a3bb  kernel: Don't enable ANDROID_BINDER_IPC_32BIT for mixed userspace/kernel  [martinusbe]
-b59bfb8  kernel: fix ccache variable sanitation for clang builds  [martinusbe]
+a44e72b  Prefer /system/usr/keylayouts over everything else  [martinusbe]
+0da51de  Huawei:: HWC doesn't understand 0,0,0,0 == fullscreen damage. Set it to the whole visible surface  [martinusbe]
+   * frameworks/opt/telephony/
+2c9baaa  Dynamically calculate thresholds based on Huawei's for huaweiSignalStrength  [martinusbe]
+92fed77  Implement signal strength hacks used on Huawei devices  [martinusbe]
+   * packages/apps/Camera2/
+1a4526a  Camera2: Fix photo snap delay on front cam.  [martinusbe]
+   * system/core/
+77c3538  Revert "logd: add "+passcred" for logdw socket"  [martinusbe]
+   * system/vold/
+ebc3386  Allow deletion of symlink  [martinusbe]
+====================
+     05-10-2018
+====================
 
 
-   * manifest/
-8cd93f6  gzosp: Remove unused device repos  [martinusbe]
-
-
-   * external/json-c/
-9f63dd6  json-c: Add libjson to the vendor image  [theringmaster]
+   * build/make/
+a006801  Make change and version bump to OPM4.171019.016.B1  [Mirko]
+03b2b7b  Make change and version bump to OPM4.171019.016  [Mirko]
+   * frameworks/av/
+3308920  fix crash due to no output format available -- DO NOT MERGE  [Mirko]
+62c6e62  Handle overflow in android::HeifDataSource::readAt  [Mirko]
+04a6631  better mpeg2 TS elementary stream Access Unit parsing  [Mirko]
+2ab3cef  Handle bad bitrate index in mp3dec.  [Mirko]
+6cc3100  heif: use width and height for decoder -- DO NOT MERGE  [Mirko]
    * frameworks/base/
-c1a0f7f  Statusbar text battery: use  ⚡  instead of ~ when charging  [Mirko]
-242c094  Ambient battery level: use a ⚡ symbol when charging  [Mirko]
-c3e3df7  Ambient: show battery level on bottom  [Mirko]
-a76147f  Music ticker: once per track is enough  [Mirko]
-c33391c  Stock Recents: use Slim Recents icons management [1/2]  [Mirko]
-   * packages/apps/DUI/
-a35eac3  Fling kb cursors: long press left/right to keep moving cursor [1/2]  [Mirko]
-7a2f6e9  Expose moar DUI parts  [Mirko]
-a82035b  Fix FC for Fling when unpinning an app  [Mirko]
-   * packages/apps/SlimRecents/
-763150e  Fix icon being bigger than some iconpack backimages  [Mirko]
-070aa4f  Don't add custom shape for unsupported apps but backimage available  [Mirko]
-b6801e0  IconsHandler: fix some back images not drawing correctly  [Mirko]
-0849dac  Reset icons normalizer on icon pack change  [Mirko]
-2067fcc  Slimrecents thumbnails: improve scalability  [Mirko]
-1dee1d3  Slimrecents: Improve card layout  [Mirko]
-384790b  Refesh icon shape size when changing panel scale  [Mirko]
-ae2e70a  Stock Recents: use Slim Recents icons management [2/2]  [Mirko]
-c62f964  Use iconpack back shape if available otherwise system icons shape  [Mirko]
-268d2f4  Improve performances and UI of Auto Expanded mode  [Mirko]
-98f58c6  Fix system fonts losing antialias with Slim Recents Auto Expand mode  [Mirko]
-26e80fd  Restore Auto Expand Mode  [Mirko]
-b5884b0  Improve code and fix panel glitch when starring apps  [Mirko]
-263dc8f  Drop auto expanded mode for now  [Mirko]
-   * packages/apps/WolvesDen/
-e4c83b8  Fling kb cursors: long press left/right to keep moving cursor [2/2]  [Mirko]
-8f61738  Slim Recents hints footer: cut down the long novel  [Mirko]
-3b3017c  Slim Recents settings: add hints footer  [Mirko]
+943776a  Fixed Security Vulnerability of DcParamObject  [Mirko]
+62dddee  Update internal ViewPager's SavedState to match Support Library version  [Mirko]
+7dc93de  [DO NOT MERGE] Copy PermissionChecker from support lib and use in RcognitionService  [Mirko]
+6c5adca  [DO NOT MERGE] Add permission check to setAllowOnlyVpnForUids  [Mirko]
+55dfab1  Verify last array's length in readFromParcel  [Mirko]
+   * frameworks/native/
+2d72559  Add bounds check to sensors direct channel creation  [Mirko]
+   * manifest/
+6f6cb20  android 8.1.0_r28  [Mirko]
+   * packages/apps/Dialer/
+5408236  Control dialer's incoming call proximity sensor check via an overlay  [martinusbe]
+   * packages/services/Telephony/
+c296c70  Enhanced permission checks for TelephonyManager#endCall() API.  [Mirko]
+   * system/core/
+2664016  String16: remove integer overflows  [Mirko]
+eb33881  libsuspend: Bring back earlysuspend  [Mirko]
    * vendor/validus/
-2f85d8b  generate changelog for 1.8  [martinusbe]
+2864b0c  version: v2.3  [martinusbe]
+d02785a  fonts: Add Audiowide for ZeroKool  [martinusbe]
+11cb0f6  sprint n.ispsn -> x.ispsn  [Pyrtle93]
+====================
+     05-09-2018
+====================
 
+
+   * hardware/qcom/gps/
+cc005ed  msm8084: Handle race condition in HAL post SSR  [martinusbe]
+0c65eeb  msm8084: Memory management fixes  [martinusbe]
+c14ee1e  msm8084: Add new event mask for timezone  [martinusbe]
+04a4cfd  msm8084: Remove reporting gps status from loc eng layer  [martinusbe]
+82b3b2e  msm8084: Remove Redundant Log  [martinusbe]
+2e1c09c  msm8084: LocTimer repeated expiration  [martinusbe]
+cfaef19  msm8084: MsgTask thread must call associator function always  [martinusbe]
+3481803  msm8084: Adding a number of utilities  [martinusbe]
+0ee35ad  msm8084: gps.conf parameters are in sap.conf table  [martinusbe]
+b773516  msm8084: Adding Mutex for Creating Context  [martinusbe]
+b3b66fe  msm8084: Removed unused code and unnecessary notice files  [martinusbe]
+b060e8e  msm8084: Avoiding race conditions during the pallellized builds in Android system  [martinusbe]
+f0f796c  msm8974: Return the correct length of nmea sentence  [martinusbe]
+e38211c  msm8974: Don't rely on transitively included headers  [martinusbe]
+8956919  msm8974: Fix logging level and remove nmea log  [martinusbe]
+5a0fc2b  msm8974: Fix duplicate gps.conf for hammerhead  [martinusbe]
+531de14  msm8974: Move device dependent modules to /vendor  [martinusbe]
+a91bbe6  msm8974: Cleanup obsolete LOCAL_PRELINK_MODULE  [martinusbe]
+c8aefee  msm8974: Default apn ip type to ipv4  [martinusbe]
+e9a28cd  msm8974: Add missing liblog dependency  [martinusbe]
+d3a535f  Revert "msm8974: remove from top level makefile"  [martinusbe]
+e47c3fa  Revert "msm8974: deprecate msm8974"  [martinusbe]
+c4d245b  gps: msm8960: Move device dependent modules to /vendor  [martinusbe]
+81959a5  gps: msm8960: Cleanup obsolete LOCAL_PRELINK_MODULE  [martinusbe]
+a936736  msm8960: Default apn ip type to ipv4  [martinusbe]
+9adf5bf  msm8960: Add support for IPV6 in AGPS Interface  [martinusbe]
+ef78050  gps: Use    * pathmap  [martinusbe]
+====================
+     05-07-2018
+====================
+
+
+   * frameworks/base/
+d3aaa40  Fix potential NPE and handle disabled packages properly  [Mirko]
+c39aa06  Add progress for font apply [1/2]  [Mirko]
+7753f65  Dynamic font fix for FDE devices  [Mirko]
+65be0eb  Fonts: Update keyguard when font changes  [Mirko]
+9469689  Introduce FontService  [Mirko]
+   * packages/apps/Settings/
+5da0bdb  Add progress for font apply [2/2]  [Mirko]
+1cef92e  Add Font preference for font manager  [Mirko]
+   * system/sepolicy/
+f186a62  Implement sepolicy rules for font service in o-mr1  [Mirko]
+c2c5e91  Sepolicy rules for FontService  [Mirko]
+d75f13e  Sepolicy exceptions for font engine assets  [Mirko]
+   * vendor/validus/
+e23c1c6  new fonts  [Mirko]
+735828f  Added new fonts  [Mirko]
+61cda5d  Add font package  [Mirko]
+====================
+     05-06-2018
+====================
+
+
+   * frameworks/base/
+5cbf6c4  ChooserActivity blacklist: fix FC on clean flash  [martinusbe]
+2e69128  ChooserAcitivity: add blacklist option to items longpress menu  [martinusbe]
+def8258  Blacklist apps in the ChooserAcitivity (e.g. Share button) [1/2]  [martinusbe]
+   * frameworks/opt/telephony/
+2c4b89f  Telephony: Set isNvSubscription as protected  [martinusbe]
+   * packages/apps/Settings/
+9bb50a5  Merge pull request #7 from jenslody/8.1-pr  [GitHub]
+1d2a9d7  ProximityOnWakePreferenceController: fix crash in settings-search due to missing implementation of "PreferenceControllerMixin".  [Jens Lody]
+   * packages/apps/WolvesDen/
+4e0ee47  Blacklist apps in the ChooserAcitivity (e.g. Share button) [2/2]  [martinusbe]
+c9d1f27  PackageListAdapter: show more apps in the list  [martinusbe]
+====================
+     05-05-2018
+====================
+
+
+   * vendor/validus/
+9e5bc24  gzosp: repopick: fix pick in the case of same name/path  [martinusbe]
+
+
+   * frameworks/base/
+bda86bd  Change power save mode color to black and expose it for themes  [martinusbe]
+
+
+   * build/make/
+bc657b4  Add build.prop to incrementals too  [martinusbe]
+54c7e90  build: allow forcing build of otatools  [martinusbe]
+a12d3a0  core: include vendor_buildinfo.sh when TARGET_COPY_OUT_VENDOR=system  [martinusbe]
+d4260b6  core: Dont overwrite build.prop when TARGET_COPY_OUT_VENDOR=system  [martinusbe]
+c2e0e45  Install (vendor|system/vendor)/build.prop always  [martinusbe]
+d55ac52  Add PRODUCT_SYSTEM_DEFAULT_PROPERTIES  [martinusbe]
+42380ec  Allow setting the recovery density separately from the aapt config  [martinusbe]
+e659c6c  build: Update install tools packaging for target-files support  [martinusbe]
+d145976  build: Add vendor.prop capability  [martinusbe]
+a90537b  core, release: add sload.f2fs for otatools.zip  [martinusbe]
+   * system/vold/
+e0132a7  Workaround perdev_minors path change in Linux  [martinusbe]
+
+
+   * vendor/validus/
+12be627  prebuilts: update Phonograph apk  [martinusbe]
 
 
    * bootable/recovery/
-5be238d  updater: Fix allowing devices to suppress BLKDISCARD  [martinusbe]
-   * hardware/qcom/audio/default/
-a0441e8  msm8960: treblize configuration  [hardwareadictos]
-56c5592  hal: Ensure device_name is copied if empty  [hardwareadictos]
+16fc5b0  bootloader_message: allow devices to override  [martinusbe]
+
+
+   * frameworks/base/
+7ae07fa  SystemUI: Hide lockscreen items [1/2]  [Mirko]
+   * hardware/qcom/audio-caf/msm8996/
+a266de7  qahw_api: Ignore missing dependency  [martinusbe]
+   * packages/apps/Settings/
+26b6787  add PreferenceController for proximity wake  [Mirko]
+5608c18  Prox Switch: Match base default off correct switch call in fragment  [Mirko]
+e6db34b  Settings: Proximity wake  [Mirko]
+ba09f57  deviceinfo: Add support for overriding vendor properties  [martinusbe]
+   * packages/apps/WolvesDen/
+f14ec10  Hide lockscreen items [2/2]  [Mirko]
+
+
+   * frameworks/base/
+682d635  base: SystemUI: bring back the google assist qs tiles  [Mirko]
+6f8aadf  Add Music QS Tile  [Mirko]
+c393d4d  Add Always On Display QS Tile  [Mirko]
+9a09637  Smart Pixels: Switch to registered receiver  [Mirko]
+e3df33d  Move Smart Pixels out of SystemUI  [Mirko]
+421b9b0  Fix NullPointerException on systemui restart with smart pixel enabled.  [Mirko]
+d6ae6c3  SystemUI: Refactor Smart Pixels tile  [Mirko]
+f79012e  SystemUI: Add Smart Pixels tile  [Mirko]
+133b2d2  SystemUI: Smart Pixels [1/2]  [Mirko]
+1ff3faf  SystemUI: screen-dimmer-pixel-filter  [Mirko]
+   * packages/apps/Settings/
+1fc0526  Add a preference controller for Smart Pixels  [Mirko]
+4c8e1f2  Settings: External Smart Pixels fragment launch  [Mirko]
+   * packages/apps/WolvesDen/
+db2912d  Update Smart Pixels menu  [Mirko]
+ced484b  Smart Pixels [2/2]  [Mirko]
+880d871  Add ListPreference helpers backed by Settings  [Mirko]
    * vendor/validus/
-19ebf1f  v1.8 for 8.1_r18 ;-)  [martinusbe]
+af2724e  version: going to v2.2  [martinusbe]
