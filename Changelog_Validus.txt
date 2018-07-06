@@ -1,87 +1,139 @@
 ====================
-     06-10-2018
+     07-06-2018
 ====================
 
 
    * build/make/
-49965bc  Make change and version bump to OPM2.171026.006.C1  [martinusbe]
-e02d3f1  DO NOT MERGE: Updating security string for oc-mr1-dev to 2018-06-05  [martinusbe]
+593f9aa  Make change and version bump to OPM6.171019.030.E1  [Prema Chand Alugu]
    * frameworks/av/
-881429c  Init gain config to prevent uninit leak.  [martinusbe]
-4a09f1a  Add check preventing div0 issue  [martinusbe]
-4c6a45b  Sanitize effect descriptors for AudioPolicyService binder calls.  [martinusbe]
+34da71f  Speed up id3v2 unsynchronization  [Prema Chand Alugu]
+7e17ca3  Fix security vulnerability in CryptoHal  [Prema Chand Alugu]
+2af4918  aaudio: use weak pointer to prevent UAF  [Prema Chand Alugu]
+484252e  Add minimum size check for ImageGrid atom  [Prema Chand Alugu]
    * frameworks/base/
-e05eaf5  DO NOT MERGE (O) Revoke permision when group changed  [martinusbe]
-214c395  Rework thumbnail cleanup  [martinusbe]
-a475fac  DO NOT MERGE - fix AFM.getComponentNameFromContext()  [martinusbe]
-32aec54  Make sure apps cannot forge package name on AssistStructure used for Autofill.  [martinusbe]
-   * frameworks/opt/telephony/
-cec25a9  Fixed invalid pdu issue  [martinusbe]
+daaaa90  clearCallingIdentity before calling into getPackageUidAsUser  [Prema Chand Alugu]
+74199ae  Nullcheck to fix Autofill CTS  [Prema Chand Alugu]
+e869cd9  Osu: fixed Mismatch between createFromParcel and writeToParcel  [Prema Chand Alugu]
+a533508  DO NOT MERGE Truncate newline and tab characters in BluetoothDevice name  [Prema Chand Alugu]
+b617938  Fix broken check for TelephonyManager#getForbiddenPlmns  [Prema Chand Alugu]
+2027b54  ResStringPool: Fix security vulnerability  [Prema Chand Alugu]
+3858adb  RESTRICT AUTOMERGE: Prevent reporting fake package name - framework (backport to oc-mr1-dev)  [Prema Chand Alugu]
+1cbdc9e  Use concrete CREATOR instance for parceling lists  [Prema Chand Alugu]
+c5b29e6  Proper autofill fix to let phone process autofill Settings activity.  [Prema Chand Alugu]
+   * frameworks/native/
+fd978ac  Don't pad before calling writeInPlace().  [Prema Chand Alugu]
+dc87595  Increment when attempting to read protected Parcel Data  [Prema Chand Alugu]
+6c8343d  Disallow reading object data from Parcels with non-object reads  [Prema Chand Alugu]
    * hardware/interfaces/
-925063a  cas: fix UAF in descrambler -- DO NOT MERGE  [martinusbe]
+87fb192  cas: do not use hidl_memory if size is > SIZE_MAX  [Prema Chand Alugu]
    * manifest/
-a307b79  default: remove external libvorbis  [GitHub]
-32ad4e2  8.1.0_r30  [GitHub]
-   * packages/providers/MediaProvider/
-fe63e0a  Rework thumbnail cleanup  [martinusbe]
+5d4ce24  manifest: 8.1.0_r41  [Prema Chand Alugu]
+   * packages/apps/Bluetooth/
+da9b978  Make sure server response doesn't exceed maximum allowable length  [Prema Chand Alugu]
+   * packages/services/Telephony/
+cbeac0e  DO NOT MERGE Add Safety Net Log for getForbiddenPlmns security hole  [Prema Chand Alugu]
+1935573  Fix broken permission check for TelephonyManager#getForbiddenPlmns  [Prema Chand Alugu]
    * system/bt/
-33e177c  DO NOT MERGE SMP: Validate remote elliptic curve points  [martinusbe]
-43df179  DO NOT MERGE Fix OOB read in process_l2cap_cmd  [martinusbe]
-d43ceec  DO NOT MERGE Drop LE CoC fragments when frame size is too big  [martinusbe]
-3518e0c  DO NOT MERGE Initialize local variable in gatts_process_read_by_type_req  [martinusbe]
-543fd45  DO NOT MERGE Handle bad packet length in gatts_process_read_req  [martinusbe]
-95574d7  Get rid of BTM_IS_PUBLIC_BDA  [martinusbe]
-7b15062  DO NOT MERGE Add bounds check for BNEP_Write  [martinusbe]
-5558382  PAN: Always allocate in bta_pan_data_buf_ind_cback  [martinusbe]
-24eecb0  DO NOT MERGE Fix unexpected behavior in bta_dm_sdp_result  [martinusbe]
+1f81a20  Add bounds check to l2cble_process_sig_cmd L2CAP_CMD_DISC_REQ  [Prema Chand Alugu]
+fda5d55  DO NOT MERGE: Check number of attributes before writing to a buffer  [Prema Chand Alugu]
+91e0a9a  DO NOT MERGE AVRC: Add bound check for AVRC_EVT_APP_SETTING_CHANGE  [Prema Chand Alugu]
+cd6c923  DO NOT MERGE Prevent stack overflow in btif_storage  [Prema Chand Alugu]
+bfe98ea  DO NOT MERGE Fix unexpected behavior in smp_sm_event  [Prema Chand Alugu]
+   * system/libhidl/
+b1044f9  mapMemory: Do not map if size is > SIZE_MAX  [Prema Chand Alugu]
    * vendor/validus/
-36a47fb  ValidusOS: v2.4 * Android 8.1.0_r30 * Edge GEstures * Customizable lockscreen clock * More stuffses  [hardwareadictos]
+bdb798a  ValidusOS: vendor: v2.6  [GitHub]
+====================
+     07-05-2018
+====================
 
-   * hardware/qcom/wlan/
-785e620  Move wcnss_service to vendor  [Anay Wadhera]
-2a89f37  Reading the serialno property is forbidden  [Anay Wadhera]
-b02b5f1  WifiHal: Fix junk data append to error info  [Anay Wadhera]
-cd09d6b  Wifi-Hal: Introduce support for NAN Publish Replied Ind  [Anay Wadhera]
-c533dda  Wifi-Hal: Add support to fetch second ndp channel  [Anay Wadhera]
 
-   * frameworks/base/
-aae9166  Add an option to force pre-O apps to use full screen aspect ratio  [hardwareadictos]
-f083477  Add NPE handling to the Edge Gesture Manager  [hardwareadictos]
-45fade7  Add ability to use EdgeGestureService for system gestures  [hardwareadictos]
-cdb26e7  Add EdgeGesture service  [hardwareadictos]
-2e7957e  Add edge gesture (1/2)  [hardwareadictos]
-   * packages/apps/WolvesDen/
-2c3bfa2  Add edge gestures (2/2)  [hardwareadictos]
-   * system/sepolicy/
-c7d2e5c  Add missing lines for edgestureservice  [hardwareadictos]
-7630a6e  sepolicy: Add new policy for edgegesture service  [hardwareadictos]
+====================
+     07-04-2018
+====================
 
-   * frameworks/base/
-3a25532  renderthread: relax error handling for wide gamut EGL configs  [martinusbe]
-dddf5e1  Don't crash if the IR HAL is not declared  [martinusbe]
 
-   * device/gzosp/sepolicy/
-7df779a  sepolicy qcom: correct path  [martin coulon]
+   * hardware/qcom/audio-caf/msm8998/
+838e9ec  Merge LA.UM.6.2.r1-08700-sdm660.0 on remote branch  [Ram9199]
+7161b2f  Merge LA.UM.6.4.r1-09000-8x98.0  [Ram9199]
+12b7e94  audio: Fixes for VNDK_VERSION=current  [Ram9199]
+0559223  Make libqcomvisualizer build with the VNDK.  [Ram9199]
+4c4f707  Make libqcompostprocbundle build with the VNDK.  [Ram9199]
+1d188f5  Build audio.primary.* with BOARD_VNDK_VERSION  [Ram9199]
+9dc85a6  Add libhardware_headers and libsystem_headers to modules  [Ram9199]
+6206095  configs: Fixed BTSCO samplerate mixer control  [Ram9199]
+6fb25dd  hal: Avoid resampling when hifi audio is enabled  [Ram9199]
+8937390  audio: revert the calculation of out_get_presentation_position  [Ram9199]
+2baf19c  msm8998: hal: Update ultrasound route hacks  [Ram9199]
+1500a26  msm8998: ultrasound: Initial open source hal for Elliptic Ultrasound  [Ram9199]
+4a95aca  configs: msm8937: Add mixer paths for sdm439 with pm8953  [Ram9199]
+====================
+     07-03-2018
+====================
 
-   * frameworks/base/
-9782b24  Remove the 0 from the 12 hour format from the 'Digital (bold)' option  [martinusbe]
 
-   * frameworks/base/
-84ed5c4  Keyguard items: code improvements  [Mirko]
-3c9ba04  Introduce lockscreen clock/date styles [1/2]  [Mirko]
-1312942  Always keep clock/date & alarm visible while dozing  [Mirko]
-   * packages/apps/WolvesDen/
-17aef12  Introduce lockscreen clock/date styles [2/2]  [Mirko]
-   * system/sepolicy/
-da911a2  init: disable file execute_no_trans neverallow  [martinusbe]
-5f62ff6  Hide some denials.  [martinusbe]
-b7b0440  priv_app: suppress denials for /proc/stat  [martinusbe]
-e879b75  Suppress denials for non-API access  [martinusbe]
-03b2bc7  priv_app: move logspam suppression to core policy  [martinusbe]
-97f9af9  Suppress denials from sdcardfs (b/67454004)  [martinusbe]
-1356160  Allow system_server to update timerslack_ns for hal_audio_default  [martinusbe]
-09a4033  system_server: allow writing to timerslack_ns  [martinusbe]
-851eb08  Adapt add_service uses for TARGET_HAS_LEGACY_CAMERA_HAL1  [martinusbe]
-c1e5975  Add rules required for TARGET_HAS_LEGACY_CAMERA_HAL1  [martinusbe]
-d34c74d  Sepolicy: Fix perfprofd path  [martinusbe]
+====================
+     07-02-2018
+====================
+
+
+====================
+     07-01-2018
+====================
+
+
+   * hardware/qcom/audio-caf/msm8996/
+6258aad  Merge tag 'LA.UM.6.6.r1-08900-89xx.0' of https://source.codeaurora.org/quic/la/platform/hardware/qcom/audio into lineage-15.1-caf-8996  [martinusbe]
+   * hardware/qcom/display-caf/msm8996/
+ea7a510  gralloc1: Add support for secure display.  [martinusbe]
+dbc7a87  liblight: Use char array instead of char pointer array for file name  [martinusbe]
+da9b7af  liblight: Change flash mode control for RGB LEDs  [martinusbe]
+====================
+     06-30-2018
+====================
+
+
+====================
+     06-29-2018
+====================
+
+
+====================
+     06-28-2018
+====================
+
+
+====================
+     06-27-2018
+====================
+
+
+====================
+     06-26-2018
+====================
+
+
+====================
+     06-25-2018
+====================
+
+
+====================
+     06-24-2018
+====================
+
+
+====================
+     06-23-2018
+====================
+
+
+   * bionic/
+d06202d  linker: Ensure active matching pairs  [martinusbe]
+   * vendor/validus/
+4aa27ec  version: 2.5 because why not  [martinusbe]
+====================
+     06-22-2018
+====================
+
 
