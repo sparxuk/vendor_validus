@@ -78,6 +78,10 @@ PRODUCT_COPY_FILES += \
     vendor/validus/prebuilt/common/etc/init.d/90userinit:system/etc/init.d/90userinit \
     vendor/validus/prebuilt/common/bin/sysinit:system/bin/sysinit
 
+# Google permissions
+PRODUCT_COPY_FILES += \
+    vendor/validus/prebuilt/common/etc/permissions/privapp-permissions-elgoog.xml:system/etc/permissions/privapp-permissions-elgoog.xml
+
 # Required packages
 PRODUCT_PACKAGES += \
     CellBroadcastReceiver \
