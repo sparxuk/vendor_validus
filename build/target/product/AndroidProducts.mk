@@ -15,6 +15,6 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/gzosp_arm.mk \
-    $(LOCAL_DIR)/gzosp_arm64.mk \
-    $(LOCAL_DIR)/gzosp_x86.mk
+    $(LOCAL_DIR)/validus_arm.mk \
+    $(LOCAL_DIR)/validus_arm64.mk \
+    $(LOCAL_DIR)/validus_x86.mk

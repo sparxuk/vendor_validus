@@ -1,11 +1,11 @@
-# gzosp functions that extend build/envsetup.sh
+# validus functions that extend build/envsetup.sh
 
-function gzosp_device_combos()
+function validus_device_combos()
 {
     local T list_file variant device
 
     T="$(gettop)"
-    list_file="${T}/vendor/gzosp/gzosp.devices"
+    list_file="${T}/vendor/validus/validus.devices"
     variant1="userdebug"
     variant2="user"
 
@@ -28,46 +28,46 @@ function gzosp_device_combos()
     if [[ ! -f "${list_file}" ]]
     then
         echo "unable to find device list: ${list_file}"
-        list_file="${T}/vendor/gzosp/gzosp.devices"
+        list_file="${T}/vendor/validus/validus.devices"
         echo "defaulting device list file to: ${list_file}"
     fi
 
     while IFS= read -r device
     do
-        add_lunch_combo "gzosp_${device}-${variant1}"
-        add_lunch_combo "gzosp_${device}-${variant2}"
+        add_lunch_combo "validus_${device}-${variant1}"
+        add_lunch_combo "validus_${device}-${variant2}"
     done < "${list_file}"
 }
 
-function gzosp_rename_function()
+function validus_rename_function()
 {
-    eval "original_gzosp_$(declare -f ${1})"
+    eval "original_validus_$(declare -f ${1})"
 }
 
-function _gzosp_build_hmm() #hidden
+function _validus_build_hmm() #hidden
 {
     printf "%-8s %s" "${1}:" "${2}"
 }
 
-function gzosp_append_hmm()
+function validus_append_hmm()
 {
-    HMM_DESCRIPTIVE=("${HMM_DESCRIPTIVE[@]}" "$(_gzosp_build_hmm "$1" "$2")")
+    HMM_DESCRIPTIVE=("${HMM_DESCRIPTIVE[@]}" "$(_validus_build_hmm "$1" "$2")")
 }
 
-function gzosp_add_hmm_entry()
+function validus_add_hmm_entry()
 {
     for c in ${!HMM_DESCRIPTIVE[*]}
     do
         if [[ "${1}" == $(echo "${HMM_DESCRIPTIVE[$c]}" | cut -f1 -d":") ]]
         then
-            HMM_DESCRIPTIVE[${c}]="$(_gzosp_build_hmm "$1" "$2")"
+            HMM_DESCRIPTIVE[${c}]="$(_validus_build_hmm "$1" "$2")"
             return
         fi
     done
-    gzosp_append_hmm "$1" "$2"
+    validus_append_hmm "$1" "$2"
 }
 
-function gzospremote()
+function validusremote()
 {
     local proj pfx project
 
@@ -76,7 +76,7 @@ function gzospremote()
         echo "Not in a git directory. Please run this from an Android repository you wish to set up."
         return
     fi
-    git remote rm gzosp 2> /dev/null
+    git remote rm validus 2> /dev/null
 
     proj="$(pwd -P | sed "s#$ANDROID_BUILD_TOP/##g")"
 
@@ -86,8 +86,8 @@ function gzospremote()
 
     project="${proj//\//_}"
 
-    git remote add gzosp "git@github.com:GZOSP/$pfx$project"
-    echo "Remote 'gzosp' created"
+    git remote add validus "git@github.com:ValidusOs/$pfx$project"
+    echo "Remote 'validus' created"
 }
 
 function cmremote()
@@ -147,11 +147,11 @@ function cafremote()
     echo "Remote 'caf' created"
 }
 
-function gzosp_push()
+function validus_push()
 {
     local branch ssh_name path_opt proj
     branch="lp5.1"
-    ssh_name="gzosp_review"
+    ssh_name="validus_review"
     path_opt=
 
     if [[ "$1" ]]
@@ -169,24 +169,24 @@ function gzosp_push()
         proj="android_$proj"
     fi
 
-    git $path_opt push "ssh://${ssh_name}/GZOSP/$proj" "HEAD:refs/for/$branch"
+    git $path_opt push "ssh://${ssh_name}/ValidusOs/$proj" "HEAD:refs/for/$branch"
 }
 
 
-gzosp_rename_function hmm
+validus_rename_function hmm
 function hmm() #hidden
 {
     local i T
     T="$(gettop)"
-    original_gzosp_hmm
+    original_validus_hmm
     echo
 
-    echo "vendor/gzosp extended functions. The complete list is:"
-    for i in $(grep -P '^function .*$' "$T/vendor/gzosp/build/envsetup.sh" | grep -v "#hidden" | sed 's/function \([a-z_]*\).*/\1/' | sort | uniq); do
+    echo "vendor/validus extended functions. The complete list is:"
+    for i in $(grep -P '^function .*$' "$T/vendor/validus/build/envsetup.sh" | grep -v "#hidden" | sed 's/function \([a-z_]*\).*/\1/' | sort | uniq); do
         echo "$i"
     done |column
 }
 
-gzosp_append_hmm "gzospremote" "Add a git remote for matching gzosp repository"
-gzosp_append_hmm "aospremote" "Add git remote for matching AOSP repository"
-gzosp_append_hmm "cafremote" "Add git remote for matching CodeAurora repository."
+validus_append_hmm "validusremote" "Add a git remote for matching validus repository"
+validus_append_hmm "aospremote" "Add git remote for matching AOSP repository"
+validus_append_hmm "cafremote" "Add git remote for matching CodeAurora repository."
