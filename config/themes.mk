@@ -37,4 +37,11 @@ PRODUCT_PACKAGES += \
     SettingsBlackTheme \
     SystemBlackTheme \
     SystemSettingsIconTint \
-    SysuiQsBlackTheme 
+    SysuiQsBlackTheme
+
+# QS tile styles
+PRODUCT_PACKAGES += \
+    QStilesDefault \
+    QStilesCircleTrim \
+    QStilesSquircleTrim \
+    QStilesTwoToneCircle
