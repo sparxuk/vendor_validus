@@ -206,3 +206,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 include vendor/validus/google/GoogleAudio.mk
 
 EXTENDED_POST_PROCESS_PROPS := vendor/validus/tools/validus_process_props.py
+
+# Themes
+include vendor/validus/config/themes.mk
+
