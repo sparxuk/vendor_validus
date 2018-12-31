@@ -97,6 +97,11 @@ PRODUCT_PACKAGES += \
     libprotobuf-cpp-full \
     librsjni
 
+# Cutout control overlays
+PRODUCT_PACKAGES += \
+    HideCutout \
+    StatusBarStock
+    
 # AudioFX
 PRODUCT_PACKAGES += \
     AudioFX
