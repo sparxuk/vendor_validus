@@ -1,229 +1,118 @@
 ====================
-     03-24-2019
+     05-31-2019
 ====================
 
 
-   * build/make/
-b9ed2dc57  build gzosp device sepolicy  [Alx31]
+====================
+     05-30-2019
+====================
+
+
+====================
+     05-29-2019
+====================
+
+
+====================
+     05-28-2019
+====================
+
+
+   * packages/services/Telecomm/
+ca62919  Change UI to be consistency with dialer settings light M2 theme  [martinusbe]
+====================
+     05-27-2019
+====================
+
+
    * frameworks/base/
-5ea845adfed  Prevent NFE in SystemUI when parsing invalid int (2)  [Alx31]
-8aeb6e3074b  Prevent NFE in SystemUI when parsing invalid int  [Alx31]
-   * vendor/validus/
-7d3bd22  bump to 4.1  [Alx31]
-====================
-     03-23-2019
-====================
-
-
-   * bionic/
-a82a54b56  Remove some PR_SET_VMAs during pthread_create  [Sparx]
-   * build/make/
-402f9c4bd  build: Add vendor.prop capability  [Sparx]
-60c862e68  Version bump to PQ2A.190305.002  [Sparx]
-89d66cbbd  Update Platform Security String to 2019-03-05 for pi-dev Bug:122541777 (cherry picked from commit ac6eac206d0e4b0604a362d1bcbfae3e1b03bfc2)  [Sparx]
-b76f3c123  Version bump to PQ2A.190301.002  [Sparx]
-c08b6657c  Update Platform Security String to 2019-03-01 for pi-dev Bug:122541777 (cherry picked from commit a1165c3723c9d58afc83202ff63c6f691737effb)  [Sparx]
-fcc680f12  Version bump to PQ2A.190205.003  [Sparx]
-394b172fe  Version bump to PQ2A.190205.002  [Sparx]
-4c71fc025  core: Pass HW FDE flags to soong  [Sparx]
-   * frameworks/base/
-c701bb290e9  IMMS should preserve selected IME upon boot  [Sparx]
-c7b3d5e555c  Add bluetooth icon.  [Sparx]
-75c5cd76ab5  Clean up screenshot if nothing selected  [Sparx]
-e5be4b456d1  Unbreak ambient display while Heads up is disabled  [Sparx]
-b7caceb2e48  Fix NPE when creates wifi tracker  [Sparx]
-ee01bb02eae  Revert "Reset wifi tethering state when failing in QS."  [Sparx]
-683a65c3086  Visualizer: fix native crash when visualizer release  [Sparx]
-69c471d7bf4  Use fdeCheckPassword error code to indicate pw failure  [Sparx]
-77117330310  frameworks: base: Port password retention feature  [Sparx]
-9c28213b9ab  base: Cleanup FP controller  [Sparx]
-09d4c2d3ec5  SystemUI: Fix flickering issue when live wallpaper is showing on aod/pulsing  [Sparx]
-0586752363a  BatteryMeterView: Fix logcat spam  [Sparx]
-ca5eb3acebf  Powermenu: Bring back airplane mode [1/2] Was broken due to using legacy layout Also tinted icons to theme with accent color  [Sparx]
-e0464e35116  Add kill button to notification guts [1/2]  [Sparx]
-af90941a1ea  Revert "Volume panel: load the bool once"  [Sparx]
-4cd121704e3  Code improvements for expandable volume panel  [Sparx]
-4849a67d292  Include InCallNotification.ogg in AllAudio.mk file  [Sparx]
-d93ccfbbbc0  Add ChargingStarted + InCallNotif to AudioPackage  [Sparx]
-9bc229041f2  SystemUI: Remove unused resources  [Sparx]
-22275db3b28  Redo expanded volume panel for 9.x  [Sparx]
-9ade7a36af7  Volume panel: Fix animation  [Sparx]
-e2e320033f1  Volume panel: load the bool once  [Sparx]
-b53fda78eee  Volume panel: Do the same with less  [Sparx]
-eb106fecd05  Allow devices override audio panel location  [Sparx]
-af030239328  SystemUI: Force Expanded Notifications [1/2]  [Sparx]
-d97534faed0  Double tap to sleep on statusbar [1/2]  [Sparx]
-a7490677a2a  Keyguard: Forward port lockscreen quick unlock (1/2) * PasswordTextView QuickUnlock listener functions and method thanks to ParanoidAndroid    *: Keyguard: Implement quick unlock feature [1/2] BigBrother1984 <carlosavignano@aospa.co> I0b3d92b91f72020d327a7f2f184c2fbc5519a5df  [Sparx]
-823feba3b08  Add back volume button control [1/2] this commit adds:  [Sparx]
-b80c8fa3653  fb: add back all keyboard IME features back (1/2) this commit adds:  [Sparx]
-7587ac093ff  call log limit 500=>5000  [Sparx]
-4ea47b5f029  [1/2] base: Fingerprint authentication vibration  [Sparx]
-90805ea1bea  Allow to suppress notifications sound/vibration if screen is On [1/2]  [Sparx]
-b8aab740e54  DPM: Fix regression from I54376f60ac53451ace22965d331b47cd8c2e614e  [Sparx]
-0d4896e6e05  RESTRICT AUTOMERGE Do not linkify text with RLO/LRO characters.  [Sparx]
-4ca49abae76  Adding SUPL NI Emergency Extension Time  [Sparx]
-bd21555678c  FRP: save password quality in DPM.resetPassword  [Sparx]
-803165d5d5e  Set scrollview on the power menu  [Sparx]
-d4a4e79f6ef  Powermenu: Bring back silent mode [1/2] Reconfigured for horizontal layout Icons themed with accent color  [Sparx]
-2f3cc6c6de8  Power button flashlight: allow to skip proximity check per device  [Sparx]
-e5b9f675e38  Power button flashlight toggle: add proximity sensor check  [Sparx]
-53cabaf2ec5  Allow doubletap/longpress power to toggle torch [1/2]  [Sparx]
-4a7461f7184  Flashlight toggle api improvements  [Sparx]
-6a2adf9286f  Add api to toggle flashlight and check if device has flashlight  [Sparx]
-   * manifest/
-78a36c3  manifest: android-9.0.0_r34  [Sparx]
-   * packages/apps/Settings/
-a73042dfcf  Settings: Add deep sleep info to uptime  [Sparx]
-ddb4daa01b  settings: move some strings to WD  [Sparx]
-f13512472e  Notification log improvements  [Sparx]
-922ccc0ac0  Expose the notification log  [Sparx]
-6cd099c7ee  Settings: Bring back Uptime  [Sparx]
-0a6252507d  Settings: Use correct icon for ring volume  [Sparx]
-21f63ccf2b  Settings: Show me more than 4 freaking items in the menus!  [Sparx]
-58338a0425  Keyguard: Forward port lockscreen quick unlock (2/2)  [Sparx]
-f43cd3bf38  Add back volume button control [2/2] this commit adds:  [Sparx]
-d43f1e7c88  Settings: add back all keyboard IME features back (2/2) this commit adds:  [Sparx]
-77c637df9a  Settings: Move Buttons settings to WolvesDen  [Sparx]
-e57dfb3151  Settings: Move three finger screenshot to WolvesDen  [Sparx]
-254dd978a4  Revert "[2/2] settings: implement OP like navigation gestures"  [Sparx]
-cf62736bdc  Power detail pages: Finish off the rest of the icon tinting  [Sparx]
-e7c0a0f254  Settings: fix icon tinting in power detail pages  [Sparx]
-487d9497b4  StorageSummaryPreference: Nuke hardcoded color  [Sparx]
-6dee65c95a  Allow to doubletap or longpress power to toggle flashlight [2/2]  [Sparx]
+14f4743  Add AlarmsBlocker [1/2]  [Sparx]
+3e7af85  WakelockBlocker [1/2]  [Sparx]
    * packages/apps/WolvesDen/
-5d86a0d  wolvesden: add gestures/navbar switch  [Sparx]
-eaffb18  WolvesDen: Renew navigation gestures info string  [Sparx]
-7733ab6  wolvesden: fix strings for op gestures  [Sparx]
-495a4d0  [2/2] WolvesDen: op gesture tweaks  [Sparx]
-5971d0d  WolvesDen: Implement some strings  [Sparx]
-9fd8975  Powermenu: Bring back airplane mode [2/2]  [Sparx]
-dfd2fcf  Reinstate lock screen items  [Sparx]
-2bf6ae8  Add kill button to notification guts [2/2]  [Sparx]
-ca9fab4  wolvesden: Force Expanded Notifications [2/2]  [Sparx]
-b68227c  lockscreen: remove this, fc because empty  [Sparx]
-3213892  Double tap to sleep on statusbar [2/2]  [Sparx]
-27f8d88  [2/2] WolvesDen: Fingerprint authentication vibration  [Sparx]
-5e610c1  Allow to suppress notifications sound/vibration if screen is On [2/2]  [Sparx]
-9fc07d5  WolvesDen: Import Buttons settings into Navigation tab  [Sparx]
-68564d9  WolvesDen: Import Three-finger-gestgure into system tab  [Sparx]
-b5f936d  [2/2] WolvesDen: implement OP like navigation gestures  [Sparx]
-86cf2b0  WolvesDen: Tabs: Bring back navigation tab  [Sparx]
-772bd8e  Powermenu: Bring back silent mode [2/2]  [Sparx]
-   * system/vold/
-ce7f42d  increase timeout for waiting on block device  [Sparx]
-3bdaca9  Wait for dm device to be ready before format  [Sparx]
-c917dc7  vold: bring inline with LOS  [Sparx]
-d8c4e60  vold: Move QCOM HW FDE inclusion under validus namespace  [Sparx]
-d0fdcba  system: vold: Remove crypto block device creation  [Sparx]
-241082f  vold: Add Hardware FDE feature  [Sparx]
-   * vendor/qcom/opensource/data-ipa-cfg-mgr/
-3a01e0a  ipacm: Fix XLAT mux id issue  [martinusbe]
+af8012f  AlarmsBlocker [2/2]  [Sparx]
+daf9b5c  WakelockBlocker [2/2]  [Sparx]
    * vendor/validus/
-4198320  gzosp: Add techpack/audio to include path also  [Sparx]
-cba7262  gzosp: Consider techpack/audio when generating kernel headers  [Sparx]
-ac87294  gzosp: qcom: Set proper CAF data-ipa-cfg-mgr pathmap  [Sparx]
-4042f3e  gzosp: qcom: Set data-ipa-cfg-mgr pathmap  [Sparx]
-131e988  qcom_target: Move RIL path mapping to core/config.mk  [Sparx]
-4d47713  vendor: bring inline with LOS  [Sparx]
-2daa6e1  soong_config: Add flag for crypto waiting on QSEE to start  [Sparx]
-53223b1  soong_config: Add flag for legacy HW FDE  [Sparx]
-6f018a7  soong_config: Add new flags for HW FDE  [Sparx]
-3b22556  vendor: allow maintainers to build DSP stuff  [Sparx]
+ad80623  Version bump - 5.1  [Sparx]
+f83d844  Devices: Add HLTE  [Sparx]
 ====================
-     03-22-2019
-====================
-
-
-   * manifest/
-73521e1  val: track our cryptfs_hw  [Sparx]
-6606ee6  validus: track vold  [Sparx]
-   * packages/apps/Bluetooth/
-17721fb9  Update Bluetooth to use adaptive icon.  [martinusbe]
-9fe3e6e7  Fix generating id in android namespace  [martinusbe]
-19ba19a5  Bluetooth: Remove unused string resources  [martinusbe]
-====================
-     03-21-2019
-====================
-
-
-   * frameworks/av/
-368267fe3  Visualizer: fix native crash when visualizer release  [martinusbe]
-9765f83de  stagefright: add changes related to high-framerates in CameraSource  [martinusbe]
-   * hardware/ril/
-976a1fc  libril: Restore support for RIL v6, v8 and v9 stacks  [martinusbe]
-eaa2b94  libril: Protect against NULL unsolicited response function  [martinusbe]
-1c6e4c9  ril: Add guard makefile  [martinusbe]
-   * hardware/ril-caf/
-8f69bb6  Encode the Number of MNC Digits in CellIdentity  [martinusbe]
-   * packages/services/Telephony/
-07ae92d75  Don't start SIP service before decrypted  [martinusbe]
-   * vendor/qcom/opensource/cryptfs_hw/
-cbd061f  validus  [martinusbe]
-b2e6ab0  cryptfs_hw: bring inline with LOS  [martinusbe]
-447cb91  cryptfs_hw: Remove unused variable  [martinusbe]
-17e131f  cryptfs_hw: add missing logging tag  [martinusbe]
-0e1a6d7  cryptfs_hw: Featureize support for waiting on QSEE to start  [martinusbe]
-8d0769e  cryptfs_hw: Add compatibility for pre-O hw crypto  [martinusbe]
-====================
-     03-20-2019
+     05-26-2019
 ====================
 
 
 ====================
-     03-19-2019
+     05-25-2019
 ====================
 
 
 ====================
-     03-18-2019
+     05-24-2019
 ====================
 
 
 ====================
-     03-17-2019
+     05-23-2019
 ====================
 
 
 ====================
-     03-16-2019
+     05-22-2019
 ====================
 
 
 ====================
-     03-15-2019
+     05-21-2019
+====================
+
+
+   * frameworks/base/
+0e5b7ba  Keyguard: Cleanup lock clock code [1/2]  [Alx31]
+9aebf35  base: Persistent settings icon on qs panel for 9.x  [Alx31]
+98300c4  Keyguard: Remove du clock code  [Alx31]
+9e60969  Led lights: don't skip dialer and other ones  [Alx31]
+d18487a  base: Add sammy bold with accent color LS clock (1/2)  [Alx31]
+c9df25f  Let's use bold in accent clocks  [Alx31]
+9a6e1ba  base: Add stock clocks with accent color (1/2)  [Alx31]
+8c85af5  [1/2] Add sammy accent clock and a variant  [Alx31]
+e35a633  ActivityRecord: .app must not be null when you call .setVisible  [Alx31]
+cdcc09b  Wallpaper is half black after rotating quickly  [Alx31]
+23f8309  SQLite: Do integrity_check only once  [Alx31]
+4c984be  Add handling SQLiteDatabaseCorruptException  [Alx31]
+fc942f1  Improvements for swipe to screenshot  [Alx31]
+34c3132  Fix weird artifact in battery icon  [Alx31]
+0421fae  Improve Q battery icon and unify with portrait style  [Alx31]
+429b3d8  SettingsLib: Expose Q battery icon paths  [Alx31]
+b12112b  [1/2] base: Add Q style to battery icon chooser  [Alx31]
+dc29830  Fix inaccurate power algorithm of mobile radio  [Alx31]
+89b0a6f  base: Add seekbar to media notification  [Alx31]
+5000a5e  base: Return of Smart Pulldown [1/2]  [Alx31]
+   * packages/apps/Settings/
+d9f2934  Remove AOSP battery percentage, we have one in WolvesDen  [Alx31]
+   * packages/apps/WolvesDen/
+5e5f442  Keyguard: Cleanup lock clock code [2/2]  [Alx31]
+668adec  Add sammy bold with accent color LS clock (2/2  [Alx31]
+d969be7  Add stock clocks with accent color (2/2)  [Alx31]
+98fac46  [2/2] Add sammy accent clock and a variant  [Alx31]
+988b1f0  [2/2] wolvesden: Add Q style to battery icon chooser  [Alx31]
+8483d5c  Return of Smart Pulldown [1/2]  [Alx31]
+====================
+     05-20-2019
 ====================
 
 
 ====================
-     03-14-2019
+     05-19-2019
+====================
+
+
+   * packages/apps/Dialer/
+f51cebb  Dialer: AudioModeProvider: use wired route for usb headsets  [martinusbe]
+====================
+     05-18-2019
 ====================
 
 
 ====================
-     03-13-2019
+     05-17-2019
 ====================
 
 
-====================
-     03-12-2019
-====================
-
-
-====================
-     03-11-2019
-====================
-
-
-====================
-     03-10-2019
-====================
-
-
-   * hardware/qcom/audio/default/
-e5b60cf5  Merge remote-tracking branch 'caf' into HEAD  [martinusbe]
-   * hardware/qcom/display/
-9ade636cc  Merge remote-tracking branch 'caf' into HEAD  [martinusbe]
-   * hardware/qcom/media/
-ba74f9ee  Merge remote-tracking branch 'caf' into HEAD  [martinusbe]
-   * packages/services/OmniJaws/
-14b4132  Weather: Set OWM as default provider  [alliancesparx]

@@ -515,7 +515,7 @@ platform/packages/providers/CalendarProvider
 platform/packages/providers/CallLogProvider
 platform/packages/providers/ContactsProvider
 platform/packages/providers/DownloadProvider
-platform/packages/providers/MediaProvider
+packages/providers/MediaProvider
 platform/packages/providers/PartnerBookmarksProvider
 platform/packages/providers/TelephonyProvider
 platform/packages/providers/TvProvider
