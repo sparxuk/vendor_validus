@@ -65,9 +65,14 @@ PRODUCT_COPY_FILES += \
 #PRODUCT_COPY_FILES +=  \
 #    vendor/validus/prebuilt/common/sysconfig/dialer_experience.xml:system/etc/sysconfig/dialer_experience.xml
 
+
 PRODUCT_COPY_FILES += \
     vendor/validus/prebuilt/common/etc/permissions/privapp-permissions-omnijaws.xml:system/etc/permissions/privapp-permissions-omnijaws.xml \
     vendor/validus/prebuilt/common/etc/permissions/privapp-permissions-gzr.xml:system/etc/permissions/privapp-permissions-gzr.xml
+
+# Enforce privapp-permissions whitelist
+PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
+    ro.control_privapp_permissions=enforce
 
 # Fonts packages
 PRODUCT_PACKAGES += \
