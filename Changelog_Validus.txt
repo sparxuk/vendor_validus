@@ -1,118 +1,137 @@
 ====================
-     05-31-2019
+     06-20-2019
 ====================
 
 
 ====================
-     05-30-2019
+     06-19-2019
 ====================
 
 
 ====================
-     05-29-2019
+     06-18-2019
 ====================
 
 
 ====================
-     05-28-2019
+     06-17-2019
 ====================
 
 
-   * packages/services/Telecomm/
-ca62919  Change UI to be consistency with dialer settings light M2 theme  [martinusbe]
 ====================
-     05-27-2019
+     06-16-2019
 ====================
 
 
+====================
+     06-15-2019
+====================
+
+
+====================
+     06-14-2019
+====================
+
+
+   * build/make/
+c4167ea37  Version bump to PQ3A.190605.003 [core/build_id.mk]  [alliancesparx]
+d99bdddcf  Version bump to PQ3A.190605.002  [alliancesparx]
+3fc5995c7  Update Security String to 2019-06-05 Bug:129374896 Merged-In: 2c26c3d4c0314f8a3f905e5a7081556f7b4b353a (cherry picked from commit 3ae4e858b7c169b19a4994dd6b124a68fa234ff0)  [alliancesparx]
+3e9a7f0a6  [DO NOT MERGE] Update Security String to 2019-06-01 Bug:129374896 (cherry picked from commit 2db03695f4fccc312947155ae724f48885e472c5)  [alliancesparx]
    * frameworks/base/
-14f4743  Add AlarmsBlocker [1/2]  [Sparx]
-3e7af85  WakelockBlocker [1/2]  [Sparx]
-   * packages/apps/WolvesDen/
-af8012f  AlarmsBlocker [2/2]  [Sparx]
-daf9b5c  WakelockBlocker [2/2]  [Sparx]
-   * vendor/validus/
-ad80623  Version bump - 5.1  [Sparx]
-f83d844  Devices: Add HLTE  [Sparx]
-====================
-     05-26-2019
-====================
-
-
-====================
-     05-25-2019
-====================
-
-
-====================
-     05-24-2019
-====================
-
-
-====================
-     05-23-2019
-====================
-
-
-====================
-     05-22-2019
-====================
-
-
-====================
-     05-21-2019
-====================
-
-
-   * frameworks/base/
-0e5b7ba  Keyguard: Cleanup lock clock code [1/2]  [Alx31]
-9aebf35  base: Persistent settings icon on qs panel for 9.x  [Alx31]
-98300c4  Keyguard: Remove du clock code  [Alx31]
-9e60969  Led lights: don't skip dialer and other ones  [Alx31]
-d18487a  base: Add sammy bold with accent color LS clock (1/2)  [Alx31]
-c9df25f  Let's use bold in accent clocks  [Alx31]
-9a6e1ba  base: Add stock clocks with accent color (1/2)  [Alx31]
-8c85af5  [1/2] Add sammy accent clock and a variant  [Alx31]
-e35a633  ActivityRecord: .app must not be null when you call .setVisible  [Alx31]
-cdcc09b  Wallpaper is half black after rotating quickly  [Alx31]
-23f8309  SQLite: Do integrity_check only once  [Alx31]
-4c984be  Add handling SQLiteDatabaseCorruptException  [Alx31]
-fc942f1  Improvements for swipe to screenshot  [Alx31]
-34c3132  Fix weird artifact in battery icon  [Alx31]
-0421fae  Improve Q battery icon and unify with portrait style  [Alx31]
-429b3d8  SettingsLib: Expose Q battery icon paths  [Alx31]
-b12112b  [1/2] base: Add Q style to battery icon chooser  [Alx31]
-dc29830  Fix inaccurate power algorithm of mobile radio  [Alx31]
-89b0a6f  base: Add seekbar to media notification  [Alx31]
-5000a5e  base: Return of Smart Pulldown [1/2]  [Alx31]
+59e537a4265  fwb: util: Update fileWritable() and fileReadable()  [alliancesparx]
+337d18dedf6  base: FileUtils: adapt to GZOSP  [alliancesparx]
+e77d04470fc  base: add FileUtils class  [alliancesparx]
+2394b126c21  Implement per-app thermal control [2/3]  [alliancesparx]
+4cd9ed54698  Add cross user permission check - areNotificationsEnabledForPackage  [alliancesparx]
+2a0743d4e24  Limit IsSeparateProfileChallengeAllowed to system callers  [alliancesparx]
+d8b0ee5149a  Added missing permission check to isPackageDeviceAdminOnAnyUser.  [alliancesparx]
+c4d8af879e7  DO NOT MERGE Atoms: Add BluetoothClassicPairingEvent  [alliancesparx]
+b6dcff8ad8b  Fix NPE on ExpandableNotificationRow  [alliancesparx]
+d0dd7c06965  SystemUI: Fix fc when selecting logo or carrier label  [alliancesparx]
+52fd5fb78d4  SystemUI: partial screenshot on long press power menu  [alliancesparx]
+709e7c1da76  base: refine partial screenshot handling  [alliancesparx]
+2d5f16bcfb8  Q Style Clock: Make sure minutes text is in single line  [alliancesparx]
+e04f30b87a7  SystemUI: Set proper color for battery text view  [alliancesparx]
+2c973d3219c  Q Style Clock: Make it fully translatable  [alliancesparx]
+cee8ddf3284  LSClockStyle: Misc fixes  [alliancesparx]
+9c773d495bf  Q Style Clock: Improve design a bit  [alliancesparx]
+22296da26b9  KeyguardStatusView: add custom text clock  [alliancesparx]
+c6561e14fdc  Q Style Clock: Reduce top margin, users want to see more notifications  [alliancesparx]
+0d1821cf1be  Q Style Clock: Set "It's" to accent color instead of gold / yellow color  [alliancesparx]
+25c181418cf  KeyguardSliceView: Align as per the Clock Style  [alliancesparx]
+1c7f184a791  Q TextClock: Use Google Sans for typeface  [alliancesparx]
+61bb5f4da82  SystemUI: Cleanup keyguard_status_view layout  [alliancesparx]
+626d65036cb  CustomTextClock: Code style cleanups  [alliancesparx]
+f9c41a9f107  KeyguardStatusView: Cleanup pointless duplication  [alliancesparx]
+f2570769f5d  CustomTextClock: Improve UI and optimisations  [alliancesparx]
+6798951af1e  Lockscreen Clock Styles: Introduce Q style text clock  [alliancesparx]
+440d40d2336  LS clock style: Place Q style clock above keyguard status view  [alliancesparx]
+49e751c2ba3  Fixed auto-brightness first screen update.  [alliancesparx]
+   * manifest/
+c49c0e3  manifest: 9.0.0_r40  [alliancesparx]
+7b0769e  validus: track our clang  [alliancesparx]
    * packages/apps/Settings/
-d9f2934  Remove AOSP battery percentage, we have one in WolvesDen  [Alx31]
+eb11a621d4  Implement per-app thermal control [1/3]  [alliancesparx]
+d7b39a50f9  Remove freeform and resizable activity preferences  [alliancesparx]
+d1e28f95f6  Add summary to custom ambient preference  [alliancesparx]
+8b47a2a7d8  Ensure battery saver preference is truly disabled while plugged in  [alliancesparx]
    * packages/apps/WolvesDen/
-5e5f442  Keyguard: Cleanup lock clock code [2/2]  [Alx31]
-668adec  Add sammy bold with accent color LS clock (2/2  [Alx31]
-d969be7  Add stock clocks with accent color (2/2)  [Alx31]
-98fac46  [2/2] Add sammy accent clock and a variant  [Alx31]
-988b1f0  [2/2] wolvesden: Add Q style to battery icon chooser  [Alx31]
-8483d5c  Return of Smart Pulldown [1/2]  [Alx31]
+21904fa  WolvesDen: Add Q text lockscreen clock style  [alliancesparx]
+   * vendor/validus/
+332a7b6  Version bump - 5.2  [alliancesparx]
 ====================
-     05-20-2019
+     06-13-2019
 ====================
 
 
 ====================
-     05-19-2019
-====================
-
-
-   * packages/apps/Dialer/
-f51cebb  Dialer: AudioModeProvider: use wired route for usb headsets  [martinusbe]
-====================
-     05-18-2019
+     06-12-2019
 ====================
 
 
 ====================
-     05-17-2019
+     06-11-2019
 ====================
 
 
+====================
+     06-10-2019
+====================
+
+
+====================
+     06-09-2019
+====================
+
+
+====================
+     06-08-2019
+====================
+
+
+   * frameworks/av/
+c00e4287c  libcameraservice: force specific cam id for google face unlock  [Nick van Bokhorst]
+====================
+     06-07-2019
+====================
+
+
+====================
+     06-06-2019
+====================
+
+
+   * frameworks/av/
+0a26acdfd  AudioFlinger: Prevent multiple effect chains with same sessionId  [Alx31]
+894bd507c  audio: ensure effect chain with specific session id is unique  [Alx31]
+7e6b6e92d  NuPlayerCCDecoder: fix memory OOB  [Alx31]
+   * packages/apps/Bluetooth/
+5f582ac0  Revert "DO NOT MERGE Separate SDP procedure from bonding state (2/2)"  [martinusbe]
+e5997ae0  DO NOT MERGE Revert "BondStateMachine: Check for null before calling getDeviceType"  [martinusbe]
+06db0c34  BondStateMachine: Check for null before calling getDeviceType  [martinusbe]
+   * system/bt/
+727960c75  DO NOT MERGE Revert "DO NOT MERGE Separate SDP procedure from bonding state (1/2)"  [martinusbe]
+34729cda5  DO NOT MERGE Log encryption key size MERGE CONFLCIT RESOLUTION TO PI-QPR3-RELEASE * Log result from HCI_READ_ENCR_KEY_SIZE command  [martinusbe]
+dae39550d  DO NOT MERGE Don't persist bonds using sample LTK  [martinusbe]
+ffae782de  DO NOT MERGE Drop Bluetooth connection with weak encryption key  [martinusbe]
