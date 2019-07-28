@@ -1,137 +1,171 @@
 ====================
-     06-20-2019
+     07-28-2019
 ====================
 
 
-====================
-     06-19-2019
-====================
-
-
-====================
-     06-18-2019
-====================
-
-
-====================
-     06-17-2019
-====================
-
-
-====================
-     06-16-2019
-====================
-
-
-====================
-     06-15-2019
-====================
-
-
-====================
-     06-14-2019
-====================
-
-
-   * build/make/
-c4167ea37  Version bump to PQ3A.190605.003 [core/build_id.mk]  [alliancesparx]
-d99bdddcf  Version bump to PQ3A.190605.002  [alliancesparx]
-3fc5995c7  Update Security String to 2019-06-05 Bug:129374896 Merged-In: 2c26c3d4c0314f8a3f905e5a7081556f7b4b353a (cherry picked from commit 3ae4e858b7c169b19a4994dd6b124a68fa234ff0)  [alliancesparx]
-3e9a7f0a6  [DO NOT MERGE] Update Security String to 2019-06-01 Bug:129374896 (cherry picked from commit 2db03695f4fccc312947155ae724f48885e472c5)  [alliancesparx]
    * frameworks/base/
-59e537a4265  fwb: util: Update fileWritable() and fileReadable()  [alliancesparx]
-337d18dedf6  base: FileUtils: adapt to GZOSP  [alliancesparx]
-e77d04470fc  base: add FileUtils class  [alliancesparx]
-2394b126c21  Implement per-app thermal control [2/3]  [alliancesparx]
-4cd9ed54698  Add cross user permission check - areNotificationsEnabledForPackage  [alliancesparx]
-2a0743d4e24  Limit IsSeparateProfileChallengeAllowed to system callers  [alliancesparx]
-d8b0ee5149a  Added missing permission check to isPackageDeviceAdminOnAnyUser.  [alliancesparx]
-c4d8af879e7  DO NOT MERGE Atoms: Add BluetoothClassicPairingEvent  [alliancesparx]
-b6dcff8ad8b  Fix NPE on ExpandableNotificationRow  [alliancesparx]
-d0dd7c06965  SystemUI: Fix fc when selecting logo or carrier label  [alliancesparx]
-52fd5fb78d4  SystemUI: partial screenshot on long press power menu  [alliancesparx]
-709e7c1da76  base: refine partial screenshot handling  [alliancesparx]
-2d5f16bcfb8  Q Style Clock: Make sure minutes text is in single line  [alliancesparx]
-e04f30b87a7  SystemUI: Set proper color for battery text view  [alliancesparx]
-2c973d3219c  Q Style Clock: Make it fully translatable  [alliancesparx]
-cee8ddf3284  LSClockStyle: Misc fixes  [alliancesparx]
-9c773d495bf  Q Style Clock: Improve design a bit  [alliancesparx]
-22296da26b9  KeyguardStatusView: add custom text clock  [alliancesparx]
-c6561e14fdc  Q Style Clock: Reduce top margin, users want to see more notifications  [alliancesparx]
-0d1821cf1be  Q Style Clock: Set "It's" to accent color instead of gold / yellow color  [alliancesparx]
-25c181418cf  KeyguardSliceView: Align as per the Clock Style  [alliancesparx]
-1c7f184a791  Q TextClock: Use Google Sans for typeface  [alliancesparx]
-61bb5f4da82  SystemUI: Cleanup keyguard_status_view layout  [alliancesparx]
-626d65036cb  CustomTextClock: Code style cleanups  [alliancesparx]
-f9c41a9f107  KeyguardStatusView: Cleanup pointless duplication  [alliancesparx]
-f2570769f5d  CustomTextClock: Improve UI and optimisations  [alliancesparx]
-6798951af1e  Lockscreen Clock Styles: Introduce Q style text clock  [alliancesparx]
-440d40d2336  LS clock style: Place Q style clock above keyguard status view  [alliancesparx]
-49e751c2ba3  Fixed auto-brightness first screen update.  [alliancesparx]
-   * manifest/
-c49c0e3  manifest: 9.0.0_r40  [alliancesparx]
-7b0769e  validus: track our clang  [alliancesparx]
+73ec143c04d  Theme settings dashboard icons [1/3]  [alliancesparx]
+f95b5055955  base: Running services icon toggle [1/2]  [alliancesparx]
+50cad472480  Allow to quickly open Running Services from QS panel [1/2]  [alliancesparx]
+1c4468a61c0  Suspend Actions [1/3]  [alliancesparx]
+f88369fac7a  Less boring heads up option: always show alarm clock headsup  [alliancesparx]
+feba5428eab  Less boring heads up option [1/2]  [alliancesparx]
+4040316364e  Statusbar logo: Remove color picker, set icons to adopt accent color [1/2]  [alliancesparx]
+2ebd1509903  QSPannnel: import UserHandle  [alliancesparx]
+564b67c7f2f  Brightness slider + - buttons: use more granular values  [alliancesparx]
+128cb7c3585  Refresh QS brightness icon and improve its touch area and padding  [alliancesparx]
+e9a0b37044d  Multi-User fixes for brightness slider mod  [alliancesparx]
+3d5ed647754  Adapt custom brightness actions to BrightnessDialog  [alliancesparx]
+e6204993593  Bottom brightness slider fixes and improvements  [alliancesparx]
+0d957254c36  Improve the brightness footer slider animation when on 2nd QS page  [alliancesparx]
+9f244e4c24a  Footer brightness slider: improve hide/show animation  [alliancesparx]
+3c29beef7c5  Brightness slider: Vibrate after a long press  [alliancesparx]
+b65657d94b0  Brightness Buttons: Improve touch area  [alliancesparx]
+5f5ae2d2275  Footer brightness buttons: make touch area more reliable  [alliancesparx]
+0c6b2eadd78  Brightness slider buttons: make them dynamic (auto and manual)  [alliancesparx]
+83139cacc08  Footer brightness slider: fix FC and code cleanup  [alliancesparx]
+9eea06a2676  Make use of the brightness slider buttons  [alliancesparx]
+b65cb17097a  Rework auto brightness implementation  [alliancesparx]
+bf1e9639e86  Brightness control on footer  [alliancesparx]
+8e022474f70  Lockscreen: Remove duplicated colors  [alliancesparx]
+f2429a114db  FOD: prevent showing on auth error  [alliancesparx]
+487fbee9623  FODCircleView: support all screen orientations  [alliancesparx]
+785e7e6aae2  FOD: deactivate temporary brightness correclty  [alliancesparx]
+43b0ecdf3e4  fod: run async task for setting brightness  [alliancesparx]
+61702092394  FODCircleView: read from system props  [alliancesparx]
+8eb5054ab9a  FOD: fixes and improvements  [alliancesparx]
+b2aa430cfe9  FODCircleView: calculate proper dimming amount  [alliancesparx]
+f5e1a63cf41  Launch music player on headset connect: add BT compatibility [1/2]  [alliancesparx]
+97ca7ad4b75  Move DexLoadReporter setup before AppComponentFactory calls  [alliancesparx]
+f05baa0bfaa  SystemUI: Fix SystemUI failed to go to doze issue  [alliancesparx]
+37054e3d19e  Bluetooth: Unregister BLE APPs when mBluetoothGatt valid only  [alliancesparx]
+2c739fc9a9a  base: Let's remove custom font applying on custom date  [alliancesparx]
+67f4ed03aad  base: add our styles back [1/2]  [alliancesparx]
+41f4dc4ff5a  [1/2] base: add Q beta pill background  [alliancesparx]
+260c8cc41f2  Introduce lockscreen date styles [1/2]  [alliancesparx]
+f9054e549dd  fwb: SystemUI: Show 4G instead of LTE [1/2]  [alliancesparx]
+e9280adb175  SystemUI: Added animation of switching between the power menu and the extended power menu  [alliancesparx]
+e759b3608cc  Powermenu: Fix flight mode strings Depending which language was selected user could end up with almost duplicate strings - this should fix it.  [alliancesparx]
+b812cfb60d7  Add optional OP cam support  [alliancesparx]
+fcaf9b4f000  AudioService: Remove Analog Dock from fixed-volume devices  [alliancesparx]
+e63177144de  SystemUI: Use proper lock icon scale on dismissing notification panel view  [alliancesparx]
+3af0449a4df  Switch widgets away from android.text.format.Time  [alliancesparx]
+9012d36bcdd  Migrate telephony code away from Time  [alliancesparx]
+66f9cdf1dd7  Remove unused class  [alliancesparx]
+76771d30cfa  Remove unnecessary usage of deprecated Time class  [alliancesparx]
+363b39d03e5  Add a basic benchmark for android.text.format.Time  [alliancesparx]
+de3b18800fc  Avoid use of DateUtilsBridge.icuTimeZone()  [alliancesparx]
+b9440fa13ae  Launch default music player on headset connect [1/2]  [alliancesparx]
+b7bbddd7289  CarrierConfigManager: Enable enhanced call blocking function  [alliancesparx]
+db4392ad968  SystemUI: Protect against terrible music players  [alliancesparx]
+cfa83f5282f  Fix binder leakage when turning off Bluetooth  [alliancesparx]
+188cf2d8cb9  Avoid scheduling service restart twice.  [alliancesparx]
+395fd559e75  Stop USB Debugging authorization window dismissing on tap outside.  [alliancesparx]
+278e3c17771  Frameworks: Slightly refactor Parcel code  [alliancesparx]
+54a4898e4da  Removing an extra installd call.  [alliancesparx]
+d1267f9b3be  base: make qs battery estimates clickable  [alliancesparx]
+57871f48e03  base: Add toggle to disable battery estimates in QS [1/2]  [alliancesparx]
+3d79f53592a  SystemUI: Ensure battery estimates update on callback  [alliancesparx]
+d42495639d5  SystemUI: Implement enhanced battery estimates in QS  [alliancesparx]
    * packages/apps/Settings/
-eb11a621d4  Implement per-app thermal control [1/3]  [alliancesparx]
-d7b39a50f9  Remove freeform and resizable activity preferences  [alliancesparx]
-d1e28f95f6  Add summary to custom ambient preference  [alliancesparx]
-8b47a2a7d8  Ensure battery saver preference is truly disabled while plugged in  [alliancesparx]
+15902fba4d  Theme settings dashboard icons [2/3]  [alliancesparx]
+1905359a57  Settings: Set settings title text to adopt accent color  [alliancesparx]
+c63d8cf087  Allow to quickly open Running Services from notification/qs panel [2/2]  [alliancesparx]
+7f5dab4bc3  WolvesDen: Simplify the structure, make changes to integrate with Settings  [alliancesparx]
+8db1aadd93  changelog: link to 9.0  [alliancesparx]
    * packages/apps/WolvesDen/
-21904fa  WolvesDen: Add Q text lockscreen clock style  [alliancesparx]
+948a6d1  WolvesDen:Theme settings dashboard icons [3/3]  [alliancesparx]
+01c9e1d  WolvesDen: Running services icon toggle [2/2]  [alliancesparx]
+02b006e  Suspend Actions [3/3]  [alliancesparx]
+a75cb23  Less boring heads up option [2/2]  [alliancesparx]
+b2fdcfc  Statusbar logo: Remove color picker, set icons to adopt accent color [2/2]  [alliancesparx]
+75565c8  WolvesDen: Remove unused res and tidy up  [alliancesparx]
+22f7802  Add missing resources This fixes active icon text size  [alliancesparx]
+a02635c  Add and use new icons by @scoobyjenkins  [alliancesparx]
+19571fc  Simplify the structure, make changes to integrate with Settings  [alliancesparx]
+b7965f5  Launch music player on headset connect: add BT compatibility [2/2]  [alliancesparx]
+bf8d4cf  LS Settings: let's add our styles back [2/2]  [alliancesparx]
+39654c4  [2/2] Date styles: add Q beta pill  [alliancesparx]
+db33360  Introduce lockscreen date styles [2/2]  [alliancesparx]
+eabb72a  WolvesDen: Add LTE to 4G status bar toggle  [alliancesparx]
+bd3679d  wolvesden: Launch default music player on headset connect [2/2]  [alliancesparx]
+11f568f  wolvesden: move smart pixels to system  [alliancesparx]
+daaeacf  WolvesDen: Batterty Estimations: nuke percent text view temporary  [alliancesparx]
+0ed6bf3  WolvesDen: StatusBarBattery: Use our ListPreference preference  [alliancesparx]
+bac5df5  WolvesDen: Add toggle to disable battery estimates in QS [2/2]  [alliancesparx]
+c41664f  SystemUI: add toggle for the onehand ui mode [2/2]  [alliancesparx]
+   * packages/services/Telephony/
+48397cda6  Suspend Actions [2/3]  [alliancesparx]
    * vendor/validus/
-332a7b6  Version bump - 5.2  [alliancesparx]
+4004e18  Version bump -> 6.0  [alliancesparx]
+045644c  Overlay: Set default hotspot name  [alliancesparx]
 ====================
-     06-13-2019
-====================
-
-
-====================
-     06-12-2019
+     07-27-2019
 ====================
 
 
 ====================
-     06-11-2019
+     07-26-2019
 ====================
 
 
 ====================
-     06-10-2019
+     07-25-2019
 ====================
 
 
 ====================
-     06-09-2019
+     07-24-2019
 ====================
 
 
 ====================
-     06-08-2019
-====================
-
-
-   * frameworks/av/
-c00e4287c  libcameraservice: force specific cam id for google face unlock  [Nick van Bokhorst]
-====================
-     06-07-2019
+     07-23-2019
 ====================
 
 
 ====================
-     06-06-2019
+     07-22-2019
 ====================
 
 
-   * frameworks/av/
-0a26acdfd  AudioFlinger: Prevent multiple effect chains with same sessionId  [Alx31]
-894bd507c  audio: ensure effect chain with specific session id is unique  [Alx31]
-7e6b6e92d  NuPlayerCCDecoder: fix memory OOB  [Alx31]
-   * packages/apps/Bluetooth/
-5f582ac0  Revert "DO NOT MERGE Separate SDP procedure from bonding state (2/2)"  [martinusbe]
-e5997ae0  DO NOT MERGE Revert "BondStateMachine: Check for null before calling getDeviceType"  [martinusbe]
-06db0c34  BondStateMachine: Check for null before calling getDeviceType  [martinusbe]
-   * system/bt/
-727960c75  DO NOT MERGE Revert "DO NOT MERGE Separate SDP procedure from bonding state (1/2)"  [martinusbe]
-34729cda5  DO NOT MERGE Log encryption key size MERGE CONFLCIT RESOLUTION TO PI-QPR3-RELEASE * Log result from HCI_READ_ENCR_KEY_SIZE command  [martinusbe]
-dae39550d  DO NOT MERGE Don't persist bonds using sample LTK  [martinusbe]
-ffae782de  DO NOT MERGE Drop Bluetooth connection with weak encryption key  [martinusbe]
+====================
+     07-21-2019
+====================
+
+
+====================
+     07-20-2019
+====================
+
+
+====================
+     07-19-2019
+====================
+
+
+====================
+     07-18-2019
+====================
+
+
+====================
+     07-17-2019
+====================
+
+
+====================
+     07-16-2019
+====================
+
+
+====================
+     07-15-2019
+====================
+
+
+====================
+     07-14-2019
+====================
+
+
