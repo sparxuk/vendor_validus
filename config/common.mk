@@ -66,7 +66,8 @@ PRODUCT_COPY_FILES += \
 #    vendor/validus/prebuilt/common/sysconfig/dialer_experience.xml:system/etc/sysconfig/dialer_experience.xml
 
 PRODUCT_COPY_FILES += \
-    vendor/validus/prebuilt/common/etc/permissions/privapp-permissions-omnijaws.xml:system/etc/permissions/privapp-permissions-omnijaws.xml
+    vendor/validus/prebuilt/common/etc/permissions/privapp-permissions-omnijaws.xml:system/etc/permissions/privapp-permissions-omnijaws.xml \
+    vendor/validus/prebuilt/common/etc/permissions/privapp-permissions-gzr.xml:system/etc/permissions/privapp-permissions-gzr.xml
 
 # Fonts packages
 PRODUCT_PACKAGES += \
