@@ -205,7 +205,7 @@ endif
 # Versioning System
 # validus first version.
 PRODUCT_VERSION_MAJOR = 9
-PRODUCT_VERSION_MINOR = Beta
+PRODUCT_VERSION_MINOR = RC
 PRODUCT_VERSION_MAINTENANCE = 6.2
 VALIDUS_POSTFIX := -$(shell date +"%Y%m%d-%H%M")
 ifdef VALIDUS_BUILD_EXTRA
