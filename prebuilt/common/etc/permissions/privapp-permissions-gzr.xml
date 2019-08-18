@@ -43,6 +43,7 @@
     <privapp-permissions package="com.android.systemui">
         <permission name="android.permission.MODIFY_DAY_NIGHT_MODE"/>
         <permission name="android.permission.NAVIGATION_EDITOR"/>
+        <permission name="android.permission.FORCE_STOP_PACKAGES"/>
     </privapp-permissions>
 
 </permissions>
