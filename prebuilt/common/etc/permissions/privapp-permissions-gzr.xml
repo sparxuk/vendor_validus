@@ -46,4 +46,9 @@
         <permission name="android.permission.FORCE_STOP_PACKAGES"/>
     </privapp-permissions>
 
+    <!-- Additional permissionsfor Fluid Navigation Gestures app -->
+    <privapp-permissions package="com.fb.fluid">
+        <permission name="android.permission.WRITE_SECURE_SETTINGS"/>
+    </privapp-permissions>
+
 </permissions>
