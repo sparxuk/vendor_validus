@@ -3,6 +3,8 @@
 ====================
 
 
+   * vendor/validus/
+a1ff9a2  Generate changelog  [alliancesparx]
 ====================
      08-26-2019
 ====================
@@ -13,16 +15,99 @@
 ====================
 
 
+   * hardware/qcom/power/
+17a0be8  power: Add initial sm6150 power HAL  [Ram9199]
 ====================
      08-24-2019
 ====================
 
 
+   * frameworks/base/
+fb0c2c3007c  Update Xbox BT controller mapping to support upcoming controller firmware update  [hardwareadictos]
+47085813657  Added mapping files for DualShock3 and DualShock4  [hardwareadictos]
+58d5903e828  Fallback BUTTON_MODE to HOME  [hardwareadictos]
+537bb05a658  Remap PS key to BUTTON_MODE  [hardwareadictos]
+3af40f47df1  Add keylayout for Xbox One USB controller  [hardwareadictos]
+b60ef904e26  Keylayout for xbox controllers  [hardwareadictos]
+9c3c86340b7  LockSettingsService: Support for separate clear key api  [hardwareadictos]
+314acb9a261  base: update gzosp FileUtils  [hardwareadictos]
+2400d994d2f  BT: Adding aptX-Adaptive codec entry to Framework  [hardwareadictos]
+356bfb9638b  base: introduce DisplayModeManager[1/2]  [hardwareadictos]
+409be07794a  input: swap hw back with recents button [1/2]  [hardwareadictos]
+c49a462a6c8  NetworkManagement : Add ability to restrict app vpn usage  [hardwareadictos]
+d6c8c245ecb  [2/3] NetworkManagement : Add ability to restrict app data/wifi usage  [hardwareadictos]
+3693f2fe459  Fix NPE issue for GpsNetInitiatedHandler not complete initialization  [hardwareadictos]
+89f86921aa4  Fix NPE crash issue for setting  [hardwareadictos]
+5e1680adb06  Fix NPE issue while disable KeyguardViewMediator  [hardwareadictos]
+2255b904978  power: Respect global vibration setting for charging sounds  [hardwareadictos]
+0d1535b4877  policy: Allow key events from 3rd party source  [hardwareadictos]
+fe833d9f68f  fingerprint: Speed up wake-and-unlock scenario  [hardwareadictos]
+c9870e3bac6  test: remove check for hwkeys  [hardwareadictos]
+7fb09065976  config_defaultToNavigationBar false  [hardwareadictos]
+d2244a23a6f  FOD: Make sure we're only hiding fod on the normal keyguard  [hardwareadictos]
+dc87989238d  Keyguard: Don't listen for fingerprint when prox.sensor is covered  [hardwareadictos]
+d73cb782f0b  PhoneWindowManager: trigger virtual keypress for back  [hardwareadictos]
+4da4f8ba273  FOD: make the color cyan #00ffff  [hardwareadictos]
+1887168b1dc  FOD: make colors depend on xml  [hardwareadictos]
+   * frameworks/native/
+c2b3b5b6e  input: swap hw back with recents button [2/2]  [hardwareadictos]
+   * packages/apps/Settings/
+c1141b8e4a  Settings: per-app VPN data restriction  [hardwareadictos]
+0be455856a  [1/3] Settings: per-app cellular data and wifi restrictions  [hardwareadictos]
+3b63dbc70e  Remove LockScreenSettings from searchable index FC needs further investigation  [hardwareadictos]
+7691d20b0e  Add custom features to search index [2/2]  [hardwareadictos]
+   * packages/apps/WolvesDen/
+5016383  System: fix doubled fingerpint settings  [hardwareadictos]
+c59540f  wolvesden: re-order system settings a bit (part 1)  [hardwareadictos]
+0185e20  wolvesden: add hwkeys swap switch  [hardwareadictos]
+4520f34  Add custom features to search index [1/2]  [hardwareadictos]
+c19a7a2  wolvesden: Custom fingerprint icon and auth vibration [2/2]  [hardwareadictos]
+   * system/core/
+b64f916d4  fs_mgr: Wrapped key support for FBE  [hardwareadictos]
+9f3e6593a  fs_mgr: Add MF_WRAPPEDKEY flag  [hardwareadictos]
+   * system/vold/
+6a2bdfd  vold: change to upgrade key if export fails  [hardwareadictos]
+02b6a51  vold: add support for clear key  [hardwareadictos]
+a2c64a3  vold: Use separate flag for wrappedkey  [hardwareadictos]
+d281697  vold: Wrapped key support for FBE  [hardwareadictos]
+   * vendor/validus/
+88187d0  vendor: ValidusOS v6.3  [hardwareadictos]
+153cea3  permissions: cleanup systemui permissions  [hardwareadictos]
+589f940  permissions: add for Fluid Navigation Gestures app  [hardwareadictos]
+bd0a8be  permissions: systemui can FORCE_STOP_PACKAGES  [hardwareadictos]
 ====================
      08-23-2019
 ====================
 
 
+   * hardware/qcom/display-caf/sm8150/
+30fc752f2  sdm: set geometry change on doze suspend  [Ram9199]
+0a2858399  display: Add property to use panel FPS for rotator.  [Ram9199]
+71a708d33  sdm: Add HIDL implementation to configure bit clocks.  [Ram9199]
+494197f89  Merge "sdm: Make commit synchronous if power state is involved."  [Ram9199]
+41937d572  Merge 3cd79bf23d2a5882ce274dcf3cd44af81fa97c51 on remote branch  [Ram9199]
+0d682df02  Merge 97d13bf15202a5225844a399281896fde4601298 on remote branch  [Ram9199]
+38e2ba171  sdm: Trigger validate upon lut swap.  [Ram9199]
+266bd5dc9  sdm: Query strategy if there is a need to validate.  [Ram9199]
+2150e7176  hwc2: Disable caching for virtual displays.  [Ram9199]
+4ae02b95a  display: Add a property to disable factory floor mode  [Ram9199]
+7012c1ede  Merge "Remove $WORKSPACE variable in display/display_hal Makefile"  [Ram9199]
+   * hardware/qcom/media-caf/sm8150/
+8075b1695  mm-video-v4l2: vdec :enable C2D for MPEG2 interlaced output on sa8155  [Ram9199]
+84e90c65a  fixCR2481012:enable macro __LINUX__ for swvc1dec  [Ram9199]
+b65ad0c09  Merge "mm-video-v4l2: venc: Fix in VP8 output buffer dump"  [Ram9199]
+6789b15e8  media:enable sw video codec  [Ram9199]
+ec106c75c  Clean $WORKSPACE variable  [Ram9199]
+1c2467e0b  mm-video-v4l2: vdec: Check for negative timestamp in fbd  [Ram9199]
+40eea0454  Preliminary Android target definition for sdmshrike  [Ram9199]
+e11041a99  mm-video-v4l2: venc: Add support for profile level 45  [Ram9199]
+36b892230  mm-video-v4l2: vdec: udpate error based on return value  [Ram9199]
+840a14637  Merge 8f7462391d56bbe99912d822f9d31680d73a09d3 on remote branch  [Ram9199]
+4040c4f78  Merge "mm-video: refine condition for free buffer call"  [Ram9199]
+0022fd560  Merge "Support NV12_512 color format"  [Ram9199]
+124d2f612  Merge "mm-video-v4l2: Moved post_event() call out of m_lock."  [Ram9199]
+67c7bc5db  Merge "mm-video-v4l2: venc: Fix integer overflow issues"  [Ram9199]
+ac1b60905  Merge "Support hypvisor in LV"  [Ram9199]
 ====================
      08-22-2019
 ====================
@@ -38,6 +123,17 @@
 ====================
 
 
+   * hardware/ril-caf/
+a7a0f56  Encode the Number of MNC Digits in CellIdentity  [martinusbe]
+0c2218a  libril: Fix manual network selection with old modem  [martinusbe]
+70a646e  librilutils: Relocate pb-generated objects to their expected path  [martinusbe]
+3cdd59b  libril: Restore support for RIL v6, v8 and v9 stacks  [martinusbe]
+9d022cf  libril: Protect against NULL unsolicited response function  [martinusbe]
+4e3cafc  Revert "Disable rild from starting at power up"  [martinusbe]
+bb3363d  Make RIL command headers overlayable by devices.  [martinusbe]
+7a81b76  libril: Bounds check s_commands  [martinusbe]
+b630a18  ril-caf: Add guard makefile  [martinusbe]
+d6affa4  libril: allow board to provide libril  [martinusbe]
 ====================
      08-19-2019
 ====================
@@ -48,11 +144,110 @@
 ====================
 
 
+   * manifest/
+660c6e0  Track our hardware_broadcom_libbt/nfc  [alliancesparx]
 ====================
      08-17-2019
 ====================
 
 
+   * build/make/
+bfcfcaf44  fix "build: Only set the default verity key as a fallback"  [alliancesparx]
+f842629ae  build: Only set the default verity key as a fallback  [alliancesparx]
+39896a151  make: Use build prop overrides when generating vendor build.prop too  [alliancesparx]
+f85c73789  Version bump to PQ3A.190801.002 [core/build_id.mk]  [alliancesparx]
+2dcac2bf0  Update Security String from 08-05 to 2019-08-01 Bug:126590667  [alliancesparx]
+f8690852b  Update Security String to 2019-08-05 Bug:126590667 (cherry picked from commit a3e1c57a95d895fff372054205914bc322b025a1)  [alliancesparx]
+   * frameworks/av/
+f0397be7a  Camera: Lazy load sound files to speed up camera startup  [alliancesparx]
+e319e6ac5  media: Add support for up to level 6.2 for AVC  [alliancesparx]
+a1d5f7fba  CameraService: Support hooks for motorized camera  [alliancesparx]
+   * frameworks/base/
+87c0abddcb3  MediaCodecInfo: Add support for level 6.2  [alliancesparx]
+35b9b698411  Camera: allow camera to use power key as shutter  [alliancesparx]
+f85e304ad16  GlobalActionsDialog: Fix emergency icon on dark theme  [alliancesparx]
+249cc644ab5  GamingMode: Update our strings.  [alliancesparx]
+d872816eb75  FOD: disable fod on trusted keyguard  [alliancesparx]
+f712906bafd  FOD: change Windowmanager flags  [alliancesparx]
+db27231fa3f  Fix NPE upon boot after changing keyguard wallpaper  [alliancesparx]
+ff5b863ad77  WallpaperManagerService: Fix theme switching  [alliancesparx]
+22412923aac  tiles: include Caffeine Tile  [alliancesparx]
+2fc941246e4  SystemUI: Add Gaming mode tile  [alliancesparx]
+63695f88688  SystemUI: QS: Add VPN tile  [alliancesparx]
+0dc4af491a3  Fix aosp partial screenshot  [alliancesparx]
+ebdd01e749f  SystemUI: Add Caffeine QS tile  [alliancesparx]
+96773f572bb  Cellular tile: don't show disable confirmation dialog  [alliancesparx]
+331906bbe14  Update screenshot QS tile icons  [alliancesparx]
+7ddc943f7ba  Allow user to add/remove QS with one click  [alliancesparx]
+919b1c8bcbc  Persist screenshot type after reboot  [alliancesparx]
+4784f3ac908  Tiles: enable sync tile  [alliancesparx]
+7a66ca16626  Add partial/full screenshot QS tile  [alliancesparx]
+6dc9c63022c  QS: Add Sync QS Tile  [alliancesparx]
+6ce9082747f  Aosp hidden partial screenshot code fixes  [alliancesparx]
+be3ba7dc0f3  Collect APK certificates after an OTA, rather than relying on timestamps  [alliancesparx]
+230931be95b  [RESTRICT AUTOMERGE] Protect VPN dialogs against overlay.  [alliancesparx]
+4f4d07de75f  Clear the Parcel before writing an exception during a transaction  [alliancesparx]
+746579eeef2  DO NOT MERGE SurfaceControl: Fix captureLayers JNI  [alliancesparx]
+b298935dea6  Clean up ProcessRecord when reuse a pid.  [alliancesparx]
+5762bbef2b0  [RESTRICT AUTOMERGE] Fix NullPointerException when mLockPatternUtils is not set.  [alliancesparx]
+563e609b436  Update API docs for TelecomManager#endCall.  [alliancesparx]
+99128594f0d  [RESTRICT AUTOMERGE] Make LockTaskController default behaviour match ScreenPinningSettings.  [alliancesparx]
+   * frameworks/native/
+10407618f  android.bp:  product_variables: validus  [alliancesparx]
+3380c0d8d  SF : Map metadata before accessing value.  [alliancesparx]
+54f0ea4bc  SF: Add support for 64 bit consumer usage flag  [alliancesparx]
+d55c97c0b  sf: Do not black out HDR layer  [alliancesparx]
+6f5501a7c  Exsf: Add hardware hdr capability check  [alliancesparx]
+d338f0830  Fix build error  [alliancesparx]
+6df0b7ffe  SurfaceFlinger: Exclude CAF extensions from non-QC devices  [alliancesparx]
+bb5a5afdc  SF : Include display Intf headers library  [alliancesparx]
+b39c368ac  SurfaceFlinger: Combine SF Refactor changes.  [alliancesparx]
+4fcde9f99  media: Add support for level 6-6.2 for AVC  [alliancesparx]
+6b25516d1  libbinder: Status: check dataPosition sets.  [alliancesparx]
+6c892ae8a  libbinder: readCString: no ubsan sub-overflow  [alliancesparx]
+   * manifest/
+db624d6  manifest: track hardware_gzosp_interfaces fom validus  [alliancesparx]
+55d2bb7  manifest: track Snap camera from gzosp  [alliancesparx]
+222d7b5  manifest: 9.0.0_r46  [alliancesparx]
+   * packages/apps/Settings/
+1504f9219b  AppNotificationSettings.java: fix duplicate onpause()  [alliancesparx]
+ef18511ff0  Do not allow draw on top for App notification settings  [alliancesparx]
+d1152b7dfe  [RESTRICT AUTOMERGE] Make ScreenPinningSettings behaviour consistent with LockTaskController.  [alliancesparx]
+   * system/sepolicy/
+c777e84a  sepolicy: Add Google App build props  [alliancesparx]
+   * vendor/validus/
+dce2e1d  Generate changelog  [alliancesparx]
+28cf0df  permissions for systemui  [alliancesparx]
+588df85  permissions for camera2 & FMradio  [alliancesparx]
+bdcd474  permissions for Snap  [alliancesparx]
+8352f5e  soong_config: Add flag for msm8974 1440p EGL workaround  [alliancesparx]
+c77e23c  fonts: Add Source Sans Pro from Android Q  [alliancesparx]
+b5cbdc9  fonts: add slate font  [alliancesparx]
+132a71b  Revert "validus: Enforce privapp-permissions whitelist"  [alliancesparx]
+71e79e8  validus: also use the google privapp permissions  [alliancesparx]
+d599822  vendor: gzosp: Add phone-xhdpi-2048-dalvik-heap  [alliancesparx]
+31bedbd  vendor: gzosp: Add phone-xxhdpi-4096-dalvik-heap  [alliancesparx]
+96d9bdb  vendor: gzosp: Add phone-xxhdpi-2048-dalvik-heap  [alliancesparx]
+a3611bf  vendor: gzosp: Revert back to previous configuration for xxxhdpi-3072-dalvik-heap  [alliancesparx]
+b28be00  vendor: gzosp: Rework 3 and 4-GB dalvik heap configurations  [alliancesparx]
+1fa2c6f  vendor: gzosp: Update HWUI config for xxhdpi/2GB devices  [alliancesparx]
+5de3993  vendor: gzosp: Update configuration for 2GB/1080p devices  [alliancesparx]
+4cf04fe  vendor: gzosp: Provide overrides for hwui memory limits for xxhdpi phones  [alliancesparx]
+76c5702  vendor: gzosp: Use 3gb dalvik heap and hwui  [alliancesparx]
+f1462ad  vendor: gzosp: Add HWUI overrides for xxxhdpi phone  [alliancesparx]
+3b49935  vendor: gzosp: Add dalvik heap override for xxxhdpi phone  [alliancesparx]
+525a547  validus: Enforce privapp-permissions whitelist  [alliancesparx]
+16ebbfb  validus: create privapp-permissions-gzr  [alliancesparx]
+adeb015  vendor: Add vendor.lineage.biometrics.fingerprint.inscreen permission  [alliancesparx]
+d2b98c8  vendor: Add qcom platform type to soongs vars  [alliancesparx]
+9b984a4  qcom: Add UM 4.14 platforms  [alliancesparx]
+883b3c0  build: Support SDM710 platform  [alliancesparx]
+a9d6a41  build: Separate platform macros from QCOM platform definition  [alliancesparx]
+52c6468  build: Reorganize inclusion of QCOM macros  [alliancesparx]
+73ac170  build: Use ifeq/else ifeq/else construction in board config  [alliancesparx]
+e365db6  Revert "ValidusOS: Bump to Beta"  [hardwareadictos]
+0dccc42  Generate changelog  [alliancesparx]
+48dcd0f  Version bump -> 6.2  [alliancesparx]
 ====================
      08-16-2019
 ====================
@@ -68,6 +263,11 @@
 ====================
 
 
+   * hardware/gzosp/interfaces/
+de69a26  Introduce camera motor hal  [martinusbe]
+   * system/netd/
+c140f0b  NetD : Allow passing in interface names for vpn app restriction  [martinusbe]
+4097d07  [3/3] NetD : Allow passing in interface names for wifi/data app restriction  [martinusbe]
 ====================
      08-13-2019
 ====================

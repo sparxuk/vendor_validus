@@ -387,7 +387,8 @@ platform/frameworks/rs
 platform/frameworks/support
 platform/frameworks/wilhelm
 platform/hardware/akm
-platform/hardware/broadcom/libbt
+hardware/broadcom/libbt
+hardware/broadcom/nfc
 hardware_broadcom_wlan
 platform/hardware/google/apf
 platform/hardware/google/av
