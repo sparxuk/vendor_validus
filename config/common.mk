@@ -77,6 +77,8 @@ PRODUCT_PACKAGES += \
     FontArvoLatoOverlay \
     FontRubikRubikOverlay \
 
+-include vendor/validus/config/fonts.mk
+
 # Power whitelist
 PRODUCT_COPY_FILES += \
     vendor/validus/config/permissions/validus-power-whitelist.xml:system/etc/sysconfig/validus-power-whitelist.xml
