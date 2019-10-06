@@ -15,11 +15,11 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/gzosp_arm.mk \
-    $(LOCAL_DIR)/gzosp_arm64.mk \
-    $(LOCAL_DIR)/gzosp_x86.mk
+    $(LOCAL_DIR)/validus_arm.mk \
+    $(LOCAL_DIR)/validus_arm64.mk \
+    $(LOCAL_DIR)/validus_x86.mk
 
 COMMON_LUNCH_CHOICES := \
-    gzosp_arm-userdebug \
-    gzosp_arm64-userdebug \
-    gzosp_x86-userdebug
+    validus_arm-userdebug \
+    validus_arm64-userdebug \
+    validus_x86-userdebug
