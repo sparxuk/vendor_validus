@@ -62,7 +62,8 @@ PRODUCT_COPY_FILES += \
 
 # privapp permissions
 PRODUCT_COPY_FILES += \
-    vendor/validus/prebuilt/common/etc/permissions/privapp-permissions-gzr.xml:system/etc/permissions/privapp-permissions-gzr.xml
+    vendor/validus/prebuilt/common/etc/permissions/privapp-permissions-gzr.xml:system/etc/permissions/privapp-permissions-gzr.xml \
+    vendor/validus/prebuilt/common/etc/permissions/privapp-permissions-google.xml:system/etc/permissions/privapp-permissions-google.xml
 
 # Validus-specific startup services
 PRODUCT_COPY_FILES += \
