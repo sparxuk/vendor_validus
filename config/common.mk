@@ -79,6 +79,9 @@ PRODUCT_PACKAGES += \
 
 -include vendor/validus/config/fonts.mk
 
+PRODUCT_PACKAGES += \
+     OverlayStub
+
 # Power whitelist
 PRODUCT_COPY_FILES += \
     vendor/validus/config/permissions/validus-power-whitelist.xml:system/etc/sysconfig/validus-power-whitelist.xml
