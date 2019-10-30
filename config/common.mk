@@ -71,6 +71,12 @@ PRODUCT_COPY_FILES += \
     vendor/validus/prebuilt/common/etc/init.d/90userinit:system/etc/init.d/90userinit \
     vendor/validus/prebuilt/common/bin/sysinit:system/bin/sysinit
 
+# Fonts
+PRODUCT_PACKAGES += \
+    FontArbutusSourceOverlay \
+    FontArvoLatoOverlay \
+    FontRubikRubikOverlay \
+
 # Power whitelist
 PRODUCT_COPY_FILES += \
     vendor/validus/config/permissions/validus-power-whitelist.xml:system/etc/sysconfig/validus-power-whitelist.xml
