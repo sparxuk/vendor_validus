@@ -76,6 +76,7 @@ PRODUCT_PACKAGES += \
     FontArbutusSourceOverlay \
     FontArvoLatoOverlay \
     FontRubikRubikOverlay \
+    FontGoogleSansOverlay \
 
 -include vendor/validus/config/fonts.mk
 
