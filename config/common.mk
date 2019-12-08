@@ -82,7 +82,7 @@ PRODUCT_PACKAGES += \
 
 # Power whitelist
 PRODUCT_COPY_FILES += \
-    vendor/validus/config/permissions/gzosp-power-whitelist.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/gzosp-power-whitelist.xml
+    vendor/validus/config/permissions/validus-power-whitelist.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/validus-power-whitelist.xml
 
 # Required packages
 PRODUCT_PACKAGES += \
