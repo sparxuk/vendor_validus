@@ -25,7 +25,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_COPY_FILES += \
     vendor/validus/prebuilt/common/bin/backuptool.sh:install/bin/backuptool.sh \
     vendor/validus/prebuilt/common/bin/backuptool.functions:install/bin/backuptool.functions \
-    vendor/validus/prebuilt/common/bin/50-gzosp.sh:$(TARGET_COPY_OUT_SYSTEM)/addon.d/50-gzosp.sh \
+    vendor/validus/prebuilt/common/bin/50-validus.sh:$(TARGET_COPY_OUT_SYSTEM)/addon.d/50-validus.sh \
     vendor/validus/prebuilt/common/bin/clean_cache.sh:$(TARGET_COPY_OUT_SYSTEM)/bin/clean_cache.sh
 
 ifeq ($(AB_OTA_UPDATER),true)
